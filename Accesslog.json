@@ -1,0 +1,1908 @@
+{
+  "pools": {
+    "firstNames": [
+      "Harvey",
+      "Reese",
+      "Thiago",
+      "Andrews",
+      "Isla",
+      "Ravi",
+      "Matjhea",
+      "Carlos",
+      "Yulie",
+      "Arkadash",
+      "Gelwich",
+      "Michael",
+      "Keith",
+      "Marie",
+      "Amara",
+      "Sven",
+      "Lina",
+      "Noor",
+      "Takumi",
+      "Jin",
+      "Marek",
+      "Omar",
+      "Lucia",
+      "Anya",
+      "Sergei",
+      "Fatima",
+      "Hugo",
+      "Zanele",
+      "Dmitri",
+      "Priya",
+      "Tobias",
+      "Yuna",
+      "Aleksei",
+      "Celeste",
+      "Idris",
+      "Miriam",
+      "Caspian",
+      "Adaeze",
+      "Florian",
+      "Yuki",
+      "Brennan",
+      "Oksana",
+      "Tariq",
+      "Solange",
+      "Nikolai",
+      "Aiko",
+      "Devlin",
+      "Ingrid",
+      "Rashid",
+      "Elowen",
+      "Kwame",
+      "Zara",
+      "Mikael",
+      "Hana",
+      "Emeka",
+      "Astrid",
+      "Darius",
+      "Leila",
+      "Kofi",
+      "Petra",
+      "Chidi",
+      "Yael",
+      "Bastian",
+      "Amina",
+      "Rowan",
+      "Chioma",
+      "Ezra",
+      "Yewande",
+      "Matteo",
+      "Saoirse",
+      "Hamid",
+      "Viveka",
+      "Renaud",
+      "Kesi",
+      "Dmitriy",
+      "Ananya",
+      "Cillian",
+      "Nneka",
+      "Ruairi",
+      "Sakura",
+      "Femi",
+      "Dagny",
+      "Bjoern",
+      "Layla",
+      "Emre",
+      "Suki",
+      "Kenji",
+      "Adina",
+      "Mehmet",
+      "Freyja",
+      "Oluwaseun",
+      "Tamsin",
+      "Aldric",
+      "Farida",
+      "Remy",
+      "Yewande",
+      "Declan",
+      "Bimpe",
+      "Gunnar",
+      "Sienna",
+      "Obinna",
+      "Thea",
+      "Arjun",
+      "Seren",
+      "Jovan",
+      "Kaito",
+      "Isolde",
+      "Bade",
+      "Nnanna",
+      "Linh",
+      "Vasco",
+      "Ingeborg",
+      "Emiliano",
+      "Zuzanna",
+      "Chukwu",
+      "Maeve",
+      "Raoul",
+      "Adaora",
+      "Sigrid",
+      "Kira",
+      "Efrain",
+      "Chidera",
+      "Balthazar",
+      "Yewande",
+      "Obi",
+      "Wren",
+      "Kazuki",
+      "Sorcha",
+      "Nnamdi",
+      "Vigdis",
+      "Brais",
+      "Asel",
+      "Gunnhild",
+      "Taiwo",
+      "Leandro",
+      "Malia",
+      "Seun",
+      "Fionnuala",
+      "Daisuke",
+      "Zuberi",
+      "Alphonse",
+      "Himari",
+      "Cormac",
+      "Adeola",
+      "Rasmus",
+      "Citlali",
+      "Makena",
+      "Ekundayo",
+      "Pita",
+      "Vanya",
+      "Ozzy",
+      "Freya",
+      "Yusuf",
+      "Xiomara",
+      "Niall",
+      "Amara",
+      "Cezar",
+      "Orla",
+      "Tendai",
+      "Lukas",
+      "Seraphina",
+      "Babajide",
+      "Fionn",
+      "Akinwale",
+      "Saga",
+      "Ekene",
+      "Gwenael",
+      "Oluwatobi",
+      "Naomi",
+      "Sverre",
+      "Chibuike",
+      "Imogen",
+      "Jiri",
+      "Adebayo",
+      "Paloma",
+      "Taiwo",
+      "Finnian",
+      "Uchenna",
+      "Maxime",
+      "Ashante",
+      "Eirik",
+      "Chiamaka",
+      "Leif",
+      "Olabisi",
+      "Brenna",
+      "Fiorenzo",
+      "Kehinde",
+      "Astred",
+      "Nonso",
+      "Tove",
+            "Alistair",
+      "Nadia",
+      "Rohan",
+      "Elara",
+      "Samir",
+      "Thalia",
+      "Jasper",
+      "Malika",
+      "Ewan",
+      "Soraya",
+      "Khalid",
+      "Briony",
+      "Tariro",
+      "Lucian",
+      "Esme",
+      "Anouk",
+      "Ibrahim",
+      "Sadhana",
+      "Torben",
+      "Kalila",
+      "Milos",
+      "Aurelia",
+      "Yaroslav",
+      "Indira",
+      "Cassius",
+      "Zainab",
+      "Renata",
+      "Alvaro",
+      "Dalia",
+      "Iskander",
+      "Milena",
+      "Tenzin",
+      "Roxana",
+      "Nikos",
+      "Samira",
+      "Artem",
+      "Nour",
+      "Leocadia",
+      "Viktor",
+      "Aarav",
+      "Eleni",
+      "Boris",
+      "Zoya",
+      "Amir",
+      "Katerina",
+      "Rami",
+      "Selene",
+      "Petros",
+      "Noemi",
+      "Hassan",
+      "Ilona",
+      "Thierry",
+      "Aisha",
+      "Gregor",
+      "Zofia",
+      "Rakesh",
+      "Marisol",
+      "Sandro",
+      "Yasmine",
+      "Anselm",
+      "Camila",
+      "Fadil",
+      "Loredana",
+      "Mateusz",
+      "Sania",
+      "Radek",
+      "Talia",
+      "Zoran",
+      "Nabila",
+      "Karim",
+      "Vesna",
+      "Oleg",
+      "Safiya",
+      "Dorin",
+      "Yelena",
+      "Arman",
+      "Nadira",
+      "Cosmin",
+      "Elif",
+      "Suleiman",
+      "Tamara",
+      "Zeki",
+      "Marina",
+      "Adil",
+      "Violeta",
+      "Hector",
+      "Rania",
+      "Faris",
+      "Noorul",
+      "Eldar",
+      "Aminata",
+      "Bogdan",
+      "Zehra",
+      "Rodolfo",
+      "Sibel",
+      "Yassin",
+      "Alina",
+      "Ciro",
+      "Mirela",
+      "Farhan",
+      "Dilara",
+      "Teodor",
+      "Nargis",
+      "Iker",
+      "Belen",
+      "Sorin",
+      "Lavinia",
+      "Aziz",
+      "Huda",
+      "Danilo",
+      "Sorina",
+      "Riad",
+      "Imane",
+      "Yordan",
+      "Raluca",
+      "Mahmoud",
+      "Asma",
+      "Flavio",
+      "Caterina",
+      "Selim",
+      "Nesrin",
+      "Tudor",
+      "Sabina",
+      "Zlatan",
+      "Aylin",
+      "Ilir",
+      "Drita",
+      "Arben",
+      "Valbona",
+      "Bekim",
+      "Shpresa",
+      "Enzo",
+      "Giulia",
+      "Luca",
+      "Alessia",
+      "Matias",
+      "Josefina",
+      "Thiago",
+      "Renan",
+      "Bianca",
+      "Mateo",
+      "Catalina",
+      "Sebastien",
+      "Colette",
+      "Pascal",
+      "Elodie",
+      "Quentin",
+      "Manon",
+      "Etienne",
+      "Amelie",
+      "Rene",
+      "Delphine"
+    ],
+    "lastNames": [
+      "Voss",
+      "Okafor",
+      "Chen",
+      "Markov",
+      "Durand",
+      "Sato",
+      "Kowalski",
+      "Ibrahim",
+      "Novak",
+      "Silva",
+      "Alvarez",
+      "Petrov",
+      "Haddad",
+      "Nguyen",
+      "Geraci",
+      "Rossi",
+      "Volkov",
+      "Yamamoto",
+      "Singh",
+      "Khan",
+      "Costa",
+      "Dubois",
+      "Nowak",
+      "Smirnov",
+      "Bianchi",
+      "Popescu",
+      "Ivanov",
+      "Mensah",
+      "Adeyemi",
+      "Nakamura",
+      "Ferreira",
+      "Lindqvist",
+      "Abubakar",
+      "Vasquez",
+      "Reinholt",
+      "Okeke",
+      "Deschamps",
+      "Kaur",
+      "Azoulay",
+      "Patel",
+      "Brandt",
+      "Afolabi",
+      "Johanssen",
+      "Mbeki",
+      "Ashworth",
+      "Tanaka",
+      "Reyes",
+      "Hofmann",
+      "Ezenwachi",
+      "Strand",
+      "Okonkwo",
+      "Larsson",
+      "Adebiyi",
+      "Tremblay",
+      "Farouk",
+      "Eriksson",
+      "Nwosu",
+      "Marchand",
+      "Osei",
+      "Bergstrom",
+      "Adebisi",
+      "Fontaine",
+      "Chukwu",
+      "Magnusson",
+      "Eze",
+      "Beaumont",
+      "Obiora",
+      "Gustafsson",
+      "Nzinga",
+      "Pelletier",
+      "Ijeh",
+      "Sorensen",
+      "Onyekachi",
+      "Andersen",
+      "Amaechi",
+      "Christensen",
+      "Nwafor",
+      "Nielsen",
+      "Obiechina",
+      "Rasmussen",
+      "Ojiaku",
+      "Dahl",
+      "Uchenna",
+      "Moller",
+      "Olawale",
+      "Lund",
+      "Badmus",
+      "Holm",
+      "Ekwueme",
+      "Kjeldsen",
+      "Ogunleye",
+      "Hedegaard",
+      "Balogun",
+      "Vestergaard",
+      "Adeniyi",
+      "Ostergaard",
+      "Lawal",
+      "Lund",
+      "Akintola",
+      "Friis",
+      "Jideonwo",
+      "Madsen",
+      "Olojede",
+      "Jacobsen",
+      "Olatunde",
+      "Laursen",
+      "Igwe",
+      "Simonsen",
+      "Babatunde",
+      "Thomsen",
+      "Fasanya",
+      "Mortensen",
+      "Alabi",
+      "Kristiansen",
+      "Tijani",
+      "Knudsen",
+      "Soares",
+      "Pedersen",
+      "Cardoso",
+      "Hansen",
+      "Figueiredo",
+      "Jensen",
+      "Rodrigues",
+      "Poulsen",
+      "Conceicao",
+      "Mikkelsen",
+      "Carvalho",
+      "Bertelsen",
+      "Martins",
+      "Nygaard",
+      "Teixeira",
+      "Holm",
+      "Lima",
+      "Hojgaard",
+      "Batista",
+      "Winther",
+      "Fonseca",
+      "Nissen",
+      "Azevedo",
+      "Bundgaard",
+      "Melo",
+      "Eliasen",
+      "Barbosa",
+      "Lorentzen",
+      "Araujo",
+      "Andreasen",
+      "Dias",
+      "Damsgaard",
+      "Pinto",
+      "Gregersen",
+      "Gomes",
+      "Svensson",
+      "Pereira",
+      "Henriksen",
+      "Lopes",
+      "Abrahamsen",
+      "Xavier",
+      "Halvorsen",
+      "Correia",
+      "Andersen",
+      "Nunes",
+      "Iversen",
+      "Vieira",
+      "Kristoffersen",
+      "Cunha",
+      "Ostergaard",
+      "Borges",
+      "Magnusson",
+      "Matos",
+      "Eriksen",
+      "Rezende",
+      "Dalgaard",
+      "Alves",
+      "Haugaard",
+      "Moraes",
+      "Hermansen",
+      "Santana",
+      "Norgaard",
+      "Campos",
+      "Fabricius",
+      "Ramos",
+      "Kirkegaard",
+      "Santos",
+      "Berthelsen",
+      "Lima",
+      "Bondesen",
+      "Castro",
+      "Gronbek",
+      "Machado",
+      "Hvidberg",
+      "Freitas",
+      "Vesterby",
+      "Salave'a",
+      "Faleolo",
+      "Tuilagi",
+      "Pouesi",
+      "Faleolo",
+      "Ioane",
+      "Savea",
+      "Tuiloma",
+      "Nonu",
+      "Fifita",
+      "Taufa",
+      "Latu",
+      "Taufa",
+      "Tonga",
+      "Havili",
+      "Vaki",
+      "Finau",
+      "Taufa",
+      "Nakagawa",
+      "Yoshida",
+      "Kobayashi",
+      "Kato",
+      "Ito",
+      "Watanabe",
+      "Suzuki",
+      "Tanaka",
+      "Sasaki",
+      "Inoue",
+      "Kimura",
+      "Hayashi",
+      "Yamaguchi",
+      "Matsumoto",
+      "Fujiwara",
+      "Ogawa",
+      "Nishimura",
+      "Fukuda",
+      "Hashimoto",
+      "Abe",
+      "Acharya",
+      "Bhattacharya",
+      "Chakraborty",
+      "Chatterjee",
+      "Dasgupta",
+      "Ghosh",
+      "Gupta",
+      "Joshi",
+      "Kapoor",
+      "Mishra",
+      "Mukherjee",
+      "Nair",
+      "Pillai",
+      "Rao",
+      "Reddy",
+      "Sharma",
+      "Shukla",
+      "Trivedi",
+      "Venkataraman",
+      "Yadav"
+    ],
+    "ranks": [
+      "SR. ANALYST",
+       "SR. ANALYST",
+        "SR. ANALYST",
+      "FIELD AGENT",
+       "FIELD AGENT",
+        "FIELD AGENT",
+         "FIELD AGENT",
+          "FIELD AGENT",
+           "FIELD AGENT",
+            "FIELD AGENT",
+             "FIELD AGENT",
+              "FIELD AGENT",
+      "INSPECTOR",
+           "INSPECTOR",
+                "INSPECTOR",
+                     "INSPECTOR",
+                          "INSPECTOR",
+                               "INSPECTOR",
+                                    "INSPECTOR",
+      "DIRECTOR",
+       "DIRECTOR",
+      "CONTROL AGENT",
+       "CONTROL AGENT",
+        "CONTROL AGENT",
+         "CONTROL AGENT",
+          "CONTROL AGENT",
+           "CONTROL AGENT",
+      "OPERATIONS LEAD",
+      "OPERATIONS LEAD",
+      "OPERATIONS LEAD",
+      "OPERATIONS LEAD",
+
+      "INTELLIGENCE OFFICER",
+          "INTELLIGENCE OFFICER",
+              "INTELLIGENCE OFFICER",
+                  "INTELLIGENCE OFFICER",
+      "RISK ASSESSOR",
+      "SURVEILLANCE CHIEF",
+      "COMPLIANCE AUDITOR",
+      "FERRYMAN DIV.",
+      "FERRYMAN DIV.",
+      "FERRYMAN DIV.",
+      "FERRYMAN DIV.",
+      "OVERSIGHT COORDINATOR",
+      "CLEARANCE EXAMINER",
+      "TACTICAL ADVISOR",
+        "TACTICAL ADVISOR",
+          "TACTICAL ADVISOR",
+      "CONTAINMENT SPECIALIST",
+      "FORENSIC OFFICER",
+       "FORENSIC OFFICER",
+        "FORENSIC OFFICER",
+
+      "ASSET HANDLER",
+            "ASSET HANDLER",
+                  "ASSET HANDLER",
+      "COMMISSION LIAISON",
+            "COMMISSION LIAISON",
+                  "COMMISSION LIAISON",
+      "THREAT ANALYST",
+         "THREAT ANALYST",
+            "THREAT ANALYST",
+      "EXTRACTION LEAD",
+      "DEPUTY DIRECTOR",
+      "WATCH COMMANDER",
+       "WATCH COMMANDER",
+        "WATCH COMMANDER",
+      "EMBEDDED OPERATIVE",
+      "INTERCEPTION SPECIALIST",
+      "FIELD COORDINATOR",
+         "FIELD COORDINATOR",
+            "FIELD COORDINATOR",
+      "COVERT ASSETS DIV.",
+      "ARCHIVAL OFFICER",
+         "ARCHIVAL OFFICER",
+            "ARCHIVAL OFFICER",
+               "ARCHIVAL OFFICER",
+      "ABSTRACT ENERGY TECHNICIAN",
+      "RELIC CONTAINMENT OFFICER",
+      "DISPATCH OFFICER",
+      "COUNTER-INTELLIGENCE LEAD",
+            "COUNTER-INTELLIGENCE LEAD",
+      "RECRUITMENT OFFICER",
+      "BEHAVIORAL ANALYST",
+      "CRISIS COORDINATOR",
+      "CRISIS COORDINATOR",
+      "CRISIS COORDINATOR",
+      "DEEP COVER OPERATIVE",
+      "ORBITAL OPERATIONS DIV.",
+      "NEURAL SCAN TECHNICIAN",
+      "BLACK SITE ADMINISTRATOR",
+      "NETWORK INTELLIGENCE OFFICER",
+      "SENIOR FIELD DIRECTOR"
+    ],
+    "sectors": [
+      "BERLIN",
+      "LONDON",
+      "TOKYO",
+      "WASHINGTON",
+      "RABAT",
+      "NEW YORK",
+      "PARIS",
+      "MOSCOW",
+      "DELHI",
+      "LAGOS",
+      "SYDNEY",
+      "TORONTO",
+      "DUBAI",
+      "SINGAPORE",
+      "SEOUL",
+      "SAO PAULO",
+      "ISTANBUL",
+      "MEXICO CITY",
+      "JOHANNESBURG",
+      "HONG KONG",
+      "NAIROBI",
+      "JAKARTA",
+      "CAIRO",
+      "BUENOS AIRES",
+      "STOCKHOLM",
+      "MIAMI",
+      "GENOA",
+      "KINSHASA",
+      "RIYADH",
+      "WELLINGTON",
+      "AMSTERDAM",
+      "BRUSSELS",
+      "VIENNA",
+      "ZURICH",
+      "OSLO",
+      "COPENHAGEN",
+      "HELSINKI",
+      "LISBON",
+      "ATHENS",
+      "PRAGUE",
+      "BUDAPEST",
+      "WARSAW",
+      "BUCHAREST",
+      "SOFIA",
+      "BELGRADE",
+      "KIEV",
+      "MINSK",
+      "RIGA",
+      "VILNIUS",
+      "TALLINN",
+      "REYKJAVIK",
+      "DUBLIN",
+      "EDINBURGH",
+      "CARDIFF",
+      "MANCHESTER",
+      "LYON",
+      "MARSEILLE",
+      "BARCELONA",
+      "MADRID",
+      "SEVILLE",
+      "MILAN",
+      "ROME",
+      "NAPLES",
+      "VENICE",
+      "FLORENCE",
+      "MUNICH",
+      "HAMBURG",
+      "FRANKFURT",
+      "COLOGNE",
+      "STUTTGART",
+      "ZURICH",
+      "GENEVA",
+      "BASEL",
+      "BERN",
+      "LAUSANNE",
+      "SHANGHAI",
+      "BEIJING",
+      "GUANGZHOU",
+      "SHENZHEN",
+      "CHENGDU",
+      "WUHAN",
+      "XIAN",
+      "NANJING",
+      "TIANJIN",
+      "HANGZHOU",
+      "OSAKA",
+      "KYOTO",
+      "NAGOYA",
+      "SAPPORO",
+      "FUKUOKA",
+      "MUMBAI",
+      "BANGALORE",
+      "HYDERABAD",
+      "KOLKATA",
+      "CHENNAI",
+      "KARACHI",
+      "LAHORE",
+      "ISLAMABAD",
+      "DHAKA",
+      "COLOMBO",
+      "BANGKOK",
+      "KUALA LUMPUR",
+      "MANILA",
+      "HO CHI MINH CITY",
+      "PHNOM PENH",
+      "YANGON",
+      "TAIPEI",
+      "MACAU",
+      "ULAANBAATAR",
+      "ALMATY",
+      "TASHKENT",
+      "BAKU",
+      "TBILISI",
+      "YEREVAN",
+      "ASHGABAT",
+      "TEHRAN",
+      "BAGHDAD",
+      "BEIRUT",
+      "DAMASCUS",
+      "AMMAN",
+      "ANKARA",
+      "IZMIR",
+      "ADANA",
+      "BURSA",
+      "GAZIANTEP",
+      "ALEXANDRIA",
+      "TUNIS",
+      "ALGIERS",
+      "CASABLANCA",
+      "TRIPOLI",
+      "KHARTOUM",
+      "ADDIS ABABA",
+      "KAMPALA",
+      "DAR ES SALAAM",
+      "LUSAKA",
+      "HARARE",
+      "MAPUTO",
+      "ANTANANARIVO",
+      "ACCRA",
+      "DAKAR",
+      "ABIDJAN",
+      "DOUALA",
+      "LIBREVILLE",
+      "BRAZZAVILLE",
+      "LUANDA",
+      "CAPE TOWN",
+      "DURBAN",
+      "PRETORIA",
+      "PORT ELIZABETH",
+      "BLOEMFONTEIN",
+      "LIMA",
+      "BOGOTA",
+      "CARACAS",
+      "QUITO",
+      "LA PAZ",
+      "ASUNCION",
+      "MONTEVIDEO",
+      "SANTIAGO",
+      "BRASILIA",
+      "RECIFE",
+      "GUADALAJARA",
+      "MONTERREY",
+      "HAVANA",
+      "PANAMA CITY",
+      "SAN JOSE",
+      "CHICAGO",
+      "LOS ANGELES",
+      "HOUSTON",
+      "PHOENIX",
+      "PHILADELPHIA",
+      "SAN ANTONIO",
+      "SAN DIEGO",
+      "DALLAS",
+      "SAN JOSE",
+      "AUSTIN",
+      "MONTREAL",
+      "VANCOUVER",
+      "CALGARY",
+      "EDMONTON",
+      "OTTAWA",
+      "AUCKLAND",
+      "BRISBANE",
+      "MELBOURNE",
+      "PERTH",
+      "ADELAIDE",
+      "CHRISTCHURCH",
+      "PORT MORESBY",
+      "SUVA",
+      "APIA",
+      "NUKU ALOFA"
+    ],
+    "statuses": [
+      {
+        "label": "COMPLETE",
+        "weight": 8
+      },
+      {
+        "label": "ARCHIVED",
+        "weight": 8
+      },
+      {
+        "label": "PENDING",
+        "weight": 7
+      },
+      {
+        "label": "IN REVIEW",
+        "weight": 7
+      },
+      {
+        "label": "FLAGGED",
+        "weight": 4
+      },
+      {
+        "label": "CONTAINED",
+        "weight": 4
+      },
+      {
+        "label": "ESCALATED",
+        "weight": 3
+      },
+      {
+        "label": "DENIED",
+        "weight": 3
+      },
+      {
+        "label": "AUTHORIZED",
+        "weight": 5
+      },
+      {
+        "label": "TRANSMITTED",
+        "weight": 5
+      },
+      {
+        "label": "REDACTED",
+        "weight": 2
+      },
+      {
+        "label": "CRITICAL",
+        "weight": 1
+      },
+      {
+        "label": "SEALED",
+        "weight": 2
+      },
+      {
+        "label": "SUSPENDED",
+        "weight": 2
+      },
+      {
+        "label": "UNDER OBSERVATION",
+        "weight": 3
+      },
+      {
+        "label": "ACTIVE",
+        "weight": 4
+      },
+      {
+        "label": "TERMINATED",
+        "weight": 2
+      },
+      {
+        "label": "CLASSIFIED",
+        "weight": 3
+      },
+      {
+        "label": "COMPROMISED",
+        "weight": 1
+      },
+      {
+        "label": "DEFERRED",
+        "weight": 3
+      }
+    ],
+    "actions": [
+      {
+        "label": "ACCESSED PROFILE",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "UPDATED THREAT ASSESSMENT",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "COMPLETE",
+          "PENDING",
+          "FLAGGED"
+        ]
+      },
+      {
+        "label": "SUBMITTED FIELD REPORT",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED",
+          "PENDING"
+        ]
+      },
+      {
+        "label": "EMERGENCY DISPATCH LOGGED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "ESCALATED",
+          "PENDING",
+          "FLAGGED"
+        ]
+      },
+      {
+        "label": "CONTAINMENT PROTOCOL INITIATED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "ESCALATED",
+          "PENDING",
+          "CRITICAL"
+        ]
+      },
+      {
+        "label": "SURVEILLANCE FEED REVIEWED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW"
+        ]
+      },
+      {
+        "label": "SUBJECT TRACKING UPDATED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "PENDING",
+          "FLAGGED",
+          "ACTIVE"
+        ]
+      },
+      {
+        "label": "INCIDENT CROSS-REFERENCED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED"
+        ]
+      },
+      {
+        "label": "DOCUMENT CLASSIFIED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "ARCHIVED",
+          "SEALED",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "CLEARANCE LEVEL MODIFIED",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "FLAGGED",
+          "ESCALATED",
+          "SUSPENDED"
+        ]
+      },
+      {
+        "label": "FIELD TEAM DEPLOYED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "PENDING",
+          "ESCALATED",
+          "ACTIVE"
+        ]
+      },
+      {
+        "label": "FIELD TEAM RETRACTED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED",
+          "TERMINATED"
+        ]
+      },
+      {
+        "label": "BIO-SCAN EXECUTED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW"
+        ]
+      },
+      {
+        "label": "ABSTRACT ENERGY LOGGED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "PENDING",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "ANOMALY DETECTED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "FLAGGED",
+          "ESCALATED",
+          "CRITICAL"
+        ]
+      },
+      {
+        "label": "COMMUNICATION INTERCEPTED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "IN REVIEW",
+          "FLAGGED",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "DATA PURGE AUTHORIZED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "ESCALATED",
+          "CRITICAL",
+          "SEALED"
+        ]
+      },
+      {
+        "label": "RELOCATION ORDER ISSUED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "PENDING",
+          "ESCALATED",
+          "AUTHORIZED"
+        ]
+      },
+      {
+        "label": "THREAT INDEX RECALCULATED",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "COMPLETE",
+          "FLAGGED",
+          "IN REVIEW"
+        ]
+      },
+      {
+        "label": "OPERATION INITIATED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "PENDING",
+          "ESCALATED",
+          "ACTIVE"
+        ]
+      },
+      {
+        "label": "OPERATION ABORTED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "CRITICAL",
+          "ESCALATED",
+          "TERMINATED"
+        ]
+      },
+      {
+        "label": "INCIDENT SEALED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "ARCHIVED",
+          "SEALED",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "FORENSIC ANALYSIS COMPLETED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED"
+        ]
+      },
+      {
+        "label": "SUBJECT INTERROGATED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "FLAGGED",
+          "ESCALATED",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "UNAUTHORIZED ACCESS FLAGGED",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "FLAGGED",
+          "CRITICAL",
+          "COMPROMISED"
+        ]
+      },
+      {
+        "label": "ASSET REQUISITIONED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "PENDING",
+          "IN REVIEW",
+          "AUTHORIZED"
+        ]
+      },
+      {
+        "label": "PSYCHOLOGICAL PROFILE UPDATED",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "IN REVIEW",
+          "COMPLETE"
+        ]
+      },
+      {
+        "label": "WITNESS ACCOUNT LOGGED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "PENDING",
+          "COMPLETE",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "SATELLITE SWEEP EXECUTED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "IN REVIEW",
+          "FLAGGED",
+          "COMPLETE"
+        ]
+      },
+      {
+        "label": "FAILSAFE TRIGGERED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "CRITICAL",
+          "ESCALATED",
+          "TERMINATED"
+        ]
+      },
+      {
+        "label": "ABSTRACT ENERGY SPIKE LOGGED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "FLAGGED",
+          "ESCALATED",
+          "CRITICAL"
+        ]
+      },
+      {
+        "label": "RELIC TRACE CONFIRMED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "IN REVIEW",
+          "FLAGGED",
+          "ESCALATED"
+        ]
+      },
+      {
+        "label": "GIFT CLASSIFICATION REVISED",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW"
+        ]
+      },
+      {
+        "label": "CORPORATE LIAISON NOTIFIED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "COMPLETE",
+          "PENDING",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "INFILTRATION DETECTED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "FLAGGED",
+          "CRITICAL",
+          "ESCALATED",
+          "COMPROMISED"
+        ]
+      },
+      {
+        "label": "SUPPLEMENTAL DOSSIER ATTACHED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "ENERGY FLUCTUATION REPORTED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "PENDING",
+          "FLAGGED",
+          "UNDER OBSERVATION"
+        ]
+      },
+      {
+        "label": "DETAINMENT ORDER ISSUED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "PENDING",
+          "ESCALATED",
+          "AUTHORIZED"
+        ]
+      },
+      {
+        "label": "SUBJECT RELEASED ON CLEARANCE",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED",
+          "AUTHORIZED"
+        ]
+      },
+      {
+        "label": "MEDIA SUPPRESSION AUTHORIZED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "COMPLETE",
+          "SEALED",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "BLACKSITE TRANSFER CONFIRMED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "ESCALATED",
+          "SEALED",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "AUGMENT CONFISCATED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "COMPLETE",
+          "FLAGGED",
+          "AUTHORIZED"
+        ]
+      },
+      {
+        "label": "ORBITAL SWEEP REQUESTED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "PENDING",
+          "IN REVIEW",
+          "AUTHORIZED"
+        ]
+      },
+      {
+        "label": "NETWORK INTERCEPT FILED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "IN REVIEW",
+          "FLAGGED",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "DEPLOYMENT ROUTE LOGGED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "COMPLETE",
+          "PENDING",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "CONTROL BRANCH DISPATCHED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "PENDING",
+          "ESCALATED",
+          "ACTIVE"
+        ]
+      },
+      {
+        "label": "CONTROL BRANCH LOST",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "CRITICAL",
+          "ESCALATED",
+          "COMPROMISED"
+        ]
+      },
+      {
+        "label": "MANIFESTATION EVENT RECORDED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW",
+          "FLAGGED"
+        ]
+      },
+      {
+        "label": "COMMISSION RECORD AMENDED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "PRIORITY FLAG RAISED",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "FLAGGED",
+          "ESCALATED",
+          "CRITICAL"
+        ]
+      },
+      {
+        "label": "NEURAL SCAN FILED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "DEFECTION ALERT LOGGED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "FLAGGED",
+          "CRITICAL",
+          "ESCALATED"
+        ]
+      },
+      {
+        "label": "DEEP COVER ASSET PINGED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "TRANSMITTED",
+          "CLASSIFIED",
+          "UNDER OBSERVATION"
+        ]
+      },
+      {
+        "label": "EXTRACTION WINDOW CONFIRMED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "AUTHORIZED",
+          "PENDING",
+          "ACTIVE"
+        ]
+      },
+      {
+        "label": "BOUNTY STATUS UPDATED",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "ACTIVE",
+          "PENDING",
+          "ESCALATED"
+        ]
+      },
+      {
+        "label": "RELIC CONTAINMENT LOGGED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "SEALED",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "ENERGY THRESHOLD EXCEEDED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "CRITICAL",
+          "FLAGGED",
+          "ESCALATED"
+        ]
+      },
+      {
+        "label": "COVERT ASSET ACTIVATED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "ACTIVE",
+          "CLASSIFIED",
+          "UNDER OBSERVATION"
+        ]
+      },
+      {
+        "label": "PUBLIC RELATIONS BRIEF FILED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "TRANSMITTED",
+          "ARCHIVED"
+        ]
+      },
+      {
+        "label": "PMC COOPERATION LOGGED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "AUTHORIZED",
+          "PENDING",
+          "COMPLETE"
+        ]
+      },
+      {
+        "label": "BLACKOUT ORDER ISSUED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "ESCALATED",
+          "CRITICAL",
+          "SEALED"
+        ]
+      },
+      {
+        "label": "GIFT POTENCY MEASURED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "CROSS-BORDER MOVEMENT FLAGGED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "FLAGGED",
+          "UNDER OBSERVATION",
+          "PENDING"
+        ]
+      },
+      {
+        "label": "INTERNAL LEAK INVESTIGATED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "IN REVIEW",
+          "CRITICAL",
+          "COMPROMISED"
+        ]
+      },
+      {
+        "label": "SUBJECT REGISTRATION DENIED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "DENIED",
+          "FLAGGED",
+          "SUSPENDED"
+        ]
+      },
+      {
+        "label": "AERIAL OBSERVATION LOGGED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "COMMISSION AUDIT INITIATED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "IN REVIEW",
+          "PENDING",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "OPERATIVE DEBRIEFED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "ARCHIVED",
+          "TRANSMITTED"
+        ]
+      },
+      {
+        "label": "SHADOW OPERATIVE RECALLED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "TERMINATED",
+          "COMPLETE",
+          "CLASSIFIED"
+        ]
+      },
+      {
+        "label": "STRIKE AUTHORIZATION DENIED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "DENIED",
+          "SUSPENDED",
+          "DEFERRED"
+        ]
+      },
+      {
+        "label": "ENCRYPTED TRANSMISSION LOGGED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "TRANSMITTED",
+          "IN REVIEW",
+          "FLAGGED"
+        ]
+      },
+      {
+        "label": "SUBJECT DECEASED CONFIRMED",
+        "targetPool": "subjectRef",
+        "validStatuses": [
+          "ARCHIVED",
+          "SEALED",
+          "COMPLETE"
+        ]
+      },
+      {
+        "label": "THREAT PROFILE OPENED",
+        "targetPool": "profileRef",
+        "validStatuses": [
+          "ACTIVE",
+          "PENDING",
+          "IN REVIEW"
+        ]
+      },
+      {
+        "label": "COMMISSION PRESENCE ESTABLISHED",
+        "targetPool": "operationRef",
+        "validStatuses": [
+          "ACTIVE",
+          "AUTHORIZED",
+          "PENDING"
+        ]
+      },
+      {
+        "label": "ENERGY SIGNATURE MATCHED",
+        "targetPool": "documentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW",
+          "FLAGGED"
+        ]
+      },
+      {
+        "label": "STRUCTURAL DAMAGE ASSESSED",
+        "targetPool": "incidentRef",
+        "validStatuses": [
+          "COMPLETE",
+          "IN REVIEW",
+          "ARCHIVED"
+        ]
+      }
+    ],
+    "targetPools": {
+      "profileRef": {
+        "type": "generated",
+        "tiers": [
+          {
+            "label": "RULER",
+            "max": 12
+          },
+          {
+            "label": "CANDIDATE",
+            "max": 15
+          },
+          {
+            "label": "ADEPT",
+            "max": 20
+          },
+          {
+            "label": "STANDARD",
+            "max": 18
+          }
+        ]
+      },
+      "incidentRef": [
+        "MIAMI BEACH COLLAPSE",
+        "GENOA CASCADE EVENT",
+        "CURITIBA BRANCH FAILURE",
+        "BRECINE ENERGY SPIKE",
+        "GULF OF BOTHNIA RECOVERY",
+        "SHANGHAI SKYFALL INCIDENT",
+        "REYKJAVIK RELIC BREACH",
+        "LAGOS VECTOR OUTBREAK",
+        "PARIS SUBLEVEL ANOMALY",
+        "KYIV ORBITAL STRIKE TRACE",
+        "TORONTO VEIL DISTURBANCE",
+        "MUMBAI TRANSIT FRACTURE",
+        "SANTIAGO BLACKOUT EVENT",
+        "HELSINKI SILENCE PROTOCOL",
+        "DUBAI GLASS DISTORTION",
+        "BERLIN ACCORD BREACH",
+        "HONG KONG DOJO PERIMETER ALERT",
+        "NEW YORK FIRMAMENT INCIDENT",
+        "SINGAPORE TUNNEL COLLAPSE",
+        "NAIROBI GRID SURGE",
+        "DELHI ABSTRACT SURGE EVENT",
+        "ISTANBUL SHADOW SIGHTING",
+        "MOSCOW BLACKOUT CORRIDOR",
+        "BUENOS AIRES PORT FRACTURE",
+        "STOCKHOLM RELIC EXCAVATION ALERT",
+        "KINSHASA RELAY BREACH",
+        "CARACAS MANIFESTED CIVILIAN INCIDENT",
+        "OSLO ENERGY SIGNATURE DETECTED",
+        "CAPE TOWN WATERFRONT ANOMALY",
+        "OSAKA BLOODLINE INCIDENT",
+        "AMSTERDAM HARBOUR DISTURBANCE",
+        "BRUSSELS SUBLEVEL BREACH",
+        "VIENNA ARCHIVE FIRE",
+        "ATHENS GRID OVERLOAD",
+        "PRAGUE RELIC SIGNAL SPIKE",
+        "WARSAW CONTAINMENT FAILURE",
+        "BELGRADE ENERGY DISCHARGE",
+        "CAIRO TUNNEL COLLAPSE",
+        "TEHRAN SHADOW OPERATION",
+        "BAGHDAD RELAY INTERCEPT",
+        "BEIRUT PORT ENERGY EVENT",
+        "DAMASCUS COMMISSION BREACH",
+        "KARACHI BLACKOUT CORRIDOR",
+        "DHAKA MANIFESTATION INCIDENT",
+        "BANGKOK UNDERWORLD EXPOSURE",
+        "MANILA ELEVATED ENERGY READING",
+        "TAIPEI RELIC EXCAVATION",
+        "BOGOTA STREET-LEVEL ENERGY SURGE",
+        "LIMA GRID ANOMALY",
+        "CARACAS ENERGY DISCHARGE",
+        "GUADALAJARA COMMISSION LOSS",
+        "CHICAGO TOWER INCIDENT",
+        "LOS ANGELES UNDERGROUND BREACH",
+        "MONTREAL DEEP COVER FAILURE",
+        "AUCKLAND RELIC TRANSPORT ALERT",
+        "JOHANNESBURG CONTAINMENT LAPSE",
+        "ACCRA ENERGY SURGE CONFIRMED",
+        "DOUALA SHADOW SIGHTING",
+        "LUANDA ABSTRACT TRACE",
+        "ADDIS ABABA ENERGY BLOOM",
+        "KAMPALA COVERT ASSET LOST",
+        "DAR ES SALAAM RELIC DISCOVERY",
+        "LUSAKA MANIFESTATION REPORT",
+        "MAPUTO SUBJECT ESCAPE",
+        "DAKAR COMMUNICATION BLACKOUT",
+        "ABIDJAN GRID ANOMALY"
+      ],
+      "subjectRef": [
+        "UNREGISTERED WIELDER",
+        "UNKNOWN SUBJECT",
+        "HOSTILE ENTITY",
+        "UNCONFIRMED RULER-CLASS",
+        "FLAGGED CIVILIAN",
+        "CORPORATE ASSET",
+        "DETENTION ESCAPEE",
+        "RELIC HOLDER",
+        "AUGMENTED INDIVIDUAL",
+        "SUSPECTED EAKARIS AGENT",
+        "BLACK MARKET OPERATOR",
+        "HIGH VALUE TARGET",
+        "MANIFESTED MINOR",
+        "UNLICENSED AUGMENT CARRIER",
+        "DEFECTED COMMISSION AGENT",
+        "LA RETE ASSOCIATE",
+        "FREELANCE WIELDER",
+        "PMC CONTRACTOR WITH GIFT CAPABILITY",
+        "GHOST-LISTED SUBJECT",
+        "EAKARIS CANDIDATE",
+        "UNCLASSIFIED GIFT TYPE",
+        "SUBJECT EVADING REGISTRATION",
+        "RELIC-BONDED INDIVIDUAL",
+        "CIVILIAN WITH ABSTRACT SENSITIVITY",
+        "FORMER COMMISSION ASSET",
+        "STOKKMAN CORPORATE OPERATIVE",
+        "IRONCREST FIELD CONTRACTOR",
+        "PEREGRINE PMC ASSET",
+        "WAYFINDER TECHNICAL CONTRACTOR",
+        "FORREST INNOVATIONS RESEARCH SUBJECT",
+        "BEAUFORT PHARMACEUTICAL TRIAL SUBJECT",
+        "UNREGISTERED RELIC CARRIER",
+        "SUSPECTED LA RETE SOLDIER",
+        "AUGMENT DEALER",
+        "DARK WEB BROKER",
+        "BOUNTY TARGET",
+        "COMMISSION MOLE",
+        "EMBEDDED CORPORATE SPY",
+        "AUTONOMOUS WIELDER CELL MEMBER",
+        "ABSTRACT ENERGY RESEARCHER",
+        "ILLEGAL IMPLANT RECIPIENT",
+        "DETAINED FOREIGN OPERATIVE",
+        "KNOWN EAKARIS SYMPATHIZER",
+        "STREET-LEVEL WIELDER",
+        "HIGH ABSTRACT ENERGY INDIVIDUAL",
+        "UNREPORTED MANIFESTATION SUBJECT",
+        "CORPORATE WHISTLEBLOWER",
+        "UNDERGROUND FIGHT CIRCUIT PARTICIPANT",
+        "ODC TRANSFER CANDIDATE",
+        "MEDIA EXPOSURE RISK"
+      ],
+      "documentRef": [
+        "ADDENDUM BATCH",
+        "SURVEILLANCE FOOTAGE",
+        "FIELD TRANSMISSION",
+        "GIFT ASSESSMENT",
+        "ABSTRACT ENERGY LOG",
+        "INCIDENT DOSSIER",
+        "BIOLOGICAL REPORT",
+        "PSYCHOLOGICAL PROFILE",
+        "FORENSIC SUMMARY",
+        "TACTICAL OVERVIEW",
+        "CLEARANCE RECORD",
+        "INTERROGATION TRANSCRIPT",
+        "RELIC ANALYSIS",
+        "SIGNAL INTERCEPT",
+        "SECURITY AUDIT",
+        "MANIFESTATION REPORT",
+        "ENERGY SIGNATURE PRINTOUT",
+        "CONTROL BRANCH AFTER-ACTION REPORT",
+        "COMMISSION DEPLOYMENT LOG",
+        "CORPORATE INTELLIGENCE BRIEF",
+        "MEDIA SUPPRESSION FILE",
+        "BLACKSITE TRANSFER RECORD",
+        "ORBITAL OBSERVATION LOG",
+        "GENETIC SAMPLING RECORD",
+        "ABSTRACT ENERGY THRESHOLD REPORT",
+        "ENGAGEMENT PROTOCOL DOCUMENT",
+        "BOUNTY ISSUANCE RECORD",
+        "ASSET EXTRACTION BRIEF",
+        "PUBLIC INCIDENT COVER FILE",
+        "REITHMEND PROPOSAL SUPPLEMENT",
+        "NEURAL SCAN READOUT",
+        "AUGMENT REGISTRY UPDATE",
+        "DEEP COVER OPERATIVE BRIEF",
+        "ODC INTAKE RECORD",
+        "CORPORATE SURVEILLANCE FILE",
+        "UNDERWORLD INTELLIGENCE BRIEF",
+        "RELIC CHAIN OF CUSTODY LOG",
+        "COMMISSION PERSONNEL FILE",
+        "CROSS-BORDER TRANSIT LOG",
+        "ENCRYPTED FIELD CORRESPONDENCE",
+        "ENERGY SPIKE ANALYSIS REPORT",
+        "GIFT POTENCY INDEX",
+        "CROWD CASUALTY ASSESSMENT",
+        "STRUCTURAL DAMAGE REPORT",
+        "MEDIA NARRATIVE CONTROL BRIEF",
+        "POLITICAL PRESSURE ASSESSMENT",
+        "COMMISSION RECRUITMENT DOSSIER",
+        "BILATERAL AGENCY COOPERATION MEMO",
+        "SATELLITE IMAGERY PACKET",
+        "ABSTRACT ENERGY CARTOGRAPHY FILE"
+      ],
+      "operationRef": [
+        "OPERATION IRONVEIL",
+        "PROTOCOL DELTA-7",
+        "CLEARANCE AUDIT",
+        "OPERATION NIGHTWATCH",
+        "PROTOCOL SIGMA-3",
+        "OPERATION GLASSFIELD",
+        "PROTOCOL BLACKLINE",
+        "OPERATION SKYLOCK",
+        "PROTOCOL ECHO-9",
+        "OPERATION SILENT HARBOR",
+        "PROTOCOL RED VEIN",
+        "OPERATION HOLLOW GRID",
+        "OPERATION ASHMANTLE",
+        "PROTOCOL COLDWATCH",
+        "OPERATION UNDERTOW",
+        "PROTOCOL PALE GATE",
+        "OPERATION IRONSHORE",
+        "PROTOCOL ZERO MARK",
+        "OPERATION FERROUS",
+        "PROTOCOL EMBER LINE",
+        "OPERATION CROWLINE",
+        "PROTOCOL WARDEN",
+        "OPERATION STILLWATER",
+        "PROTOCOL GROUNDFALL",
+        "OPERATION SPECTRE NET",
+        "PROTOCOL VAULTED SKY",
+        "OPERATION DARK MERIDIAN",
+        "PROTOCOL SUNKEN CHAIN",
+        "OPERATION LONGSTRIDE",
+        "PROTOCOL IRON CURTAIN",
+        "OPERATION PALE ECHO",
+        "PROTOCOL THREADLINE",
+        "OPERATION HOLLOWMARK",
+        "PROTOCOL ASHVEIL",
+        "OPERATION CRESTFALL",
+        "PROTOCOL OBSIDIAN",
+        "OPERATION GRANITEFIELD",
+        "PROTOCOL DAWNWATCH",
+        "OPERATION SILVERBELL",
+        "PROTOCOL COLDFORGE",
+        "OPERATION DUSTWATCH",
+        "PROTOCOL INKLINE",
+        "OPERATION STORMLOCK",
+        "PROTOCOL SEALGATE",
+        "OPERATION DEEPWATER",
+        "PROTOCOL CHAINFIRE",
+        "OPERATION NIGHTFALL",
+        "PROTOCOL WHETSTONE",
+        "OPERATION IRONCLAD",
+        "PROTOCOL SHADOW WIRE",
+        "OPERATION BLACKTIDE",
+        "PROTOCOL MARROW",
+        "OPERATION GLASSCAGE",
+        "PROTOCOL EMBER WATCH",
+        "OPERATION STEELTHREAD",
+        "PROTOCOL VAULT NINE",
+        "OPERATION PALE HORIZON",
+        "PROTOCOL DEAD SIGNAL",
+        "OPERATION COLDMANTLE",
+        "PROTOCOL GRIDLOCK"
+      ]
+    }
+  },
+  "template": "{timestamp} -- {rank} {lastName}, {firstInitial}. -- {action} -- {target} -- {sector}-{sectorNum} -- {status}"
+}

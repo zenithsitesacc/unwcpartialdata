@@ -1,0 +1,3338 @@
+{
+  "sectors": [
+    {
+      "name": "BERLIN",
+      "lon": 13.4,
+      "lat": 52.5
+    },
+    {
+      "name": "LONDON",
+      "lon": -0.1,
+      "lat": 51.5
+    },
+    {
+      "name": "PARIS",
+      "lon": 2.3,
+      "lat": 48.9
+    },
+    {
+      "name": "MOSCOW",
+      "lon": 37.6,
+      "lat": 55.8
+    },
+    {
+      "name": "ISTANBUL",
+      "lon": 29.0,
+      "lat": 41.0
+    },
+    {
+      "name": "AMSTERDAM",
+      "lon": 4.9,
+      "lat": 52.4
+    },
+    {
+      "name": "BRUSSELS",
+      "lon": 4.4,
+      "lat": 50.8
+    },
+    {
+      "name": "VIENNA",
+      "lon": 16.4,
+      "lat": 48.2
+    },
+    {
+      "name": "ZURICH",
+      "lon": 8.5,
+      "lat": 47.4
+    },
+    {
+      "name": "OSLO",
+      "lon": 10.8,
+      "lat": 59.9
+    },
+    {
+      "name": "COPENHAGEN",
+      "lon": 12.6,
+      "lat": 55.7
+    },
+    {
+      "name": "HELSINKI",
+      "lon": 25.0,
+      "lat": 60.2
+    },
+    {
+      "name": "STOCKHOLM",
+      "lon": 18.1,
+      "lat": 59.3
+    },
+    {
+      "name": "LISBON",
+      "lon": -9.1,
+      "lat": 38.7
+    },
+    {
+      "name": "MADRID",
+      "lon": -3.7,
+      "lat": 40.4
+    },
+    {
+      "name": "BARCELONA",
+      "lon": 2.2,
+      "lat": 41.4
+    },
+    {
+      "name": "ROME",
+      "lon": 12.5,
+      "lat": 41.9
+    },
+    {
+      "name": "MILAN",
+      "lon": 9.2,
+      "lat": 45.5
+    },
+    {
+      "name": "GENOA",
+      "lon": 8.9,
+      "lat": 44.4
+    },
+    {
+      "name": "MUNICH",
+      "lon": 11.6,
+      "lat": 48.1
+    },
+    {
+      "name": "HAMBURG",
+      "lon": 10.0,
+      "lat": 53.6
+    },
+    {
+      "name": "FRANKFURT",
+      "lon": 8.7,
+      "lat": 50.1
+    },
+    {
+      "name": "ATHENS",
+      "lon": 23.7,
+      "lat": 37.9
+    },
+    {
+      "name": "PRAGUE",
+      "lon": 14.4,
+      "lat": 50.1
+    },
+    {
+      "name": "WARSAW",
+      "lon": 21.0,
+      "lat": 52.2
+    },
+    {
+      "name": "BUDAPEST",
+      "lon": 19.0,
+      "lat": 47.5
+    },
+    {
+      "name": "BUCHAREST",
+      "lon": 26.1,
+      "lat": 44.4
+    },
+    {
+      "name": "KYIV",
+      "lon": 30.5,
+      "lat": 50.5
+    },
+    {
+      "name": "REYKJAVIK",
+      "lon": -22.0,
+      "lat": 64.1
+    },
+    {
+      "name": "RABAT",
+      "lon": -6.8,
+      "lat": 34.0
+    },
+    {
+      "name": "BELGRADE",
+      "lon": 20.5,
+      "lat": 44.8
+    },
+    {
+      "name": "SOFIA",
+      "lon": 23.3,
+      "lat": 42.7
+    },
+    {
+      "name": "ZAGREB",
+      "lon": 16.0,
+      "lat": 45.8
+    },
+    {
+      "name": "VILNIUS",
+      "lon": 25.3,
+      "lat": 54.7
+    },
+    {
+      "name": "RIGA",
+      "lon": 24.1,
+      "lat": 56.9
+    },
+    {
+      "name": "TALLINN",
+      "lon": 24.7,
+      "lat": 59.4
+    },
+    {
+      "name": "MINSK",
+      "lon": 27.6,
+      "lat": 53.9
+    },
+    {
+      "name": "CHISINAU",
+      "lon": 28.8,
+      "lat": 47.0
+    },
+    {
+      "name": "BRATISLAVA",
+      "lon": 17.1,
+      "lat": 48.1
+    },
+    {
+      "name": "LJUBLJANA",
+      "lon": 14.5,
+      "lat": 46.1
+    },
+    {
+      "name": "SARAJEVO",
+      "lon": 18.4,
+      "lat": 43.8
+    },
+    {
+      "name": "SKOPJE",
+      "lon": 21.4,
+      "lat": 42.0
+    },
+    {
+      "name": "TIRANA",
+      "lon": 19.8,
+      "lat": 41.3
+    },
+    {
+      "name": "VALLETTA",
+      "lon": 14.5,
+      "lat": 35.9
+    },
+    {
+      "name": "NICOSIA",
+      "lon": 33.4,
+      "lat": 35.2
+    },
+    {
+      "name": "NOVOSIBIRSK",
+      "lon": 82.9,
+      "lat": 55.0
+    },
+    {
+      "name": "YEKATERINBURG",
+      "lon": 60.6,
+      "lat": 56.8
+    },
+    {
+      "name": "VLADIVOSTOK",
+      "lon": 132.0,
+      "lat": 43.1
+    },
+    {
+      "name": "IRKUTSK",
+      "lon": 104.3,
+      "lat": 52.3
+    },
+    {
+      "name": "MURMANSK",
+      "lon": 33.1,
+      "lat": 68.9
+    },
+    {
+      "name": "YAKUTSK",
+      "lon": 129.7,
+      "lat": 62.0
+    },
+    {
+      "name": "KRASNOYARSK",
+      "lon": 92.8,
+      "lat": 56.0
+    },
+    {
+      "name": "OMSK",
+      "lon": 73.4,
+      "lat": 55.0
+    },
+    {
+      "name": "KAZAN",
+      "lon": 49.1,
+      "lat": 55.8
+    },
+    {
+      "name": "PERM",
+      "lon": 56.3,
+      "lat": 58.0
+    },
+    {
+      "name": "CHELYABINSK",
+      "lon": 61.4,
+      "lat": 55.2
+    },
+    {
+      "name": "SAMARA",
+      "lon": 50.2,
+      "lat": 53.2
+    },
+    {
+      "name": "KHABAROVSK",
+      "lon": 135.1,
+      "lat": 48.5
+    },
+    {
+      "name": "MAGADAN",
+      "lon": 150.8,
+      "lat": 59.6
+    },
+    {
+      "name": "ULAN-UDE",
+      "lon": 107.6,
+      "lat": 51.8
+    },
+    {
+      "name": "ALMATY",
+      "lon": 76.9,
+      "lat": 43.3
+    },
+    {
+      "name": "TASHKENT",
+      "lon": 69.3,
+      "lat": 41.3
+    },
+    {
+      "name": "BISHKEK",
+      "lon": 74.6,
+      "lat": 42.9
+    },
+    {
+      "name": "DUSHANBE",
+      "lon": 68.8,
+      "lat": 38.6
+    },
+    {
+      "name": "ASHGABAT",
+      "lon": 58.4,
+      "lat": 37.9
+    },
+    {
+      "name": "NUR-SULTAN",
+      "lon": 71.4,
+      "lat": 51.2
+    },
+    {
+      "name": "SHYMKENT",
+      "lon": 69.6,
+      "lat": 42.3
+    },
+    {
+      "name": "SAMARKAND",
+      "lon": 66.9,
+      "lat": 39.7
+    },
+    {
+      "name": "TBILISI",
+      "lon": 44.8,
+      "lat": 41.7
+    },
+    {
+      "name": "BAKU",
+      "lon": 49.9,
+      "lat": 40.4
+    },
+    {
+      "name": "YEREVAN",
+      "lon": 44.5,
+      "lat": 40.2
+    },
+    {
+      "name": "BEIJING",
+      "lon": 116.4,
+      "lat": 39.9
+    },
+    {
+      "name": "SHANGHAI",
+      "lon": 121.5,
+      "lat": 31.2
+    },
+    {
+      "name": "GUANGZHOU",
+      "lon": 113.3,
+      "lat": 23.1
+    },
+    {
+      "name": "SHENZHEN",
+      "lon": 114.1,
+      "lat": 22.5
+    },
+    {
+      "name": "CHENGDU",
+      "lon": 104.1,
+      "lat": 30.7
+    },
+    {
+      "name": "WUHAN",
+      "lon": 114.3,
+      "lat": 30.6
+    },
+    {
+      "name": "XIAN",
+      "lon": 108.9,
+      "lat": 34.3
+    },
+    {
+      "name": "NANJING",
+      "lon": 118.8,
+      "lat": 32.1
+    },
+    {
+      "name": "TIANJIN",
+      "lon": 117.2,
+      "lat": 39.1
+    },
+    {
+      "name": "HANGZHOU",
+      "lon": 120.2,
+      "lat": 30.3
+    },
+    {
+      "name": "SHENYANG",
+      "lon": 123.4,
+      "lat": 41.8
+    },
+    {
+      "name": "HARBIN",
+      "lon": 126.7,
+      "lat": 45.8
+    },
+    {
+      "name": "QINGDAO",
+      "lon": 120.4,
+      "lat": 36.1
+    },
+    {
+      "name": "KUNMING",
+      "lon": 102.7,
+      "lat": 25.0
+    },
+    {
+      "name": "URUMQI",
+      "lon": 87.6,
+      "lat": 43.8
+    },
+    {
+      "name": "LHASA",
+      "lon": 91.1,
+      "lat": 29.7
+    },
+    {
+      "name": "HONG KONG",
+      "lon": 114.2,
+      "lat": 22.3
+    },
+    {
+      "name": "MACAU",
+      "lon": 113.6,
+      "lat": 22.2
+    },
+    {
+      "name": "TOKYO",
+      "lon": 139.7,
+      "lat": 35.7
+    },
+    {
+      "name": "OSAKA",
+      "lon": 135.5,
+      "lat": 34.7
+    },
+    {
+      "name": "KYOTO",
+      "lon": 135.8,
+      "lat": 35.0
+    },
+    {
+      "name": "NAGOYA",
+      "lon": 136.9,
+      "lat": 35.2
+    },
+    {
+      "name": "SAPPORO",
+      "lon": 141.3,
+      "lat": 43.1
+    },
+    {
+      "name": "FUKUOKA",
+      "lon": 130.4,
+      "lat": 33.6
+    },
+    {
+      "name": "SEOUL",
+      "lon": 126.9,
+      "lat": 37.6
+    },
+    {
+      "name": "BUSAN",
+      "lon": 129.1,
+      "lat": 35.1
+    },
+    {
+      "name": "INCHEON",
+      "lon": 126.7,
+      "lat": 37.5
+    },
+    {
+      "name": "PYONGYANG",
+      "lon": 125.7,
+      "lat": 39.0
+    },
+    {
+      "name": "TAIPEI",
+      "lon": 121.6,
+      "lat": 25.0
+    },
+    {
+      "name": "ULAANBAATAR",
+      "lon": 106.9,
+      "lat": 47.9
+    },
+    {
+      "name": "BANGKOK",
+      "lon": 100.5,
+      "lat": 13.8
+    },
+    {
+      "name": "JAKARTA",
+      "lon": 106.8,
+      "lat": -6.2
+    },
+    {
+      "name": "SINGAPORE",
+      "lon": 103.8,
+      "lat": 1.3
+    },
+    {
+      "name": "MANILA",
+      "lon": 121.0,
+      "lat": 14.6
+    },
+    {
+      "name": "KUALA LUMPUR",
+      "lon": 101.7,
+      "lat": 3.1
+    },
+    {
+      "name": "HO CHI MINH",
+      "lon": 106.7,
+      "lat": 10.8
+    },
+    {
+      "name": "HANOI",
+      "lon": 105.8,
+      "lat": 21.0
+    },
+    {
+      "name": "YANGON",
+      "lon": 96.2,
+      "lat": 16.8
+    },
+    {
+      "name": "PHNOM PENH",
+      "lon": 104.9,
+      "lat": 11.6
+    },
+    {
+      "name": "VIENTIANE",
+      "lon": 102.6,
+      "lat": 17.9
+    },
+    {
+      "name": "NAYPYIDAW",
+      "lon": 96.1,
+      "lat": 19.7
+    },
+    {
+      "name": "SURABAYA",
+      "lon": 112.7,
+      "lat": -7.3
+    },
+    {
+      "name": "MEDAN",
+      "lon": 98.7,
+      "lat": 3.6
+    },
+    {
+      "name": "MAKASSAR",
+      "lon": 119.4,
+      "lat": -5.1
+    },
+    {
+      "name": "DAVAO",
+      "lon": 125.6,
+      "lat": 7.1
+    },
+    {
+      "name": "CEBU",
+      "lon": 123.9,
+      "lat": 10.3
+    },
+    {
+      "name": "BANDAR SERI BEGAWAN",
+      "lon": 115.0,
+      "lat": 4.9
+    },
+    {
+      "name": "DILI",
+      "lon": 125.6,
+      "lat": -8.6
+    },
+    {
+      "name": "PORT MORESBY",
+      "lon": 147.2,
+      "lat": -9.4
+    },
+    {
+      "name": "CHIANG MAI",
+      "lon": 98.9,
+      "lat": 18.8
+    },
+    {
+      "name": "DELHI",
+      "lon": 77.2,
+      "lat": 28.6
+    },
+    {
+      "name": "MUMBAI",
+      "lon": 72.9,
+      "lat": 19.1
+    },
+    {
+      "name": "BANGALORE",
+      "lon": 77.6,
+      "lat": 12.9
+    },
+    {
+      "name": "HYDERABAD",
+      "lon": 78.5,
+      "lat": 17.4
+    },
+    {
+      "name": "KOLKATA",
+      "lon": 88.4,
+      "lat": 22.6
+    },
+    {
+      "name": "CHENNAI",
+      "lon": 80.3,
+      "lat": 13.1
+    },
+    {
+      "name": "PUNE",
+      "lon": 73.9,
+      "lat": 18.5
+    },
+    {
+      "name": "AHMEDABAD",
+      "lon": 72.6,
+      "lat": 23.0
+    },
+    {
+      "name": "JAIPUR",
+      "lon": 75.8,
+      "lat": 26.9
+    },
+    {
+      "name": "SURAT",
+      "lon": 72.8,
+      "lat": 21.2
+    },
+    {
+      "name": "LUCKNOW",
+      "lon": 80.9,
+      "lat": 26.8
+    },
+    {
+      "name": "NAGPUR",
+      "lon": 79.1,
+      "lat": 21.1
+    },
+    {
+      "name": "VISAKHAPATNAM",
+      "lon": 83.3,
+      "lat": 17.7
+    },
+    {
+      "name": "BHOPAL",
+      "lon": 77.4,
+      "lat": 23.3
+    },
+    {
+      "name": "KARACHI",
+      "lon": 67.0,
+      "lat": 24.9
+    },
+    {
+      "name": "LAHORE",
+      "lon": 74.3,
+      "lat": 31.5
+    },
+    {
+      "name": "ISLAMABAD",
+      "lon": 73.1,
+      "lat": 33.7
+    },
+    {
+      "name": "FAISALABAD",
+      "lon": 73.1,
+      "lat": 31.4
+    },
+    {
+      "name": "PESHAWAR",
+      "lon": 71.6,
+      "lat": 34.0
+    },
+    {
+      "name": "KABUL",
+      "lon": 69.2,
+      "lat": 34.5
+    },
+    {
+      "name": "DHAKA",
+      "lon": 90.4,
+      "lat": 23.8
+    },
+    {
+      "name": "CHITTAGONG",
+      "lon": 91.8,
+      "lat": 22.3
+    },
+    {
+      "name": "COLOMBO",
+      "lon": 79.9,
+      "lat": 6.9
+    },
+    {
+      "name": "KATHMANDU",
+      "lon": 85.3,
+      "lat": 27.7
+    },
+    {
+      "name": "THIMPHU",
+      "lon": 89.6,
+      "lat": 27.5
+    },
+    {
+      "name": "MALE",
+      "lon": 73.5,
+      "lat": 4.2
+    },
+    {
+      "name": "DUBAI",
+      "lon": 55.3,
+      "lat": 25.2
+    },
+    {
+      "name": "RIYADH",
+      "lon": 46.7,
+      "lat": 24.7
+    },
+    {
+      "name": "TEHRAN",
+      "lon": 51.4,
+      "lat": 35.7
+    },
+    {
+      "name": "BAGHDAD",
+      "lon": 44.4,
+      "lat": 33.3
+    },
+    {
+      "name": "BEIRUT",
+      "lon": 35.5,
+      "lat": 33.9
+    },
+    {
+      "name": "ANKARA",
+      "lon": 32.9,
+      "lat": 39.9
+    },
+    {
+      "name": "AMMAN",
+      "lon": 35.9,
+      "lat": 31.9
+    },
+    {
+      "name": "CAIRO",
+      "lon": 31.2,
+      "lat": 30.1
+    },
+    {
+      "name": "ALEXANDRIA",
+      "lon": 29.9,
+      "lat": 31.2
+    },
+    {
+      "name": "MUSCAT",
+      "lon": 58.6,
+      "lat": 23.6
+    },
+    {
+      "name": "DOHA",
+      "lon": 51.5,
+      "lat": 25.3
+    },
+    {
+      "name": "KUWAIT CITY",
+      "lon": 47.9,
+      "lat": 29.4
+    },
+    {
+      "name": "SANAA",
+      "lon": 44.2,
+      "lat": 15.4
+    },
+    {
+      "name": "ABU DHABI",
+      "lon": 54.4,
+      "lat": 24.5
+    },
+    {
+      "name": "MANAMA",
+      "lon": 50.6,
+      "lat": 26.2
+    },
+    {
+      "name": "JERUSALEM",
+      "lon": 35.2,
+      "lat": 31.8
+    },
+    {
+      "name": "TEL AVIV",
+      "lon": 34.8,
+      "lat": 32.1
+    },
+    {
+      "name": "DAMASCUS",
+      "lon": 36.3,
+      "lat": 33.5
+    },
+    {
+      "name": "ALEPPO",
+      "lon": 37.2,
+      "lat": 36.2
+    },
+    {
+      "name": "ISFAHAN",
+      "lon": 51.7,
+      "lat": 32.7
+    },
+    {
+      "name": "MASHHAD",
+      "lon": 59.6,
+      "lat": 36.3
+    },
+    {
+      "name": "TABRIZ",
+      "lon": 46.3,
+      "lat": 38.1
+    },
+    {
+      "name": "MOSUL",
+      "lon": 43.1,
+      "lat": 36.3
+    },
+    {
+      "name": "BASRA",
+      "lon": 47.8,
+      "lat": 30.5
+    },
+    {
+      "name": "ADEN",
+      "lon": 45.0,
+      "lat": 12.8
+    },
+    {
+      "name": "LAGOS",
+      "lon": 3.4,
+      "lat": 6.5
+    },
+    {
+      "name": "CAIRO",
+      "lon": 31.2,
+      "lat": 30.1
+    },
+    {
+      "name": "KINSHASA",
+      "lon": 15.3,
+      "lat": -4.3
+    },
+    {
+      "name": "JOHANNESBURG",
+      "lon": 28.0,
+      "lat": -26.2
+    },
+    {
+      "name": "NAIROBI",
+      "lon": 36.8,
+      "lat": -1.3
+    },
+    {
+      "name": "ADDIS ABABA",
+      "lon": 38.7,
+      "lat": 9.0
+    },
+    {
+      "name": "DAR ES SALAAM",
+      "lon": 39.3,
+      "lat": -6.8
+    },
+    {
+      "name": "KHARTOUM",
+      "lon": 32.5,
+      "lat": 15.6
+    },
+    {
+      "name": "ACCRA",
+      "lon": -0.2,
+      "lat": 5.6
+    },
+    {
+      "name": "DAKAR",
+      "lon": -17.4,
+      "lat": 14.7
+    },
+    {
+      "name": "ABIDJAN",
+      "lon": -4.0,
+      "lat": 5.3
+    },
+    {
+      "name": "CAPE TOWN",
+      "lon": 18.4,
+      "lat": -33.9
+    },
+    {
+      "name": "DURBAN",
+      "lon": 31.0,
+      "lat": -29.9
+    },
+    {
+      "name": "LUANDA",
+      "lon": 13.2,
+      "lat": -8.8
+    },
+    {
+      "name": "DOUALA",
+      "lon": 9.7,
+      "lat": 4.0
+    },
+    {
+      "name": "KAMPALA",
+      "lon": 32.6,
+      "lat": 0.3
+    },
+    {
+      "name": "MOGADISHU",
+      "lon": 45.3,
+      "lat": 2.0
+    },
+    {
+      "name": "TUNIS",
+      "lon": 10.2,
+      "lat": 36.8
+    },
+    {
+      "name": "ALGIERS",
+      "lon": 3.1,
+      "lat": 36.7
+    },
+    {
+      "name": "CASABLANCA",
+      "lon": -7.6,
+      "lat": 33.6
+    },
+    {
+      "name": "TRIPOLI",
+      "lon": 13.2,
+      "lat": 32.9
+    },
+    {
+      "name": "BAMAKO",
+      "lon": -8.0,
+      "lat": 12.6
+    },
+    {
+      "name": "CONAKRY",
+      "lon": -13.7,
+      "lat": 9.5
+    },
+    {
+      "name": "FREETOWN",
+      "lon": -13.2,
+      "lat": 8.5
+    },
+    {
+      "name": "MONROVIA",
+      "lon": -10.8,
+      "lat": 6.3
+    },
+    {
+      "name": "OUAGADOUGOU",
+      "lon": -1.5,
+      "lat": 12.4
+    },
+    {
+      "name": "NIAMEY",
+      "lon": 2.1,
+      "lat": 13.5
+    },
+    {
+      "name": "LOME",
+      "lon": 1.2,
+      "lat": 6.1
+    },
+    {
+      "name": "COTONOU",
+      "lon": 2.4,
+      "lat": 6.4
+    },
+    {
+      "name": "PORT HARCOURT",
+      "lon": 7.0,
+      "lat": 4.8
+    },
+    {
+      "name": "ABUJA",
+      "lon": 7.5,
+      "lat": 9.1
+    },
+    {
+      "name": "KANO",
+      "lon": 8.5,
+      "lat": 12.0
+    },
+    {
+      "name": "IBADAN",
+      "lon": 3.9,
+      "lat": 7.4
+    },
+    {
+      "name": "N'DJAMENA",
+      "lon": 15.0,
+      "lat": 12.1
+    },
+    {
+      "name": "YAOUNDE",
+      "lon": 11.5,
+      "lat": 3.9
+    },
+    {
+      "name": "BANGUI",
+      "lon": 18.6,
+      "lat": 4.4
+    },
+    {
+      "name": "BRAZZAVILLE",
+      "lon": 15.3,
+      "lat": -4.3
+    },
+    {
+      "name": "LIBREVILLE",
+      "lon": 9.5,
+      "lat": 0.4
+    },
+    {
+      "name": "MALABO",
+      "lon": 8.8,
+      "lat": 3.8
+    },
+    {
+      "name": "SAO TOME",
+      "lon": 6.7,
+      "lat": 0.3
+    },
+    {
+      "name": "LUSAKA",
+      "lon": 28.3,
+      "lat": -15.4
+    },
+    {
+      "name": "HARARE",
+      "lon": 31.0,
+      "lat": -17.8
+    },
+    {
+      "name": "MAPUTO",
+      "lon": 32.6,
+      "lat": -25.9
+    },
+    {
+      "name": "ANTANANARIVO",
+      "lon": 47.5,
+      "lat": -18.9
+    },
+    {
+      "name": "LILONGWE",
+      "lon": 33.8,
+      "lat": -13.9
+    },
+    {
+      "name": "BLANTYRE",
+      "lon": 35.0,
+      "lat": -15.8
+    },
+    {
+      "name": "GABORONE",
+      "lon": 25.9,
+      "lat": -24.7
+    },
+    {
+      "name": "WINDHOEK",
+      "lon": 17.1,
+      "lat": -22.6
+    },
+    {
+      "name": "MASERU",
+      "lon": 27.5,
+      "lat": -29.3
+    },
+    {
+      "name": "MBABANE",
+      "lon": 31.1,
+      "lat": -26.3
+    },
+    {
+      "name": "DJIBOUTI",
+      "lon": 43.1,
+      "lat": 11.6
+    },
+    {
+      "name": "ASMARA",
+      "lon": 38.9,
+      "lat": 15.3
+    },
+    {
+      "name": "KIGALI",
+      "lon": 30.1,
+      "lat": -1.9
+    },
+    {
+      "name": "BUJUMBURA",
+      "lon": 29.4,
+      "lat": -3.4
+    },
+    {
+      "name": "JUBA",
+      "lon": 31.6,
+      "lat": 4.9
+    },
+    {
+      "name": "MOMBASA",
+      "lon": 39.7,
+      "lat": -4.1
+    },
+    {
+      "name": "ZANZIBAR",
+      "lon": 39.2,
+      "lat": -6.2
+    },
+    {
+      "name": "MORONI",
+      "lon": 43.3,
+      "lat": -11.7
+    },
+    {
+      "name": "PORT LOUIS",
+      "lon": 57.5,
+      "lat": -20.2
+    },
+    {
+      "name": "VICTORIA",
+      "lon": 55.5,
+      "lat": -4.6
+    },
+    {
+      "name": "NDJAMENA",
+      "lon": 15.0,
+      "lat": 12.1
+    },
+    {
+      "name": "NOUAKCHOTT",
+      "lon": -15.9,
+      "lat": 18.1
+    },
+    {
+      "name": "PRAIA",
+      "lon": -23.5,
+      "lat": 15.0
+    },
+    {
+      "name": "NEW YORK",
+      "lon": -74.0,
+      "lat": 40.7
+    },
+    {
+      "name": "WASHINGTON",
+      "lon": -77.0,
+      "lat": 38.9
+    },
+    {
+      "name": "CHICAGO",
+      "lon": -87.6,
+      "lat": 41.9
+    },
+    {
+      "name": "LOS ANGELES",
+      "lon": -118.2,
+      "lat": 34.1
+    },
+    {
+      "name": "MIAMI",
+      "lon": -80.2,
+      "lat": 25.8
+    },
+    {
+      "name": "HOUSTON",
+      "lon": -95.4,
+      "lat": 29.8
+    },
+    {
+      "name": "TORONTO",
+      "lon": -79.4,
+      "lat": 43.7
+    },
+    {
+      "name": "MONTREAL",
+      "lon": -73.6,
+      "lat": 45.5
+    },
+    {
+      "name": "VANCOUVER",
+      "lon": -123.1,
+      "lat": 49.3
+    },
+    {
+      "name": "SAN FRANCISCO",
+      "lon": -122.4,
+      "lat": 37.8
+    },
+    {
+      "name": "SEATTLE",
+      "lon": -122.3,
+      "lat": 47.6
+    },
+    {
+      "name": "DALLAS",
+      "lon": -96.8,
+      "lat": 32.8
+    },
+    {
+      "name": "PHOENIX",
+      "lon": -112.1,
+      "lat": 33.4
+    },
+    {
+      "name": "ATLANTA",
+      "lon": -84.4,
+      "lat": 33.7
+    },
+    {
+      "name": "BOSTON",
+      "lon": -71.1,
+      "lat": 42.4
+    },
+    {
+      "name": "DETROIT",
+      "lon": -83.0,
+      "lat": 42.3
+    },
+    {
+      "name": "MINNEAPOLIS",
+      "lon": -93.3,
+      "lat": 44.9
+    },
+    {
+      "name": "DENVER",
+      "lon": -104.9,
+      "lat": 39.7
+    },
+    {
+      "name": "LAS VEGAS",
+      "lon": -115.2,
+      "lat": 36.2
+    },
+    {
+      "name": "PORTLAND",
+      "lon": -122.7,
+      "lat": 45.5
+    },
+    {
+      "name": "CALGARY",
+      "lon": -114.1,
+      "lat": 51.0
+    },
+    {
+      "name": "EDMONTON",
+      "lon": -113.5,
+      "lat": 53.5
+    },
+    {
+      "name": "OTTAWA",
+      "lon": -75.7,
+      "lat": 45.4
+    },
+    {
+      "name": "WINNIPEG",
+      "lon": -97.1,
+      "lat": 49.9
+    },
+    {
+      "name": "MEXICO CITY",
+      "lon": -99.1,
+      "lat": 19.4
+    },
+    {
+      "name": "GUADALAJARA",
+      "lon": -103.3,
+      "lat": 20.7
+    },
+    {
+      "name": "MONTERREY",
+      "lon": -100.3,
+      "lat": 25.7
+    },
+    {
+      "name": "HAVANA",
+      "lon": -82.4,
+      "lat": 23.1
+    },
+    {
+      "name": "KINGSTON",
+      "lon": -76.8,
+      "lat": 18.0
+    },
+    {
+      "name": "PORT-AU-PRINCE",
+      "lon": -72.3,
+      "lat": 18.5
+    },
+    {
+      "name": "SANTO DOMINGO",
+      "lon": -69.9,
+      "lat": 18.5
+    },
+    {
+      "name": "SAN JUAN",
+      "lon": -66.1,
+      "lat": 18.5
+    },
+    {
+      "name": "PANAMA CITY",
+      "lon": -79.5,
+      "lat": 9.0
+    },
+    {
+      "name": "SAN JOSE",
+      "lon": -84.1,
+      "lat": 9.9
+    },
+    {
+      "name": "MANAGUA",
+      "lon": -86.3,
+      "lat": 12.1
+    },
+    {
+      "name": "TEGUCIGALPA",
+      "lon": -87.2,
+      "lat": 14.1
+    },
+    {
+      "name": "GUATEMALA CITY",
+      "lon": -90.5,
+      "lat": 14.6
+    },
+    {
+      "name": "SAN SALVADOR",
+      "lon": -89.2,
+      "lat": 13.7
+    },
+    {
+      "name": "BELIZE CITY",
+      "lon": -88.2,
+      "lat": 17.3
+    },
+    {
+      "name": "NASSAU",
+      "lon": -77.4,
+      "lat": 25.1
+    },
+    {
+      "name": "PORT OF SPAIN",
+      "lon": -61.5,
+      "lat": 10.6
+    },
+    {
+      "name": "BRIDGETOWN",
+      "lon": -59.6,
+      "lat": 13.1
+    },
+    {
+      "name": "ANCHORAGE",
+      "lon": -149.9,
+      "lat": 61.2
+    },
+    {
+      "name": "HONOLULU",
+      "lon": -157.8,
+      "lat": 21.3
+    },
+    {
+      "name": "SAO PAULO",
+      "lon": -46.6,
+      "lat": -23.5
+    },
+    {
+      "name": "BUENOS AIRES",
+      "lon": -58.4,
+      "lat": -34.6
+    },
+    {
+      "name": "BOGOTA",
+      "lon": -74.1,
+      "lat": 4.7
+    },
+    {
+      "name": "LIMA",
+      "lon": -77.0,
+      "lat": -12.1
+    },
+    {
+      "name": "SANTIAGO",
+      "lon": -70.7,
+      "lat": -33.5
+    },
+    {
+      "name": "CARACAS",
+      "lon": -66.9,
+      "lat": 10.5
+    },
+    {
+      "name": "BRASILIA",
+      "lon": -47.9,
+      "lat": -15.8
+    },
+    {
+      "name": "RECIFE",
+      "lon": -34.9,
+      "lat": -8.1
+    },
+    {
+      "name": "QUITO",
+      "lon": -78.5,
+      "lat": -0.2
+    },
+    {
+      "name": "ASUNCION",
+      "lon": -57.6,
+      "lat": -25.3
+    },
+    {
+      "name": "MONTEVIDEO",
+      "lon": -56.2,
+      "lat": -34.9
+    },
+    {
+      "name": "LA PAZ",
+      "lon": -68.1,
+      "lat": -16.5
+    },
+    {
+      "name": "MEDELLIN",
+      "lon": -75.6,
+      "lat": 6.2
+    },
+    {
+      "name": "CALI",
+      "lon": -76.5,
+      "lat": 3.4
+    },
+    {
+      "name": "BELO HORIZONTE",
+      "lon": -43.9,
+      "lat": -19.9
+    },
+    {
+      "name": "MANAUS",
+      "lon": -60.0,
+      "lat": -3.1
+    },
+    {
+      "name": "BELEM",
+      "lon": -48.5,
+      "lat": -1.5
+    },
+    {
+      "name": "FORTALEZA",
+      "lon": -38.5,
+      "lat": -3.7
+    },
+    {
+      "name": "SALVADOR",
+      "lon": -38.5,
+      "lat": -12.9
+    },
+    {
+      "name": "PORTO ALEGRE",
+      "lon": -51.2,
+      "lat": -30.0
+    },
+    {
+      "name": "CURITIBA",
+      "lon": -49.3,
+      "lat": -25.4
+    },
+    {
+      "name": "GUAYAQUIL",
+      "lon": -79.9,
+      "lat": -2.2
+    },
+    {
+      "name": "SANTA CRUZ",
+      "lon": -63.2,
+      "lat": -17.8
+    },
+    {
+      "name": "COCHABAMBA",
+      "lon": -66.2,
+      "lat": -17.4
+    },
+    {
+      "name": "MARACAIBO",
+      "lon": -71.6,
+      "lat": 10.6
+    },
+    {
+      "name": "BARRANQUILLA",
+      "lon": -74.8,
+      "lat": 11.0
+    },
+    {
+      "name": "GEORGETOWN",
+      "lon": -58.2,
+      "lat": 6.8
+    },
+    {
+      "name": "PARAMARIBO",
+      "lon": -55.2,
+      "lat": 5.8
+    },
+    {
+      "name": "CAYENNE",
+      "lon": -52.3,
+      "lat": 4.9
+    },
+    {
+      "name": "SUCRE",
+      "lon": -65.3,
+      "lat": -19.0
+    },
+    {
+      "name": "SYDNEY",
+      "lon": 151.2,
+      "lat": -33.9
+    },
+    {
+      "name": "MELBOURNE",
+      "lon": 145.0,
+      "lat": -37.8
+    },
+    {
+      "name": "BRISBANE",
+      "lon": 153.0,
+      "lat": -27.5
+    },
+    {
+      "name": "PERTH",
+      "lon": 115.9,
+      "lat": -31.9
+    },
+    {
+      "name": "ADELAIDE",
+      "lon": 138.6,
+      "lat": -34.9
+    },
+    {
+      "name": "DARWIN",
+      "lon": 130.8,
+      "lat": -12.5
+    },
+    {
+      "name": "HOBART",
+      "lon": 147.3,
+      "lat": -42.9
+    },
+    {
+      "name": "CANBERRA",
+      "lon": 149.1,
+      "lat": -35.3
+    },
+    {
+      "name": "AUCKLAND",
+      "lon": 174.8,
+      "lat": -36.9
+    },
+    {
+      "name": "WELLINGTON",
+      "lon": 174.8,
+      "lat": -41.3
+    },
+    {
+      "name": "CHRISTCHURCH",
+      "lon": 172.6,
+      "lat": -43.5
+    },
+    {
+      "name": "SUVA",
+      "lon": 178.4,
+      "lat": -18.1
+    },
+    {
+      "name": "PORT VILA",
+      "lon": 168.3,
+      "lat": -17.7
+    },
+    {
+      "name": "HONIARA",
+      "lon": 159.9,
+      "lat": -9.4
+    },
+    {
+      "name": "APIA",
+      "lon": -171.8,
+      "lat": -13.8
+    },
+    {
+      "name": "NUKU'ALOFA",
+      "lon": -175.2,
+      "lat": -21.1
+    },
+    {
+      "name": "PAPEETE",
+      "lon": -149.6,
+      "lat": -17.5
+    },
+    {
+      "name": "NOUMEA",
+      "lon": 166.5,
+      "lat": -22.3
+    },
+    {
+      "name": "CHONGQING",
+      "lon": 106.6,
+      "lat": 29.6
+    },
+    {
+      "name": "ZHENGZHOU",
+      "lon": 113.7,
+      "lat": 34.8
+    },
+    {
+      "name": "CHANGSHA",
+      "lon": 113.0,
+      "lat": 28.2
+    },
+    {
+      "name": "HEFEI",
+      "lon": 117.3,
+      "lat": 31.9
+    },
+    {
+      "name": "JINAN",
+      "lon": 117.0,
+      "lat": 36.7
+    },
+    {
+      "name": "FUZHOU",
+      "lon": 119.3,
+      "lat": 26.1
+    },
+    {
+      "name": "CHANGCHUN",
+      "lon": 125.3,
+      "lat": 43.9
+    },
+    {
+      "name": "SHIJIAZHUANG",
+      "lon": 114.5,
+      "lat": 38.0
+    },
+    {
+      "name": "NANCHANG",
+      "lon": 115.9,
+      "lat": 28.7
+    },
+    {
+      "name": "GUIYANG",
+      "lon": 106.7,
+      "lat": 26.6
+    },
+    {
+      "name": "NANNING",
+      "lon": 108.4,
+      "lat": 22.8
+    },
+    {
+      "name": "LANZHOU",
+      "lon": 103.8,
+      "lat": 36.1
+    },
+    {
+      "name": "DALIAN",
+      "lon": 121.6,
+      "lat": 38.9
+    },
+    {
+      "name": "XIAMEN",
+      "lon": 118.1,
+      "lat": 24.5
+    },
+    {
+      "name": "WENZHOU",
+      "lon": 120.7,
+      "lat": 28.0
+    },
+    {
+      "name": "ZIBO",
+      "lon": 118.1,
+      "lat": 36.8
+    },
+    {
+      "name": "TANGSHAN",
+      "lon": 118.2,
+      "lat": 39.6
+    },
+    {
+      "name": "ZHONGSHAN",
+      "lon": 113.4,
+      "lat": 22.5
+    },
+    {
+      "name": "HOHHOT",
+      "lon": 111.7,
+      "lat": 40.8
+    },
+    {
+      "name": "YINCHUAN",
+      "lon": 106.3,
+      "lat": 38.5
+    },
+    {
+      "name": "XINING",
+      "lon": 101.8,
+      "lat": 36.6
+    },
+    {
+      "name": "BAOTOU",
+      "lon": 110.0,
+      "lat": 40.7
+    },
+    {
+      "name": "ANTING",
+      "lon": 121.2,
+      "lat": 31.4
+    },
+    {
+      "name": "DONGGUAN",
+      "lon": 113.8,
+      "lat": 23.0
+    },
+    {
+      "name": "FOSHAN",
+      "lon": 113.1,
+      "lat": 23.0
+    },
+    {
+      "name": "PATNA",
+      "lon": 85.1,
+      "lat": 25.6
+    },
+    {
+      "name": "INDORE",
+      "lon": 75.9,
+      "lat": 22.7
+    },
+    {
+      "name": "VADODARA",
+      "lon": 73.2,
+      "lat": 22.3
+    },
+    {
+      "name": "COIMBATORE",
+      "lon": 77.0,
+      "lat": 11.0
+    },
+    {
+      "name": "KOCHI",
+      "lon": 76.3,
+      "lat": 9.9
+    },
+    {
+      "name": "THIRUVANANTHAPURAM",
+      "lon": 77.0,
+      "lat": 8.5
+    },
+    {
+      "name": "BHUBANESWAR",
+      "lon": 85.8,
+      "lat": 20.3
+    },
+    {
+      "name": "GUWAHATI",
+      "lon": 91.7,
+      "lat": 26.2
+    },
+    {
+      "name": "AMRITSAR",
+      "lon": 74.9,
+      "lat": 31.6
+    },
+    {
+      "name": "CHANDIGARH",
+      "lon": 76.8,
+      "lat": 30.7
+    },
+    {
+      "name": "VARANASI",
+      "lon": 83.0,
+      "lat": 25.3
+    },
+    {
+      "name": "AGRA",
+      "lon": 78.0,
+      "lat": 27.2
+    },
+    {
+      "name": "KANPUR",
+      "lon": 80.3,
+      "lat": 26.5
+    },
+    {
+      "name": "NASHIK",
+      "lon": 73.8,
+      "lat": 20.0
+    },
+    {
+      "name": "RAJKOT",
+      "lon": 70.8,
+      "lat": 22.3
+    },
+    {
+      "name": "RANCHI",
+      "lon": 85.3,
+      "lat": 23.4
+    },
+    {
+      "name": "MEERUT",
+      "lon": 77.7,
+      "lat": 28.9
+    },
+    {
+      "name": "FARIDABAD",
+      "lon": 77.3,
+      "lat": 28.4
+    },
+    {
+      "name": "GHAZIABAD",
+      "lon": 77.4,
+      "lat": 28.7
+    },
+    {
+      "name": "SRINAGAR",
+      "lon": 74.8,
+      "lat": 34.1
+    },
+    {
+      "name": "GWALIOR",
+      "lon": 78.2,
+      "lat": 26.2
+    },
+    {
+      "name": "JABALPUR",
+      "lon": 79.9,
+      "lat": 23.2
+    },
+    {
+      "name": "RAIPUR",
+      "lon": 81.6,
+      "lat": 21.3
+    },
+    {
+      "name": "MYSURU",
+      "lon": 76.7,
+      "lat": 12.3
+    },
+    {
+      "name": "NIZHNY NOVGOROD",
+      "lon": 44.0,
+      "lat": 56.3
+    },
+    {
+      "name": "VOLGOGRAD",
+      "lon": 44.5,
+      "lat": 48.7
+    },
+    {
+      "name": "SARATOV",
+      "lon": 46.0,
+      "lat": 51.5
+    },
+    {
+      "name": "ULYANOVSK",
+      "lon": 48.4,
+      "lat": 54.3
+    },
+    {
+      "name": "VORONEZH",
+      "lon": 39.2,
+      "lat": 51.7
+    },
+    {
+      "name": "KRASNODAR",
+      "lon": 39.0,
+      "lat": 45.0
+    },
+    {
+      "name": "BARNAUL",
+      "lon": 83.8,
+      "lat": 53.4
+    },
+    {
+      "name": "NOVOKUZNETSK",
+      "lon": 87.1,
+      "lat": 53.8
+    },
+    {
+      "name": "TOMSK",
+      "lon": 84.9,
+      "lat": 56.5
+    },
+    {
+      "name": "KEMEROVO",
+      "lon": 86.1,
+      "lat": 55.3
+    },
+    {
+      "name": "TYUMEN",
+      "lon": 68.9,
+      "lat": 57.2
+    },
+    {
+      "name": "ROSTOV-ON-DON",
+      "lon": 39.7,
+      "lat": 47.2
+    },
+    {
+      "name": "UKHTA",
+      "lon": 53.7,
+      "lat": 63.6
+    },
+    {
+      "name": "ARKHANGELSK",
+      "lon": 40.5,
+      "lat": 64.5
+    },
+    {
+      "name": "PETROPAVLOVSK",
+      "lon": 158.7,
+      "lat": 53.0
+    },
+    {
+      "name": "SAKHALIN",
+      "lon": 142.7,
+      "lat": 47.0
+    },
+    {
+      "name": "SYKTYVKAR",
+      "lon": 50.8,
+      "lat": 61.7
+    },
+    {
+      "name": "CHEBOKSARY",
+      "lon": 47.2,
+      "lat": 56.1
+    },
+    {
+      "name": "IZHEVSK",
+      "lon": 53.2,
+      "lat": 56.8
+    },
+    {
+      "name": "BUCARAMANGA",
+      "lon": -73.1,
+      "lat": 7.1
+    },
+    {
+      "name": "VALENCIA",
+      "lon": -68.0,
+      "lat": 10.2
+    },
+    {
+      "name": "CAMPINAS",
+      "lon": -47.1,
+      "lat": -22.9
+    },
+    {
+      "name": "NATAL",
+      "lon": -35.2,
+      "lat": -5.8
+    },
+    {
+      "name": "MACEIO",
+      "lon": -35.7,
+      "lat": -9.7
+    },
+    {
+      "name": "TERESINA",
+      "lon": -42.8,
+      "lat": -5.1
+    },
+    {
+      "name": "GOIANIA",
+      "lon": -49.3,
+      "lat": -16.7
+    },
+    {
+      "name": "AREQUIPA",
+      "lon": -71.5,
+      "lat": -16.4
+    },
+    {
+      "name": "TRUJILLO",
+      "lon": -79.0,
+      "lat": -8.1
+    },
+    {
+      "name": "CONCEPCION",
+      "lon": -73.0,
+      "lat": -36.8
+    },
+    {
+      "name": "VALPARAISO",
+      "lon": -71.6,
+      "lat": -33.0
+    },
+    {
+      "name": "CORDOBA",
+      "lon": -64.2,
+      "lat": -31.4
+    },
+    {
+      "name": "ROSARIO",
+      "lon": -60.6,
+      "lat": -32.9
+    },
+    {
+      "name": "MENDOZA",
+      "lon": -68.8,
+      "lat": -32.9
+    },
+    {
+      "name": "TUCUMAN",
+      "lon": -65.2,
+      "lat": -26.8
+    },
+    {
+      "name": "QUEBEC CITY",
+      "lon": -71.2,
+      "lat": 46.8
+    },
+    {
+      "name": "HAMILTON",
+      "lon": -79.9,
+      "lat": 43.3
+    },
+    {
+      "name": "SASKATOON",
+      "lon": -106.7,
+      "lat": 52.1
+    },
+    {
+      "name": "REGINA",
+      "lon": -104.6,
+      "lat": 50.5
+    },
+    {
+      "name": "HALIFAX",
+      "lon": -63.6,
+      "lat": 44.6
+    },
+    {
+      "name": "KELOWNA",
+      "lon": -119.5,
+      "lat": 49.9
+    },
+    {
+      "name": "THUNDER BAY",
+      "lon": -89.2,
+      "lat": 48.4
+    },
+    {
+      "name": "YELLOWKNIFE",
+      "lon": -114.4,
+      "lat": 62.5
+    },
+    {
+      "name": "WHITEHORSE",
+      "lon": -135.1,
+      "lat": 60.7
+    },
+    {
+      "name": "IQALUIT",
+      "lon": -68.5,
+      "lat": 63.7
+    },
+    {
+      "name": "SAN ANTONIO",
+      "lon": -98.5,
+      "lat": 29.4
+    },
+    {
+      "name": "SAN DIEGO",
+      "lon": -117.2,
+      "lat": 32.7
+    },
+    {
+      "name": "PHILADELPHIA",
+      "lon": -75.2,
+      "lat": 40.0
+    },
+    {
+      "name": "AUSTIN",
+      "lon": -97.7,
+      "lat": 30.3
+    },
+    {
+      "name": "JACKSONVILLE",
+      "lon": -81.7,
+      "lat": 30.3
+    },
+    {
+      "name": "COLUMBUS",
+      "lon": -83.0,
+      "lat": 39.9
+    },
+    {
+      "name": "CHARLOTTE",
+      "lon": -80.8,
+      "lat": 35.2
+    },
+    {
+      "name": "FORT WORTH",
+      "lon": -97.3,
+      "lat": 32.7
+    },
+    {
+      "name": "INDIANAPOLIS",
+      "lon": -86.2,
+      "lat": 39.8
+    },
+    {
+      "name": "NASHVILLE",
+      "lon": -86.8,
+      "lat": 36.2
+    },
+    {
+      "name": "OKLAHOMA CITY",
+      "lon": -97.5,
+      "lat": 35.5
+    },
+    {
+      "name": "EL PASO",
+      "lon": -106.5,
+      "lat": 31.8
+    },
+    {
+      "name": "LOUISVILLE",
+      "lon": -85.8,
+      "lat": 38.3
+    },
+    {
+      "name": "MEMPHIS",
+      "lon": -90.0,
+      "lat": 35.1
+    },
+    {
+      "name": "RICHMOND",
+      "lon": -77.5,
+      "lat": 37.5
+    },
+    {
+      "name": "BALTIMORE",
+      "lon": -76.6,
+      "lat": 39.3
+    },
+    {
+      "name": "RALEIGH",
+      "lon": -78.6,
+      "lat": 35.8
+    },
+    {
+      "name": "VIRGINIA BEACH",
+      "lon": -76.0,
+      "lat": 36.9
+    },
+    {
+      "name": "NEW ORLEANS",
+      "lon": -90.1,
+      "lat": 29.9
+    },
+    {
+      "name": "TAMPA",
+      "lon": -82.5,
+      "lat": 27.9
+    },
+    {
+      "name": "PITTSBURGH",
+      "lon": -80.0,
+      "lat": 40.4
+    },
+    {
+      "name": "KANSAS CITY",
+      "lon": -94.6,
+      "lat": 39.1
+    },
+    {
+      "name": "SACRAMENTO",
+      "lon": -121.5,
+      "lat": 38.6
+    },
+    {
+      "name": "SALT LAKE CITY",
+      "lon": -111.9,
+      "lat": 40.8
+    },
+    {
+      "name": "ALBUQUERQUE",
+      "lon": -106.7,
+      "lat": 35.1
+    },
+    {
+      "name": "TUCSON",
+      "lon": -110.9,
+      "lat": 32.2
+    },
+    {
+      "name": "PUEBLA",
+      "lon": -98.2,
+      "lat": 19.0
+    },
+    {
+      "name": "TIJUANA",
+      "lon": -117.0,
+      "lat": 32.5
+    },
+    {
+      "name": "JUAREZ",
+      "lon": -106.4,
+      "lat": 31.7
+    },
+    {
+      "name": "LEON",
+      "lon": -101.7,
+      "lat": 21.1
+    },
+    {
+      "name": "TORREON",
+      "lon": -103.4,
+      "lat": 25.5
+    },
+    {
+      "name": "SAN LUIS POTOSI",
+      "lon": -101.0,
+      "lat": 22.2
+    },
+    {
+      "name": "MERIDA",
+      "lon": -89.6,
+      "lat": 21.0
+    },
+    {
+      "name": "QUERETARO",
+      "lon": -100.4,
+      "lat": 20.6
+    },
+    {
+      "name": "CANCUN",
+      "lon": -86.9,
+      "lat": 21.2
+    },
+    {
+      "name": "CHIHUAHUA",
+      "lon": -106.1,
+      "lat": 28.6
+    },
+    {
+      "name": "CULIACAN",
+      "lon": -107.4,
+      "lat": 24.8
+    },
+    {
+      "name": "ACAPULCO",
+      "lon": -99.9,
+      "lat": 16.9
+    },
+    {
+      "name": "HERMOSILLO",
+      "lon": -110.9,
+      "lat": 29.1
+    },
+    {
+      "name": "VERACRUZ",
+      "lon": -96.1,
+      "lat": 19.2
+    }
+  ],
+  "incidents": [
+    {
+      "name": "MIAMI BEACH COLLAPSE",
+      "lon": -80.1,
+      "lat": 25.8
+    },
+    {
+      "name": "GENOA CASCADE EVENT",
+      "lon": 8.9,
+      "lat": 44.4
+    },
+    {
+      "name": "BRECINE ENERGY SPIKE",
+      "lon": 19.5,
+      "lat": 41.3
+    },
+    {
+      "name": "GULF OF BOTHNIA RECOVERY",
+      "lon": 21.0,
+      "lat": 63.0
+    },
+    {
+      "name": "PARIS SUBLEVEL ANOMALY",
+      "lon": 2.3,
+      "lat": 48.9
+    },
+    {
+      "name": "BERLIN ACCORD BREACH",
+      "lon": 13.4,
+      "lat": 52.5
+    },
+    {
+      "name": "AMSTERDAM HARBOUR DISTURBANCE",
+      "lon": 4.9,
+      "lat": 52.4
+    },
+    {
+      "name": "BRUSSELS SUBLEVEL BREACH",
+      "lon": 4.4,
+      "lat": 50.8
+    },
+    {
+      "name": "VIENNA ARCHIVE FIRE",
+      "lon": 16.4,
+      "lat": 48.2
+    },
+    {
+      "name": "ATHENS GRID OVERLOAD",
+      "lon": 23.7,
+      "lat": 37.9
+    },
+    {
+      "name": "PRAGUE RELIC SIGNAL SPIKE",
+      "lon": 14.4,
+      "lat": 50.1
+    },
+    {
+      "name": "KYIV ORBITAL STRIKE TRACE",
+      "lon": 30.5,
+      "lat": 50.5
+    },
+    {
+      "name": "STOCKHOLM RELIC EXCAVATION",
+      "lon": 18.1,
+      "lat": 59.3
+    },
+    {
+      "name": "ISTANBUL SHADOW SIGHTING",
+      "lon": 29.0,
+      "lat": 41.0
+    },
+    {
+      "name": "REYKJAVIK RELIC BREACH",
+      "lon": -22.0,
+      "lat": 64.1
+    },
+    {
+      "name": "MOSCOW BLACKOUT CORRIDOR",
+      "lon": 37.6,
+      "lat": 55.8
+    },
+    {
+      "name": "BELGRADE ENERGY DISCHARGE",
+      "lon": 20.5,
+      "lat": 44.8
+    },
+    {
+      "name": "WARSAW CONTAINMENT FAILURE",
+      "lon": 21.0,
+      "lat": 52.2
+    },
+    {
+      "name": "LISBON COASTAL READING",
+      "lon": -9.1,
+      "lat": 38.7
+    },
+    {
+      "name": "MADRID SUBLEVEL SIGNAL",
+      "lon": -3.7,
+      "lat": 40.4
+    },
+    {
+      "name": "NOVOSIBIRSK DEAD RELAY",
+      "lon": 82.9,
+      "lat": 55.0
+    },
+    {
+      "name": "VLADIVOSTOK HARBOUR FLASH",
+      "lon": 132.0,
+      "lat": 43.1
+    },
+    {
+      "name": "IRKUTSK BOREHOLE EVENT",
+      "lon": 104.3,
+      "lat": 52.3
+    },
+    {
+      "name": "MURMANSK DEEP SCAN ANOMALY",
+      "lon": 33.1,
+      "lat": 68.9
+    },
+    {
+      "name": "YAKUTSK PERMAFROST READING",
+      "lon": 129.7,
+      "lat": 62.0
+    },
+    {
+      "name": "YEKATERINBURG GRID COLLAPSE",
+      "lon": 60.6,
+      "lat": 56.8
+    },
+    {
+      "name": "KRASNOYARSK SUBSURFACE EVENT",
+      "lon": 92.8,
+      "lat": 56.0
+    },
+    {
+      "name": "KHABAROVSK BORDER FLASH",
+      "lon": 135.1,
+      "lat": 48.5
+    },
+    {
+      "name": "MAGADAN COASTAL SIGNAL",
+      "lon": 150.8,
+      "lat": 59.6
+    },
+    {
+      "name": "ALMATY ABSTRACT SPIKE",
+      "lon": 76.9,
+      "lat": 43.3
+    },
+    {
+      "name": "TASHKENT RELAY FRACTURE",
+      "lon": 69.3,
+      "lat": 41.3
+    },
+    {
+      "name": "BISHKEK ENERGY BLOOM",
+      "lon": 74.6,
+      "lat": 42.9
+    },
+    {
+      "name": "KABUL FIELD BREACH",
+      "lon": 69.2,
+      "lat": 34.5
+    },
+    {
+      "name": "TBILISI COMMISSION LOSS",
+      "lon": 44.8,
+      "lat": 41.7
+    },
+    {
+      "name": "BAKU PIPELINE ANOMALY",
+      "lon": 49.9,
+      "lat": 40.4
+    },
+    {
+      "name": "ASHGABAT DESERT READING",
+      "lon": 58.4,
+      "lat": 37.9
+    },
+    {
+      "name": "SAMARKAND RELIC SITE BREACH",
+      "lon": 66.9,
+      "lat": 39.7
+    },
+    {
+      "name": "NUR-SULTAN STEPPE SIGNAL",
+      "lon": 71.4,
+      "lat": 51.2
+    },
+    {
+      "name": "SHANGHAI SKYFALL INCIDENT",
+      "lon": 121.5,
+      "lat": 31.2
+    },
+    {
+      "name": "BEIJING SURVEILLANCE BREACH",
+      "lon": 116.4,
+      "lat": 39.9
+    },
+    {
+      "name": "SEOUL ENERGY DISCHARGE",
+      "lon": 126.9,
+      "lat": 37.6
+    },
+    {
+      "name": "OSAKA BLOODLINE INCIDENT",
+      "lon": 135.5,
+      "lat": 34.7
+    },
+    {
+      "name": "SAPPORO BLOODLINE TRACE",
+      "lon": 141.3,
+      "lat": 43.1
+    },
+    {
+      "name": "TAIPEI RELIC EXCAVATION",
+      "lon": 121.6,
+      "lat": 25.0
+    },
+    {
+      "name": "PYONGYANG SIGNAL GHOST",
+      "lon": 125.7,
+      "lat": 39.0
+    },
+    {
+      "name": "GUANGZHOU FACTORY GRID SURGE",
+      "lon": 113.3,
+      "lat": 23.1
+    },
+    {
+      "name": "CHENGDU SUBSURFACE EVENT",
+      "lon": 104.1,
+      "lat": 30.7
+    },
+    {
+      "name": "WUHAN CONTAINMENT ALERT",
+      "lon": 114.3,
+      "lat": 30.6
+    },
+    {
+      "name": "HARBIN BORDER ENERGY SPIKE",
+      "lon": 126.7,
+      "lat": 45.8
+    },
+    {
+      "name": "URUMQI DESERT SIGNAL",
+      "lon": 87.6,
+      "lat": 43.8
+    },
+    {
+      "name": "LHASA ALTITUDE READING",
+      "lon": 91.1,
+      "lat": 29.7
+    },
+    {
+      "name": "ULAANBAATAR STEPPE PING",
+      "lon": 106.9,
+      "lat": 47.9
+    },
+    {
+      "name": "FUKUOKA COASTAL FLASH",
+      "lon": 130.4,
+      "lat": 33.6
+    },
+    {
+      "name": "BUSAN PORT ANOMALY",
+      "lon": 129.1,
+      "lat": 35.1
+    },
+    {
+      "name": "BANGKOK UNDERWORLD EXPOSURE",
+      "lon": 100.5,
+      "lat": 13.8
+    },
+    {
+      "name": "SINGAPORE TUNNEL COLLAPSE",
+      "lon": 103.8,
+      "lat": 1.3
+    },
+    {
+      "name": "MANILA ELEVATED READING",
+      "lon": 121.0,
+      "lat": 14.6
+    },
+    {
+      "name": "HO CHI MINH DELTA READING",
+      "lon": 106.7,
+      "lat": 10.8
+    },
+    {
+      "name": "JAKARTA SUBSEA SIGNAL",
+      "lon": 106.8,
+      "lat": -6.2
+    },
+    {
+      "name": "KUALA LUMPUR UNDERGROUND EVENT",
+      "lon": 101.7,
+      "lat": 3.1
+    },
+    {
+      "name": "HANOI UNDERGROUND TRACE",
+      "lon": 105.8,
+      "lat": 21.0
+    },
+    {
+      "name": "YANGON PORT DISTURBANCE",
+      "lon": 96.2,
+      "lat": 16.8
+    },
+    {
+      "name": "PHNOM PENH RIVER ANOMALY",
+      "lon": 104.9,
+      "lat": 11.6
+    },
+    {
+      "name": "SURABAYA FACTORY SURGE",
+      "lon": 112.7,
+      "lat": -7.3
+    },
+    {
+      "name": "DAVAO COASTAL READING",
+      "lon": 125.6,
+      "lat": 7.1
+    },
+    {
+      "name": "CHIANG MAI HIGHLAND FLASH",
+      "lon": 98.9,
+      "lat": 18.8
+    },
+    {
+      "name": "PORT MORESBY JUNGLE SIGNAL",
+      "lon": 147.2,
+      "lat": -9.4
+    },
+    {
+      "name": "MUMBAI TRANSIT FRACTURE",
+      "lon": 72.9,
+      "lat": 19.1
+    },
+    {
+      "name": "DELHI ABSTRACT SURGE",
+      "lon": 77.2,
+      "lat": 28.6
+    },
+    {
+      "name": "KARACHI BLACKOUT CORRIDOR",
+      "lon": 67.0,
+      "lat": 24.9
+    },
+    {
+      "name": "DHAKA MANIFESTATION INCIDENT",
+      "lon": 90.4,
+      "lat": 23.8
+    },
+    {
+      "name": "COLOMBO RELIC FRAGMENT",
+      "lon": 79.9,
+      "lat": 6.9
+    },
+    {
+      "name": "KATHMANDU MOUNTAIN READING",
+      "lon": 85.3,
+      "lat": 27.7
+    },
+    {
+      "name": "ISLAMABAD HIGHLAND FLASH",
+      "lon": 73.1,
+      "lat": 33.7
+    },
+    {
+      "name": "BANGALORE TECH CORRIDOR SURGE",
+      "lon": 77.6,
+      "lat": 12.9
+    },
+    {
+      "name": "KOLKATA DELTA ANOMALY",
+      "lon": 88.4,
+      "lat": 22.6
+    },
+    {
+      "name": "LAHORE GRID DISTURBANCE",
+      "lon": 74.3,
+      "lat": 31.5
+    },
+    {
+      "name": "HYDERABAD SUBSURFACE TRACE",
+      "lon": 78.5,
+      "lat": 17.4
+    },
+    {
+      "name": "CHITTAGONG PORT READING",
+      "lon": 91.8,
+      "lat": 22.3
+    },
+    {
+      "name": "PESHAWAR HIGHLAND SIGNAL",
+      "lon": 71.6,
+      "lat": 34.0
+    },
+    {
+      "name": "DUBAI GLASS DISTORTION",
+      "lon": 55.3,
+      "lat": 25.2
+    },
+    {
+      "name": "TEHRAN SHADOW OPERATION",
+      "lon": 51.4,
+      "lat": 35.7
+    },
+    {
+      "name": "BAGHDAD SECTOR BLACKOUT",
+      "lon": 44.4,
+      "lat": 33.3
+    },
+    {
+      "name": "BEIRUT WATERFRONT COLLAPSE",
+      "lon": 35.5,
+      "lat": 33.9
+    },
+    {
+      "name": "RIYADH SUBLEVEL EVENT",
+      "lon": 46.7,
+      "lat": 24.7
+    },
+    {
+      "name": "SANAA ENERGY DISCHARGE",
+      "lon": 44.2,
+      "lat": 15.4
+    },
+    {
+      "name": "MUSCAT COASTAL READING",
+      "lon": 58.6,
+      "lat": 23.6
+    },
+    {
+      "name": "DOHA TOWER SIGNAL",
+      "lon": 51.5,
+      "lat": 25.3
+    },
+    {
+      "name": "CAIRO TUNNEL COLLAPSE",
+      "lon": 31.2,
+      "lat": 30.1
+    },
+    {
+      "name": "DAMASCUS SHADOW OPERATION",
+      "lon": 36.3,
+      "lat": 33.5
+    },
+    {
+      "name": "ALEPPO RELIC EXCAVATION",
+      "lon": 37.2,
+      "lat": 36.2
+    },
+    {
+      "name": "MASHHAD BORDER READING",
+      "lon": 59.6,
+      "lat": 36.3
+    },
+    {
+      "name": "MOSUL SITE BREACH",
+      "lon": 43.1,
+      "lat": 36.3
+    },
+    {
+      "name": "BASRA OFFSHORE SIGNAL",
+      "lon": 47.8,
+      "lat": 30.5
+    },
+    {
+      "name": "ISFAHAN UNDERGROUND EVENT",
+      "lon": 51.7,
+      "lat": 32.7
+    },
+    {
+      "name": "LAGOS VECTOR OUTBREAK",
+      "lon": 3.4,
+      "lat": 6.5
+    },
+    {
+      "name": "NAIROBI GRID SURGE",
+      "lon": 36.8,
+      "lat": -1.3
+    },
+    {
+      "name": "KINSHASA RELAY BREACH",
+      "lon": 15.3,
+      "lat": -4.3
+    },
+    {
+      "name": "ADDIS ABABA ENERGY BLOOM",
+      "lon": 38.7,
+      "lat": 9.0
+    },
+    {
+      "name": "CAIRO TUNNEL COLLAPSE",
+      "lon": 31.2,
+      "lat": 30.1
+    },
+    {
+      "name": "JOHANNESBURG CONTAINMENT LAPSE",
+      "lon": 28.0,
+      "lat": -26.2
+    },
+    {
+      "name": "CAPE TOWN WATERFRONT ANOMALY",
+      "lon": 18.4,
+      "lat": -33.9
+    },
+    {
+      "name": "ACCRA ENERGY SURGE",
+      "lon": -0.2,
+      "lat": 5.6
+    },
+    {
+      "name": "KHARTOUM DESERT ANOMALY",
+      "lon": 32.5,
+      "lat": 15.6
+    },
+    {
+      "name": "MOGADISHU COASTAL ENERGY BLOOM",
+      "lon": 45.3,
+      "lat": 2.0
+    },
+    {
+      "name": "DAR ES SALAAM PORT EVENT",
+      "lon": 39.3,
+      "lat": -6.8
+    },
+    {
+      "name": "DAKAR ATLANTIC READING",
+      "lon": -17.4,
+      "lat": 14.7
+    },
+    {
+      "name": "ABIDJAN HARBOUR FLASH",
+      "lon": -4.0,
+      "lat": 5.3
+    },
+    {
+      "name": "DOUALA FOREST BOUNDARY BREACH",
+      "lon": 9.7,
+      "lat": 4.0
+    },
+    {
+      "name": "LUANDA OFFSHORE SIGNAL",
+      "lon": 13.2,
+      "lat": -8.8
+    },
+    {
+      "name": "HARARE HIGHLAND READING",
+      "lon": 31.0,
+      "lat": -17.8
+    },
+    {
+      "name": "MAPUTO COASTAL COLLAPSE",
+      "lon": 32.6,
+      "lat": -25.9
+    },
+    {
+      "name": "ANTANANARIVO ISOLATION EVENT",
+      "lon": 47.5,
+      "lat": -18.9
+    },
+    {
+      "name": "LUSAKA GRID SURGE",
+      "lon": 28.3,
+      "lat": -15.4
+    },
+    {
+      "name": "DURBAN HARBOUR DISTURBANCE",
+      "lon": 31.0,
+      "lat": -29.9
+    },
+    {
+      "name": "BAMAKO RIVER TRACE",
+      "lon": -8.0,
+      "lat": 12.6
+    },
+    {
+      "name": "TUNIS COASTAL READING",
+      "lon": 10.2,
+      "lat": 36.8
+    },
+    {
+      "name": "ALGIERS SUBLEVEL SIGNAL",
+      "lon": 3.1,
+      "lat": 36.7
+    },
+    {
+      "name": "TRIPOLI HARBOUR ANOMALY",
+      "lon": 13.2,
+      "lat": 32.9
+    },
+    {
+      "name": "CASABLANCA PORT ANOMALY",
+      "lon": -7.6,
+      "lat": 33.6
+    },
+    {
+      "name": "KAMPALA HIGHLAND SURGE",
+      "lon": 32.6,
+      "lat": 0.3
+    },
+    {
+      "name": "DJIBOUTI STRAIT SIGNAL",
+      "lon": 43.1,
+      "lat": 11.6
+    },
+    {
+      "name": "KIGALI HIGHLAND ANOMALY",
+      "lon": 30.1,
+      "lat": -1.9
+    },
+    {
+      "name": "JUBA CONFLICT ZONE READING",
+      "lon": 31.6,
+      "lat": 4.9
+    },
+    {
+      "name": "MOMBASA COASTAL FLASH",
+      "lon": 39.7,
+      "lat": -4.1
+    },
+    {
+      "name": "ABUJA GRID SURGE",
+      "lon": 7.5,
+      "lat": 9.1
+    },
+    {
+      "name": "KANO ENERGY READING",
+      "lon": 8.5,
+      "lat": 12.0
+    },
+    {
+      "name": "WINDHOEK HIGHLAND SIGNAL",
+      "lon": 17.1,
+      "lat": -22.6
+    },
+    {
+      "name": "GABORONE BORDER ANOMALY",
+      "lon": 25.9,
+      "lat": -24.7
+    },
+    {
+      "name": "LILONGWE SUBSURFACE TRACE",
+      "lon": 33.8,
+      "lat": -13.9
+    },
+    {
+      "name": "TORONTO VEIL DISTURBANCE",
+      "lon": -79.4,
+      "lat": 43.7
+    },
+    {
+      "name": "MONTREAL DEEP COVER FAILURE",
+      "lon": -73.6,
+      "lat": 45.5
+    },
+    {
+      "name": "CHICAGO TOWER INCIDENT",
+      "lon": -87.6,
+      "lat": 41.9
+    },
+    {
+      "name": "LOS ANGELES UNDERGROUND BREACH",
+      "lon": -118.2,
+      "lat": 34.1
+    },
+    {
+      "name": "MIAMI BEACH COLLAPSE",
+      "lon": -80.1,
+      "lat": 25.8
+    },
+    {
+      "name": "HOUSTON SUBSTATION BREACH",
+      "lon": -95.4,
+      "lat": 29.8
+    },
+    {
+      "name": "VANCOUVER MOUNTAIN TRACE",
+      "lon": -123.1,
+      "lat": 49.3
+    },
+    {
+      "name": "SAN FRANCISCO GRID ANOMALY",
+      "lon": -122.4,
+      "lat": 37.8
+    },
+    {
+      "name": "BOGOTA ENERGY SURGE",
+      "lon": -74.1,
+      "lat": 4.7
+    },
+    {
+      "name": "LIMA GRID ANOMALY",
+      "lon": -77.0,
+      "lat": -12.1
+    },
+    {
+      "name": "SANTIAGO BLACKOUT EVENT",
+      "lon": -70.7,
+      "lat": -33.5
+    },
+    {
+      "name": "BUENOS AIRES PORT FRACTURE",
+      "lon": -58.4,
+      "lat": -34.6
+    },
+    {
+      "name": "CARACAS MANIFESTATION",
+      "lon": -66.9,
+      "lat": 10.5
+    },
+    {
+      "name": "SAO PAULO GRID COLLAPSE",
+      "lon": -46.6,
+      "lat": -23.5
+    },
+    {
+      "name": "RECIFE OFFSHORE FLASH",
+      "lon": -34.9,
+      "lat": -8.1
+    },
+    {
+      "name": "QUITO HIGHLAND SURGE",
+      "lon": -78.5,
+      "lat": -0.2
+    },
+    {
+      "name": "MANAUS RIVER ANOMALY",
+      "lon": -60.0,
+      "lat": -3.1
+    },
+    {
+      "name": "GUADALAJARA SIGNAL CASCADE",
+      "lon": -103.3,
+      "lat": 20.7
+    },
+    {
+      "name": "PANAMA CITY CANAL ANOMALY",
+      "lon": -79.5,
+      "lat": 9.0
+    },
+    {
+      "name": "HAVANA OFFSHORE READING",
+      "lon": -82.4,
+      "lat": 23.1
+    },
+    {
+      "name": "MEDELLIN HIGHLAND SIGNAL",
+      "lon": -75.6,
+      "lat": 6.2
+    },
+    {
+      "name": "ANCHORAGE TUNDRA READING",
+      "lon": -149.9,
+      "lat": 61.2
+    },
+    {
+      "name": "HONOLULU OCEAN ANOMALY",
+      "lon": -157.8,
+      "lat": 21.3
+    },
+    {
+      "name": "SYDNEY RELIC TRANSPORT ALERT",
+      "lon": 151.2,
+      "lat": -33.9
+    },
+    {
+      "name": "MELBOURNE GRID ANOMALY",
+      "lon": 145.0,
+      "lat": -37.8
+    },
+    {
+      "name": "PERTH DESERT SIGNAL",
+      "lon": 115.9,
+      "lat": -31.9
+    },
+    {
+      "name": "WELLINGTON SHADOW SIGNAL",
+      "lon": 174.8,
+      "lat": -41.3
+    },
+    {
+      "name": "AUCKLAND DEEP WATER READING",
+      "lon": 174.8,
+      "lat": -36.9
+    },
+    {
+      "name": "DARWIN OFFSHORE SIGNAL",
+      "lon": 130.8,
+      "lat": -12.5
+    },
+    {
+      "name": "BRISBANE COASTAL EVENT",
+      "lon": 153.0,
+      "lat": -27.5
+    },
+    {
+      "name": "SUVA OCEAN ANOMALY",
+      "lon": 178.4,
+      "lat": -18.1
+    },
+    {
+      "name": "PORT MORESBY JUNGLE SIGNAL",
+      "lon": 147.2,
+      "lat": -9.4
+    },
+    {
+      "name": "PAPEETE PACIFIC READING",
+      "lon": -149.6,
+      "lat": -17.5
+    },
+    {
+      "name": "CHONGQING SUBSURFACE SURGE",
+      "lon": 106.6,
+      "lat": 29.6
+    },
+    {
+      "name": "DALIAN HARBOUR FLASH",
+      "lon": 121.6,
+      "lat": 38.9
+    },
+    {
+      "name": "ZHENGZHOU GRID COLLAPSE",
+      "lon": 113.7,
+      "lat": 34.8
+    },
+    {
+      "name": "CHANGSHA ENERGY BLOOM",
+      "lon": 113.0,
+      "lat": 28.2
+    },
+    {
+      "name": "LANZHOU DESERT SIGNAL",
+      "lon": 103.8,
+      "lat": 36.1
+    },
+    {
+      "name": "NANNING FOREST ANOMALY",
+      "lon": 108.4,
+      "lat": 22.8
+    },
+    {
+      "name": "XIAMEN COASTAL READING",
+      "lon": 118.1,
+      "lat": 24.5
+    },
+    {
+      "name": "XIAN ANCIENT SITE BREACH",
+      "lon": 108.9,
+      "lat": 34.3
+    },
+    {
+      "name": "PATNA RIVER ANOMALY",
+      "lon": 85.1,
+      "lat": 25.6
+    },
+    {
+      "name": "SRINAGAR HIGHLAND SIGNAL",
+      "lon": 74.8,
+      "lat": 34.1
+    },
+    {
+      "name": "GUWAHATI JUNGLE TRACE",
+      "lon": 91.7,
+      "lat": 26.2
+    },
+    {
+      "name": "VARANASI SACRED SITE READING",
+      "lon": 83.0,
+      "lat": 25.3
+    },
+    {
+      "name": "KOCHI COASTAL SURGE",
+      "lon": 76.3,
+      "lat": 9.9
+    },
+    {
+      "name": "VOLGOGRAD RIVER ANOMALY",
+      "lon": 44.5,
+      "lat": 48.7
+    },
+    {
+      "name": "KRASNODAR FIELD BREACH",
+      "lon": 39.0,
+      "lat": 45.0
+    },
+    {
+      "name": "NIZHNY NOVGOROD GRID EVENT",
+      "lon": 44.0,
+      "lat": 56.3
+    },
+    {
+      "name": "ARKHANGELSK ARCTIC SIGNAL",
+      "lon": 40.5,
+      "lat": 64.5
+    },
+    {
+      "name": "PETROPAVLOVSK VOLCANIC TRACE",
+      "lon": 158.7,
+      "lat": 53.0
+    },
+    {
+      "name": "SAKHALIN OFFSHORE SIGNAL",
+      "lon": 142.7,
+      "lat": 47.0
+    },
+    {
+      "name": "FORTALEZA COASTAL SURGE",
+      "lon": -38.5,
+      "lat": -3.7
+    },
+    {
+      "name": "BELO HORIZONTE GRID SURGE",
+      "lon": -43.9,
+      "lat": -19.9
+    },
+    {
+      "name": "CONCEPCION HIGHLAND ANOMALY",
+      "lon": -73.0,
+      "lat": -36.8
+    },
+    {
+      "name": "CORDOBA ENERGY BLOOM",
+      "lon": -64.2,
+      "lat": -31.4
+    },
+    {
+      "name": "COCHABAMBA ALTITUDE EVENT",
+      "lon": -66.2,
+      "lat": -17.4
+    },
+    {
+      "name": "NEW ORLEANS SUBSURFACE BREACH",
+      "lon": -90.1,
+      "lat": 29.9
+    },
+    {
+      "name": "NASHVILLE GRID ANOMALY",
+      "lon": -86.8,
+      "lat": 36.2
+    },
+    {
+      "name": "SAN ANTONIO SIGNAL CASCADE",
+      "lon": -98.5,
+      "lat": 29.4
+    },
+    {
+      "name": "SEATTLE MOUNTAIN TRACE",
+      "lon": -122.3,
+      "lat": 47.6
+    },
+    {
+      "name": "DENVER ALTITUDE READING",
+      "lon": -104.9,
+      "lat": 39.7
+    },
+    {
+      "name": "YELLOWKNIFE ARCTIC ANOMALY",
+      "lon": -114.4,
+      "lat": 62.5
+    },
+    {
+      "name": "WINNIPEG PRAIRIE SIGNAL",
+      "lon": -97.1,
+      "lat": 49.9
+    },
+    {
+      "name": "HALIFAX COASTAL READING",
+      "lon": -63.6,
+      "lat": 44.6
+    },
+    {
+      "name": "TIJUANA BORDER SURGE",
+      "lon": -117.0,
+      "lat": 32.5
+    },
+    {
+      "name": "CANCUN COASTAL FLASH",
+      "lon": -86.9,
+      "lat": 21.2
+    },
+    {
+      "name": "VERACRUZ HARBOUR SIGNAL",
+      "lon": -96.1,
+      "lat": 19.2
+    }
+  ],
+  "actions": [
+    "DATA TRANSMISSION",
+    "SIGNAL RELAY",
+    "ENERGY SWEEP",
+    "FIELD REPORT FILED",
+    "SUBJECT TRACKING UPDATE",
+    "SATELLITE UPLINK",
+    "ENCRYPTED BURST SENT",
+    "INCIDENT CROSS-REFERENCE",
+    "CLEARANCE VERIFICATION",
+    "ORBITAL SWEEP INITIATED",
+    "THREAT ASSESSMENT UPDATE",
+    "ANOMALY DETECTED",
+    "CONTROL BRANCH DISPATCHED",
+    "NEURAL SCAN FILED",
+    "MANIFESTATION EVENT RECORDED",
+    "RELIC TRACE CONFIRMED",
+    "PSYCHOLOGICAL PROFILE UPDATED",
+    "CONTAINMENT PROTOCOL INITIATED",
+    "BLACKSITE TRANSFER CONFIRMED",
+    "PRIORITY FLAG RAISED",
+    "SURVEILLANCE FEED REVIEWED",
+    "COMMUNICATION INTERCEPTED",
+    "FORENSIC ANALYSIS COMPLETED",
+    "COVERT ASSET ACTIVATED",
+    "ENERGY FLUCTUATION REPORTED",
+    "DEPLOYMENT ROUTE LOGGED",
+    "NETWORK INTERCEPT FILED",
+    "COMMISSION RECORD AMENDED",
+    "UNAUTHORIZED ACCESS FLAGGED",
+    "ABSTRACT ENERGY SPIKE LOGGED",
+    "BIO-SCAN EXECUTED",
+    "RELOCATION ORDER ISSUED",
+    "FIELD TEAM RETRACTED",
+    "INCIDENT SEALED",
+    "SUBJECT INTERROGATED",
+    "MEDIA SUPPRESSION AUTHORIZED",
+    "SHADOW OPERATIVE RECALLED",
+    "FAILSAFE TRIGGERED",
+    "ASSET REQUISITIONED",
+    "STRIKE AUTHORIZATION DENIED"
+  ]
+}

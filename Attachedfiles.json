@@ -1,0 +1,140 @@
+{
+  "files": [
+    {
+      "id": "brecine-incident",
+      "type": "INCIDENT REPORT",
+      "classification": "B3 floor - Stratified for A2",
+      "title": "Brečine Manifestation Incident",
+      "date": "2214/March/03",
+      "reference": "7AN-4M1-L95-0GH-ZV2",
+      "department": "Field Operations - Tiranë-08",
+      "author": "Oversight Commissioner Sokol H.",
+      "attachTo": ["Dmitri Yan", "Arben Pjetri", "Coop Henwick", "Jay Blackmoor"],
+      "summary": "Four students and a teacher were exposed to [EXPUNGED] which resulted in simultaneous manifestations. Local U.N.W.C investigator Sebastian Hart went missing not long after arrival to the scene. Confirmation of Cryptid presence allowed deployment of control agents to the village, where Commission forces engaged local Cryptid presences. All five manifested wielders were flagged as missing. Additionally, post situation examinations proved that [EXPUNGED] was present within the village for several years before the incident.",
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "At approximately 11:04 CEST, Abstract Energy readings at 6932 over 120 ambient were detected near the Albanian coastal village of Brečine by Commission satellites. The surge lasted for 4.3 seconds and oscillated four times. A report was filed to the nearest Commission branch within Roskovec. An investigatory team led by Commission investigator and wielder Sebastian Hart arrived at the village 07 hours after incident."
+        },
+        {
+          "type": "paragraph",
+          "content": "The investigative team followed surge coordinates to site-1, where they discovered [EXPUNGED]. Further investigation into site-1 has been prompted by [EXPUNGED] division."
+        },
+        {
+          "type": "paragraph",
+          "content": "Sebastian Hart was flagged as missing 15 hours after arrival to Brečine. Additional investigators flagged Commission offices in Tiranë to request the presence of control agents after confirming Cryptid presence."
+        },
+        {
+          "type": "paragraph",
+          "content": "Control agency arrived at 22 hours after initial incident. Control agents began active engagement with several Cryptids, labelled as AC-0836. Cryptids appeared to be [EXPUNGED] and [EXPUNGED]."
+        },
+        {
+          "type": "paragraph",
+          "content": "Control agents arrived at site-2 where all five manifested wielders were engaged in combat with several Cryptids. Commission Candidate Andrej Henwick, brother of Subject-3, was at the scene."
+        },
+        {
+          "type": "paragraph",
+          "content": "Following a brief engagement at site-2, all five subjects were registered as missing. Approximately 23 hours after the incident, 1 hour after Control agents arrived at Brečine, readings of 12,852 were registered over heightened ambient of 188. Reading signature was certified to be the same as [EXPUNGED]. Investigation into site-2 confirmed that [EXPUNGED] had been residing in Brečine for several years before incident."
+        },
+        {
+          "type": "paragraph",
+          "content": "While Control agents were able to subdue and exterminate all Cryptid presence from Brečine, several civilian casualties were registered."
+        },
+        {
+          "type": "image",
+          "label": "Autopsy Photo",
+          "src": "https://od.lk/s/NzBfNDE1MjQ0NDFf/aftermath-of-bear-attack-v0-oi7w1s3e1yad1.webp",
+          "caption": "Aftermath of an AC-0836 attack on a civilian."
+        },
+        {
+          "type": "heading",
+          "content": "Subject Profiles"
+        },
+        {
+          "type": "paragraph",
+          "content": "Four students and one teacher all manifested gifts during incident. All gifts have been assessed and registered by the U.N."
+        },
+        {
+          "type": "subjects",
+          "entries": [
+            {
+              "name": "Dmitri Yan",
+              "age": "17 at time of manifestation",
+              "gift": "Space Manipulation",
+              "notes": "The user can push and pull space within a given range around themselves."
+            },
+            {
+              "name": "Arben Pjetri",
+              "age": "17 at time of manifestation",
+              "gift": "Ink Control",
+              "notes": "The user can create and manipulate ink. The user appears able to turn parts of themselves into ink."
+            },
+            {
+              "name": "Coop Henwick",
+              "age": "17 at time of manifestation",
+              "gift": "Weather Manipulator",
+              "notes": "The user can create and alter weather phenomena around themselves."
+            },
+            {
+              "name": "Jay Blackmoor",
+              "age": "17 at time of manifestation",
+              "gift": "Animal Shifter",
+              "notes": "The user can shift their biology to mirror that of animals. User has been seen replicating the strength of a gorilla and fish gills. Extent of ability unknown."
+            },
+            {
+              "name": "Anissa Heylwin",
+              "age": "35 at time of manifestation",
+              "gift": "Puppeteer",
+              "notes": "The user can manifest and control invisible strings to attach to and control objects or living beings. This allows the user to effectively puppeteer foreign objects. The user also can utilize these strings to lift themselves up and enhance their physical capabilities."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "content": "Site Notes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Site-1: [EXPUNGED]."
+        },
+        {
+          "type": "paragraph",
+          "content": "Site-2: A local fish and chips store by the name of \"The Mariner's Fry\" operated by [EXPUNGED]."
+        },
+        {
+          "type": "heading",
+          "content": "Post Incident Report"
+        },
+        {
+          "type": "paragraph",
+          "content": "Given the nature of the incident, all information and oversight was pushed up to a regional directive. The specifics of how the incident occurred were classified under A3 access minimum. Attempts to locate subjects after the incident all failed. The [EXPUNGED] demonstrated great interest in site-1."
+        },
+        {
+          "type": "paragraph",
+          "content": "Three months after incident, U.N sources confirmed Subjects 1, 2, 3 and 4 had associated with Ëakaris. Subject 5 has not since been located."
+        },
+        {
+          "type": "paragraph",
+          "content": "[EXPUNGED] has been granted clearance to perform desired experiments. Once all cleared research has been completed, site-1 is to be demolished and the case closed."
+        },
+        {
+          "type": "heading",
+          "content": "Research Report"
+        },
+        {
+          "type": "locked",
+          "content": "LACKING CLEARANCE"
+        },
+        {
+          "type": "heading",
+          "content": "Current Status"
+        },
+        {
+          "type": "paragraph",
+          "content": "All four registered subjects are confirmed as having begun operating alongside and for Ëakaris. Subject 5 is still unaccounted for. All relevant information regarding subjects has been forwarded to general oversight."
+        }
+      ],
+      "footer": "Casefile 7AN-4M1-L95-0GH-ZV2. Clearance B3 floor, stratified for A2. Any unauthorized access constitutes a violation of Articles 12 and 19."
+    }
+  ]
+}

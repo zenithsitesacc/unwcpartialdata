@@ -1,0 +1,461 @@
+{
+  "wielders": [
+    {
+      "id": "sovereign",
+      "codename": "Sovereign",
+      "category": "ruler"
+    },
+    {
+      "id": "pluto",
+      "codename": "Pluto",
+      "category": "ruler"
+    },
+    {
+      "id": "mars",
+      "codename": "Mars",
+      "category": "ruler"
+    },
+    {
+      "id": "empyrean",
+      "codename": "Empyrean",
+      "category": "ruler"
+    },
+    {
+      "id": "leviathan",
+      "codename": "Leviathan",
+      "category": "ruler"
+    },
+    {
+      "id": "Ignacio",
+      "codename": "Ignacio",
+      "category": "ruler"
+    },
+    {
+      "id": "zephyr",
+      "codename": "Zephyr",
+      "category": "ruler"
+    },
+    {
+      "id": "jupiter",
+      "codename": "Jupiter",
+      "category": "ruler"
+    },
+    {
+      "id": "custodian",
+      "codename": "Custodian",
+      "category": "ruler"
+    },
+    {
+      "id": "seamstress",
+      "codename": "Seamstress",
+      "category": "ruler"
+    },
+    {
+      "id": "mawae",
+      "codename": "Māwae",
+      "category": "ruler"
+    },
+    {
+      "id": "darcy",
+      "codename": "Darcy Phang",
+      "category": "ruler"
+    },
+    {
+      "id": "knight",
+      "codename": "Knight",
+      "realname": "Iskander Khalil",
+      "affiliation": "Unaffiliated",
+      "category": "candidate",
+      "age": "47",
+      "status": "Active in North America and Europe",
+      "origin": "Saudi Arabia",
+      "gender": "Male",
+      "combatRating": 7.5,
+      "threatRating": 5,
+      "registryId": "UNWC-CAND-002",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Aegis",
+          "locked": true,
+          "lockedMsg": "GIFT DATA SEALED BY A2 REQUEST — PENDING DEACTIVATION"
+        }
+      ],
+      "additional": "Iskander Khalil was born in Riyadh, Saudi Arabia. At the age of 16, subject entered the Saudi Arabian military as a counter-terrorism specialist, spending the majority of this period engaged in active operations against [EXPUNGED]. At the age of 22, subject manifested an abstract energy gift and was subsequently recruited into the U.N.W.C. Subject was deployed across both frontal and rear operational capacities, though performance assessments consistently favored rear operations as his area of strength. At the age of 24, subject was formally assigned the moniker Knight, and was considered a high-performing rising candidate within Commission records.\n\nAt the age of 25, subject was assigned as chief officer of an investigative counter-terrorism deployment in Chicago. During the operation, subject identified the anti-establishment forces as [EXPUNGED]. Subject proceeded to conduct a series of unauthorized raids on suspected safehouses belonging to [EXPUNGED], citing personal history with the group. These raids resulted in 44 civilian casualties and 17 U.N asset casualties. Subject was discharged from his position as chief officer and ordered to return to European jurisdiction.\n\nFollowing discharge, subject conducted an unsanctioned personal investigation into the Chicago incident. Subject claims to have identified [EXPUNGED] as a direct financial backer of [EXPUNGED], with secondary funding traced to [EXPUNGED]. Subject's conclusions regarding the involvement of [EXPUNGED] appear to have precipitated a period of irrational and escalating behavior.\n\nSubsequently, subject executed an unprovoked assault on the U.N operations facility in Arles, France, citing the facility's alleged alignment with [EXPUNGED]. The assault resulted in 78 U.N asset fatalities. Subject has since gone into hiding and has been formally classified as a terrorist by the Commission.\n\nSubject is currently believed to be operating within independent criminal networks across multiple jurisdictions. All recovery and containment attempts to date have been unsuccessful.",
+      "addendums": [
+        {
+          "author": "Recruitment Officer H. Falconi",
+          "date": "2193/March 12/09:20",
+          "text": "Subject has manifested a high-utility abstract energy gift. Recommending immediate recruitment into the U.N.W.C. Gift assessment pending formal evaluation.",
+          "status": null
+        },
+        {
+          "author": "Performance Assessor J. Murad",
+          "date": "2195/August 04/11:45",
+          "text": "Subject has been formally assigned the moniker Knight following consistent high performance across rear operational deployments. Subject is noted as a strong candidate for advancement.",
+          "status": null
+        },
+        {
+          "author": "Operations Director V. Solberg",
+          "date": "2196/November 29/08:30",
+          "text": "Subject has been formally discharged from chief officer status following the Chicago deployment. Casualty review confirmed 44 civilian and 17 U.N asset fatalities resulting from unauthorized raids conducted by subject. Subject has been ordered to return to European jurisdiction pending further review.",
+          "status": null
+        },
+        {
+          "author": "Operations Director V. Solberg",
+          "date": "2197/February 16/14:10",
+          "text": "Subject failed to comply with return orders and has not reported to any designated Commission facility. Whereabouts currently unknown. Flagging for investigative follow-up.",
+          "status": null
+        },
+        {
+          "author": "Emergency Response Coordinator T. Achebe",
+          "date": "2197/October 07/06:48",
+          "text": "Subject has conducted a direct assault on the U.N operations facility in Arles, France. 78 Commission assets confirmed dead. Subject cited facility alignment with [EXPUNGED] as justification. Subject is hereby classified as a terrorist. All Commission branches have been notified. Containment and recovery operations are now active.",
+          "status": null
+        },
+        {
+          "author": "Senior Investigator P. Renault",
+          "date": "2209/May 03/10:22",
+          "text": "Containment operations have yielded no confirmed leads on subject location. Subject continues to operate within criminal networks in multiple jurisdictions. Requesting authorization to expand the scope of recovery operations.",
+          "status": "ACCEPTED"
+        },
+        {
+          "author": "Senior Investigator P. Renault",
+          "date": "2215/January 18/09:55",
+          "text": "Expanded recovery operations have not produced results. Subject has demonstrated an ability to anticipate Commission movement. Recommending review of current containment strategy.",
+          "status": null
+        }
+      ],
+      "addendumslocked": true,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": "https://od.lk/s/NzBfNDE1MjgyNzRf/knight.PNG"
+    },
+    {
+      "id": "delger",
+      "codename": null,
+      "realname": "Delger Khuyag",
+      "affiliation": "Ëakaris",
+      "category": "adept",
+      "age": "26",
+      "status": "Active in China",
+      "origin": "Mongolia",
+      "gender": "Male",
+      "combatRating": 5.5,
+      "threatRating": 5.0,
+      "registryId": "UNWC-ADPT-010",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Onomatopoeia",
+          "description": "The user can manifest the effects of certain words they say into reality. These words must be words used in onomatopoeia, and must be a single word in length. The manifestation of these words leads to the effect associated with the word happening. For example, the word \"kaboom\" leads to a fiery detonation, the word \"boing\" leads to the target becoming bouncy. Generally, the user needs to make physical contact to inflict an onomatopoeia on something. Although some words can be used at range, and some close-contact words can be expanded in targeting via extra use of abstract energy. Tougher targets require more energy to utilize this gift on."
+        }
+      ],
+      "additional": "Born in Erdenet, Mongolia, Delger was acquired by [EXPUNGED] for [EXPUNGED] at the age of [EXPUNGED]. He was placed within [EXPUNGED] for strenuous testing. At the age of [EXPUNGED], external coordinators confirmed that stress-motivation was successful in [EXPUNGED]. Alongside [EXPUNGED], Delger became a successful result from the Fourth Batch. All other participants in Batch Four were unsuccessful.\n\nWhen the [EXPUNGED] facility underwent whitefloor-breach protocol, Delger and [EXPUNGED] evaded cleaning attempts by private and government security, and went underground.\n\nBoth Delger and [EXPUNGED] are confirmed to be working alongside Ëakaris, having been recruited soon after the whitefloor-breach.",
+      "addendums": [
+        {
+          "author": "Coordinator N. Fassbender",
+          "date": "2196/April 03/10:15",
+          "text": "I had a meeting with subject's family, and they agreed to the transfer in exchange for a yearly stipend of $10,000.",
+          "status": null
+        },
+        {
+          "author": "Coordinator N. Fassbender",
+          "date": "2197/January 21/14:40",
+          "text": "Subject has responded well to socialization with peers, and has formed a close bond with [EXPUNGED].",
+          "status": null
+        },
+        {
+          "author": "Coordinator N. Fassbender",
+          "date": "2198/August 09/09:22",
+          "text": "The most recent stress session left the subject in a poor state. I would like to request reduced quotas until subject has made mental and physical recovery. Continued stress-exposure at this age is likely to yield irreversible damage, rather than a successful outcome.",
+          "status": "DENIED"
+        },
+        {
+          "author": "Coordinator N. Fassbender",
+          "date": "2199/March 17/11:05",
+          "text": "Once more I am petitioning for lowered stress-quotas for subject and all other members of Batch Four. This batch is too young for this degree of processing.",
+          "status": "DENIED"
+        },
+        {
+          "author": "Coordinator N. Fassbender",
+          "date": "2200/November 30/16:33",
+          "text": "Subject has been acting distant, alongside other members of Batch Four. Something is amiss. I will monitor closely.",
+          "status": null
+        }
+      ],
+      "addendumslocked": false,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": "https://od.lk/s/NzBfNDE1MjgzNTRf/delger.PNG"
+    },
+    {
+      "id": "haoxun",
+      "codename": null,
+      "realname": "Haoxun Linyu",
+      "affiliation": "Ëakaris",
+      "category": "adept",
+      "age": "54",
+      "status": "Active in China — Hong Kong — Qingyue Tower",
+      "origin": "China",
+      "gender": "Male",
+      "combatRating": 5.5,
+      "threatRating": 5,
+      "registryId": "UNWC-ADPT-011",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Ouroboros",
+          "locked": true
+        }
+      ],
+      "additional": "Haoxun is an Ëakaris agent in Hongkong. His specific location and activities are heavily guarded by Ëakaris. Leading belief is that he operates out of [EXPUNGED] and is in charge of [EXPUNGED].",
+      "addendums": [],
+      "addendumslocked": false,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": "https://od.lk/s/NzBfNDE1MjgzNTZf/haoxun.PNG"
+    },
+    {
+      "id": "dmitri",
+      "codename": null,
+      "realname": "Dmitri Yan",
+      "affiliation": "Ëakaris",
+      "category": "normal",
+      "age": "22",
+      "status": "Active in Europe",
+      "origin": "Albania",
+      "gender": "Male",
+      "combatRating": 3.5,
+      "threatRating": 3,
+      "registryId": "UNWC-SND-21081",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Proposal 1 — Telekinesis",
+          "description": "The user can telekinetically move and manipulate objects and people around themselves."
+        },
+        {
+          "name": "Proposal 2 — Space Manipulation",
+          "description": "The user can push and pull space within a given range around themselves."
+        }
+      ],
+      "additional": "Dmitri Yan was part of the Brečine incident. After the incident, Subject went missing and is at large. Additional information regarding youth stored in external dossiers.",
+      "addendums": [
+        {
+          "author": "Dr. Lena Vaskovic",
+          "date": "2217/February 11/09:42",
+          "text": "Requesting formalization of Proposal 2 as primary classification. Spatial manipulation appears more consistent with analyzed footage of subject in field conditions.",
+          "status": "PENDING"
+        }
+      ],
+      "addendumslocked": false,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": null
+    },
+    {
+      "id": "arben",
+      "codename": null,
+      "realname": "Arben Pjetri",
+      "affiliation": "Ëakaris",
+      "category": "normal",
+      "age": "22",
+      "status": "Active in Europe",
+      "origin": "Albania",
+      "gender": "Male",
+      "combatRating": 4,
+      "threatRating": 3.5,
+      "registryId": "UNWC-SND-21082",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Ink Control",
+          "description": "The user can create and manipulate ink. The user appears able to turn parts of themselves into ink."
+        }
+      ],
+      "additional": "Arben was part of the Brečine incident. After the incident, Subject went missing and is at large. Additional information regarding youth stored in external dossiers.",
+      "addendums": [],
+      "addendumslocked": false,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": null
+    },
+    {
+      "id": "coop",
+      "codename": null,
+      "realname": "Coop Henwick",
+      "affiliation": "Ëakaris",
+      "category": "normal",
+      "age": "23",
+      "status": "Active in Europe",
+      "origin": "Albania",
+      "gender": "Male",
+      "combatRating": 4.5,
+      "threatRating": 3,
+      "registryId": "UNWC-SND-21083",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Weather Manipulator",
+          "description": "The user can create and alter weather phenomena around themselves."
+        }
+      ],
+      "additional": "Coop Henwick was part of the Brečine incident. Subjet is the brother of Andrej Henwick. After the incident, Subject went missing and is at large. Additional information regarding youth stored in external dossiers.",
+      "addendums": [],
+      "addendumslocked": false,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": null
+    },
+    {
+      "id": "jay",
+      "codename": null,
+      "realname": "Jay Blackmoor",
+      "affiliation": "Ëakaris",
+      "category": "normal",
+      "age": "23",
+      "status": "Active in Europe",
+      "origin": "Albania",
+      "gender": "Male",
+      "combatRating": 4.5,
+      "threatRating": 4,
+      "registryId": "UNWC-SND-21084",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Animal Shifter",
+          "description": "The user can shift their biology to mirror that of animals. User has been seen replicating the strength of a gorilla and fish gills. Extent of ability unknown."
+        }
+      ],
+      "additional": "Jay Blackmoor was part of the Brečine incident. After the incident, Subject went missing and is at large. Additional information regarding youth stored in external dossiers.",
+      "addendums": [],
+      "addendumslocked": false,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": null
+    },
+    {
+      "id": "milos",
+      "codename": null,
+      "realname": "Milos Terkalin",
+      "affiliation": "Ëakaris",
+      "category": "adept",
+      "age": "36",
+      "status": "Active in China",
+      "origin": "Czechoslovakia",
+      "gender": "Male",
+      "combatRating": 3.5,
+      "threatRating": 5.5,
+      "registryId": "UNWC-ADPT-009",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Prismatic Gates",
+          "description": "The user can create portals which connect to a separate pocket dimension. Inside this pocket dimension, the user can access any other portals. These portals require a consistent supply of abstract energy to sustain. Only the user can use these portals."
+        }
+      ],
+      "additional": "Carries messages for Ëakaris, as he maintains a portal in China, a portal in the United States, a portal in Australia, a portal in Western Europe and a portal in Southern and Northern Africa. Subject likely maintains several more portals which are unaccounted for.",
+      "addendums": [
+        {
+          "author": "Field Analyst C. Brauer",
+          "date": "2196/May 08/10:14",
+          "text": "Subject confirmed to have manifested an abstract energy output. Gift appears to involve spatial phenomena. Recommending passive observation.",
+          "status": null
+        },
+        {
+          "author": "Field Analyst C. Brauer",
+          "date": "2200/February 17/09:31",
+          "text": "Subject has not cooperated with outreach attempts. Gift utility appears significant. Logging as unregistered.",
+          "status": null
+        },
+        {
+          "author": "Senior Investigator D. Osei",
+          "date": "2204/October 03/14:52",
+          "text": "Subject has continued to evade capture or questioning. I have sufficient reason to believe the incidents at [EXPUNGED] and [EXPUNGED] were not outliers, and that subject is cooperating with terrorist forces.",
+          "status": null
+        },
+        {
+          "author": "Senior Investigator D. Osei",
+          "date": "2211/July 22/11:07",
+          "text": "Requesting elevation of subject threat profile as he is a vital messenger for Ëakaris.",
+          "status": "ACCEPTED"
+        }
+      ],
+      "addendumslocked": false,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": null
+    },
+    {
+      "id": "andrej",
+      "codename": "Volt",
+      "realname": "Andrej Henwick",
+      "affiliation": "U.N",
+      "category": "candidate",
+      "age": "26",
+      "status": "Active in Western Europe",
+      "origin": "Albania",
+      "gender": "Male",
+      "combatRating": 6.0,
+      "threatRating": 3.0,
+      "registryId": "UNWC-CAND-017",
+      "statusLabel": "ACTIVE",
+      "gifts": [
+        {
+          "name": "Stormline",
+          "description": "The user can sense, create, and manipulate electric currents in and around themselves. The user can vary the power of these currents from small, minute shocks to large bolts of lightning. The user has innate resistance to electricity."
+        }
+      ],
+      "additional": "Born in the coastal town of Brečine, Andrej manifested his gift at the age of 15. He cooperated with U.N officials and demonstrated a great deal of aptitude with his gift. At 16, he agreed to leave his hometown to pursue prospects in Berlin, in cooperation with the U.N.W.C. In 2214, Andrej's brother, Coop Henwick, was engaged in the Brečine Manifestation incident, and is since missing.\n\nAfter the Brečine incident, Andrej has made repeated inquiries into the events and his brother's whereabouts.",
+      "addendums": [
+        {
+          "author": "Field Officer R. Svensson",
+          "date": "2207/June 14/11:20",
+          "text": "Subject is confirmed to have manifested at 8,402 over ambient of 109. Subject has a high output electrokinetic gift. Suggesting monitoring.",
+          "status": null
+        },
+        {
+          "author": "Field Officer R. Svensson",
+          "date": "2208/March 02/09:05",
+          "text": "Subject has agreed to come to Berlin to pursue a future alongside the U.N.W.C.",
+          "status": null
+        },
+        {
+          "author": "Comms Liaison P. Delacroix",
+          "date": "2210/August 19/14:33",
+          "text": "Requesting a renaming of subject's gift from \"Electrokinesis\" to \"Stormline\" for increased demographic interest.",
+          "status": "ACCEPTED"
+        },
+        {
+          "author": "Comms Liaison P. Delacroix",
+          "date": "2211/November 07/10:47",
+          "text": "Subject has premiered well on talk shows and events. I would like to proceed with amplifying Andrej's role within the front sectors.",
+          "status": null
+        },
+        {
+          "author": "Comms Liaison P. Delacroix",
+          "date": "2213/April 23/16:12",
+          "text": "I am once more requesting an increased marketing allocation for Andrej. I firmly believe he has the potential to form a strong brand.",
+          "status": "ACCEPTED"
+        },
+        {
+          "author": "Investigator T. Morel",
+          "date": "2214/March 04/08:55",
+          "text": "Subject has little information regarding the Brečine incident.",
+          "status": null
+        },
+        {
+          "author": "Investigator T. Morel",
+          "date": "2216/September 30/13:18",
+          "text": "Subject continues to probe into the whereabouts of his brother and the events in Brečine, despite the passage of time. Requesting increased monitoring of subject.",
+          "status": "ACCEPTED"
+        }
+      ],
+      "addendumslocked": false,
+      "expunged": false,
+      "engagementRules": null,
+      "imageUrl": "https://od.lk/s/NzBfNDE5NjA0ODBf/andrejhenwick.jpg"
+    }
+  ]
+}
