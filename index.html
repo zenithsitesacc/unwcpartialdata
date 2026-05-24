@@ -2564,14 +2564,9 @@
       <div class="pl-dept">Wielder Commission</div>
       <div class="pl-divider"></div>
       <div class="pl-bio-checks" id="pl-bio-checks">
-        <div class="pl-bio-item" id="pl-bio-0"><span class="pl-bio-dot"></span>Reading Biometric Key</div>
-        <div class="pl-bio-item" id="pl-bio-1"><span class="pl-bio-dot"></span>Confirming DNA</div>
-        <div class="pl-bio-item" id="pl-bio-2"><span class="pl-bio-dot"></span>Registering Signal</div>
-      </div>
-      <div class="pl-bio-sig-wrap" id="pl-bio-sig-wrap" style="display:none;">
-        <div class="pl-bio-sig-label">Please confirm signature:</div>
-        <input class="pl-bio-sig-input" id="pl-bio-sig-input" type="password" autocomplete="off" spellcheck="false" />
-        <div class="pl-bio-sig-error" id="pl-bio-sig-error"></div>
+        <div class="pl-bio-item" id="pl-bio-0"><span class="pl-bio-dot"></span>Checking Chip-Signature</div>
+        <div class="pl-bio-item" id="pl-bio-1"><span class="pl-bio-dot"></span>Validating Subdermal Data</div>
+        <div class="pl-bio-item" id="pl-bio-2"><span class="pl-bio-dot"></span>Reading Neural Activity</div>
       </div>
     </div>
   </div>
@@ -2611,8 +2606,6 @@
   function rChar() { return CHARS[Math.floor(Math.random() * CHARS.length)]; }
   function rStr(len) { var s=''; for(var i=0;i<len;i++) s+=rChar()+(i<len-1?'-':''); return s; }
 
-  var SIGNATURE = '8K8A-6NA-&&53LM-9180-U6YYY@$nMMMj5';
-
   var biometric = document.getElementById('pl-biometric');
   var verify    = document.getElementById('pl-verify');
   var welcome   = document.getElementById('pl-welcome');
@@ -2632,9 +2625,6 @@
     document.getElementById('pl-bio-1'),
     document.getElementById('pl-bio-2')
   ];
-  var sigWrap  = document.getElementById('pl-bio-sig-wrap');
-  var sigInput = document.getElementById('pl-bio-sig-input');
-  var sigError = document.getElementById('pl-bio-sig-error');
 
   function showBioItem(idx, cb) {
     bioItems[idx].classList.add('visible');
@@ -2648,41 +2638,20 @@
     showBioItem(0, function() {
       showBioItem(1, function() {
         showBioItem(2, function() {
-          // Show signature prompt
-          sigWrap.style.display = 'flex';
-          setTimeout(function() { sigInput.focus(); }, 50);
+          // All checks passed — auto-proceed to loading
+          setTimeout(function() {
+            biometric.style.transition = 'opacity 0.4s';
+            biometric.style.opacity = '0';
+            setTimeout(function() {
+              biometric.style.display = 'none';
+              verify.classList.add('active');
+              startLoading();
+            }, 420);
+          }, 600);
         });
       });
     });
   }
-
-  sigInput && sigInput.addEventListener('keydown', function(e) {
-    if (e.key !== 'Enter') return;
-    var val = sigInput.value;
-    if (val === SIGNATURE) {
-      sigError.textContent = '';
-      sigInput.disabled = true;
-      sigInput.style.borderBottomColor = 'var(--normal-color)';
-      // Transition to loading phase
-      setTimeout(function() {
-        biometric.style.transition = 'opacity 0.4s';
-        biometric.style.opacity = '0';
-        setTimeout(function() {
-          biometric.style.display = 'none';
-          verify.classList.add('active');
-          startLoading();
-        }, 420);
-      }, 400);
-    } else {
-      sigError.textContent = 'SIGNATURE MISMATCH — RETRY';
-      sigInput.value = '';
-      sigInput.style.borderBottomColor = 'var(--accent-red)';
-      setTimeout(function() {
-        sigInput.style.borderBottomColor = 'var(--un-blue)';
-        sigError.textContent = '';
-      }, 1800);
-    }
-  });
 
   // === LOADING PHASE ===
   function startLoading() {
@@ -3508,15 +3477,15 @@ document.addEventListener('DOMContentLoaded', function() {
         'OVERLORD: Charlie-2?'
       ]);
 
-      // TX 5 — audio transmission
-      html += '<div class="brief-transmission">';
-      html += '<div class="brief-tx-label">RADIO TRANSMISSION <span class="brief-tx-route">CHARLIE-4-ACTUAL TO DESIGNATE OVERLORD</span></div>';
-      html += '<div class="brief-audio-player" id="delger-audio-player">';
-      html += '<button class="bap-play" id="delger-play-btn" onclick="delgerTogglePlay()">&#9654;</button>';
-      html += '<div class="bap-bar-wrap"><div class="bap-bar-bg"><div class="bap-bar-fill" id="delger-bar-fill"></div></div><span class="bap-time" id="delger-time">0:00</span></div>';
-      html += '</div>';
-      html += '<audio id="delger-audio" src="https://od.lk/s/NzBfNDE5NjEwMzBf/situationwhitefloor.mp3" preload="none"></audio>';
-      html += '</div>';
+      // TX 5 — transcript only
+      html += tx('CHARLIE-4-ACTUAL TO DESIGNATE OVERLORD', [
+        'CHARLIE-4-ACTUAL: Overlord, Charlie-4-Actual. We have a live one down here, eastern tunnel network. Subject is fast — not running, just fast. We have lost four already. Requesting immediate support. Over.',
+        'OVERLORD: Charlie-4-Actual, confirm — is this a gifted target? Over.',
+        'CHARLIE-4-ACTUAL: Confirmed gifted. Some kind of sound or impact manipulation. Not sure. Just need bodies on this. Over.',
+        'OVERLORD: Charlie-4-Actual, all units are fully committed. You are alone on this. Contain and report, do not escalate. Over.',
+        'CHARLIE-4-ACTUAL: Overlord — we cannot contain. Repeat, we cannot contain. We need extraction, we need—',
+        '[TRANSMISSION ENDS]'
+      ]);
 
       // TX 6
       html += tx('CHARLIE-1 TO DESIGNATE OVERLORD', [
@@ -5338,70 +5307,9 @@ canvas.addEventListener('mouseleave',function(){ tooltip.style.display='none'; }
     setTimeout(runStep, 300);
   }
 
-  // Custom audio player for Delger brief
-  (function() {
-    var audio, barFill, timeEl, playBtn, barBg;
-    var playing = false;
-
-    function fmt(s) {
-      var m = Math.floor(s / 60);
-      var ss = Math.floor(s % 60);
-      return m + ':' + (ss < 10 ? '0' : '') + ss;
-    }
-
-    function init() {
-      audio   = document.getElementById('delger-audio');
-      barFill = document.getElementById('delger-bar-fill');
-      timeEl  = document.getElementById('delger-time');
-      playBtn = document.getElementById('delger-play-btn');
-      barBg   = document.querySelector('.bap-bar-bg');
-      if (!audio) return;
-
-      audio.volume = 0.28; // set volume
-
-      audio.addEventListener('timeupdate', function() {
-        if (!audio.duration) return;
-        var pct = (audio.currentTime / audio.duration) * 100;
-        if (barFill) barFill.style.width = pct + '%';
-        if (timeEl) timeEl.textContent = fmt(audio.currentTime);
-      });
-
-      audio.addEventListener('ended', function() {
-        playing = false;
-        if (playBtn) playBtn.innerHTML = '&#9654;';
-        if (barFill) barFill.style.width = '0%';
-        if (timeEl) timeEl.textContent = '0:00';
-      });
-
-      if (barBg) {
-        barBg.addEventListener('click', function(e) {
-          if (!audio.duration) return;
-          var rect = barBg.getBoundingClientRect();
-          var pct = (e.clientX - rect.left) / rect.width;
-          audio.currentTime = pct * audio.duration;
-        });
-      }
-    }
-
-    window.delgerTogglePlay = function() {
-      if (!audio) init();
-      if (!audio) return;
-      if (playing) {
-        audio.pause();
-        playing = false;
-        if (playBtn) playBtn.innerHTML = '&#9654;';
-      } else {
-        audio.play();
-        playing = true;
-        if (playBtn) playBtn.innerHTML = '&#9646;&#9646;';
-      }
-    };
-
-    // Init once DOM is ready (panel may not exist yet at script run time)
-    document.addEventListener('DOMContentLoaded', function() { init(); });
-    // Also try after a short delay in case panels are injected late
-    setTimeout(init, 2000);
-  })();
+  // Init once DOM is ready (panel may not exist yet at script run time)
+  document.addEventListener('DOMContentLoaded', function() { });
+})();
 </script>
 
 </body>
