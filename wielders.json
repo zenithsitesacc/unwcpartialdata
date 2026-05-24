@@ -265,7 +265,7 @@
       "origin": "Albania",
       "gender": "Male",
       "combatRating": 4,
-      "threatRating": 3.5,
+      "threatRating": 5.5,
       "registryId": "UNWC-SND-21082",
       "statusLabel": "ACTIVE",
       "gifts": [
@@ -275,7 +275,20 @@
         }
       ],
       "additional": "Arben was part of the Brečine incident. After the incident, Subject went missing and is at large. Additional information regarding youth stored in external dossiers.",
-      "addendums": [],
+      "addendums": [
+        {
+          "author": "Senior Investigator M. Calloway",
+          "date": "2214/June 07/11:14",
+          "text": "After reviewing all information, a probable link between Subject and [EXPUNGED] appears to exist. Subject frequented [EXPUNGED], owned by [EXPUNGED]. Requesting clearance for additional investigation.",
+          "status": "ACCEPTED"
+        },
+        {
+          "author": "Senior Investigator M. Calloway",
+          "date": "2215/September 22/09:38",
+          "text": "All data has been logged regarding investigation. Subject was likely some form of disciple or student under [EXPUNGED]. Threat rating has been elevated.",
+          "status": null
+        }
+      ],
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
