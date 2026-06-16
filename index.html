@@ -2252,6 +2252,278 @@
   #view-map #map-wrap { flex: 1; min-height: 0; }
   #view-map #loading { position: absolute; }
 </style>
+
+<style>
+  /* ============================================================ */
+  /* INDICES OVERLAY                                               */
+  /* ============================================================ */
+  #indices-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 8500;
+    background: rgba(7, 8, 10, 0.94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  #indices-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .idx-panel {
+    width: min(920px, 94vw);
+    max-height: 88vh;
+    background: var(--panel);
+    border: 1px solid var(--border-bright);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: idxSlideIn 0.22s ease;
+  }
+  @keyframes idxSlideIn {
+    from { opacity: 0; transform: translateY(8px) scale(0.99); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .idx-header {
+    padding: 20px 28px 16px;
+    border-bottom: 1px solid var(--border-bright);
+    background: #0c0d10;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .idx-type {
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.25em;
+    color: var(--un-blue);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .idx-title {
+    font-family: var(--cond);
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .idx-subtitle {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+  }
+  .idx-close {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-faint);
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    padding: 6px 12px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border-color 0.12s, color 0.12s;
+    text-transform: uppercase;
+  }
+  .idx-close:hover { border-color: var(--accent-red); color: var(--accent-red); }
+  .idx-class-bar {
+    padding: 4px 28px;
+    background: rgba(196, 74, 74, 0.07);
+    border-bottom: 1px solid rgba(196, 74, 74, 0.18);
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: var(--accent-red);
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .idx-body {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+  }
+  .idx-chart-wrap {
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--border);
+    background: rgba(0,0,0,0.12);
+    overflow: hidden;
+  }
+  #idx-svg {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    max-height: calc(88vh - 200px);
+  }
+  .idx-legend-wrap {
+    padding: 22px 22px 18px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-bright) transparent;
+  }
+  .idx-legend-wrap::-webkit-scrollbar { width: 3px; }
+  .idx-legend-wrap::-webkit-scrollbar-thumb { background: var(--border-bright); }
+  .idx-legend-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .idx-legend-header {
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: var(--un-blue);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border);
+  }
+  .idx-legend-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .idx-legend-row {
+    display: grid;
+    grid-template-columns: 78px 1fr 60px;
+    align-items: center;
+    gap: 8px;
+  }
+  .idx-legend-name {
+    font-family: var(--cond);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .idx-legend-val {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--text);
+    text-align: right;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .idx-legend-bar-track {
+    height: 2px;
+    background: var(--border-bright);
+    position: relative;
+    overflow: hidden;
+  }
+  .idx-legend-bar-fill {
+    height: 100%;
+    background: var(--un-blue);
+    width: 0%;
+    transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .idx-disclaimer {
+    margin-top: auto;
+    font-family: var(--mono);
+    font-size: 8px;
+    color: var(--text-faint);
+    letter-spacing: 0.06em;
+    line-height: 1.6;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+  }
+  .idx-footer {
+    padding: 10px 28px;
+    border-top: 1px solid var(--border);
+    background: #0c0d10;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    flex-shrink: 0;
+  }
+
+  /* Indices button — square block below rating bars, left-aligned */
+  .indices-btn {
+    width: 88px;
+    height: 88px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(74, 144, 196, 0.05);
+    border: 1px solid var(--border-bright);
+    color: var(--un-blue);
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .indices-btn:hover {
+    border-color: var(--un-blue);
+    background: rgba(74, 144, 196, 0.1);
+  }
+  .indices-btn:focus { outline: none; color: var(--un-blue); }
+  .indices-btn:focus-visible { outline: none; }
+  .indices-btn-icon {
+    width: 26px;
+    height: 26px;
+    opacity: 0.85;
+  }
+  .indices-btn-label { display: none; }
+
+  /* Stat node tooltip */
+  #idx-tooltip {
+    position: fixed;
+    z-index: 9000;
+    pointer-events: none;
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+    background: var(--panel);
+    border: 1px solid var(--border-bright);
+    padding: 9px 13px;
+    max-width: 260px;
+  }
+  #idx-tooltip.visible { display: flex; }
+  #idx-tooltip .tt-stat-label {
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: var(--un-blue);
+    text-transform: uppercase;
+  }
+  #idx-tooltip .tt-stat-val {
+    font-family: var(--cond);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text);
+    line-height: 1;
+    margin: 2px 0;
+  }
+  #idx-tooltip .tt-stat-desc {
+    font-family: var(--body);
+    font-size: 11px;
+    color: var(--text-dim);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+</style>
+
 </head>
 <body>
 
@@ -2264,7 +2536,12 @@
     inset: 0;
     background: #07080a;
     z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Share Tech Mono', monospace;
+    gap: 0;
     transition: opacity 0.6s ease;
   }
 
@@ -2454,55 +2731,31 @@
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  #pl-verify.active {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  /* === BIOMETRIC PHASE STYLES === */
+  #pl-biometric { display: flex; flex-direction: column; align-items: center; }
+  #pl-verify { display: none; flex-direction: column; align-items: center; }
+  #pl-verify.active { display: flex; }
 
-  /* Biometric phase */
-  #pl-biometric {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  #pl-verify.active {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  #pl-verify:not(.active) { display: none; }
   .pl-bio-checks {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 260px;
     margin-top: 4px;
-    align-items: flex-start;
-    min-width: 220px;
   }
   .pl-bio-item {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    color: var(--text-faint);
     display: flex;
     align-items: center;
     gap: 10px;
-    opacity: 0;
-    transition: opacity 0.3s, color 0.3s;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: #5a6278;
     text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease, color 0.3s ease;
   }
   .pl-bio-item.visible { opacity: 1; }
-  .pl-bio-item.done { color: var(--normal-color); }
+  .pl-bio-item.done { color: var(--normal-color, #5a9e6f); }
   .pl-bio-dot {
     width: 5px;
     height: 5px;
@@ -2511,46 +2764,7 @@
     flex-shrink: 0;
     transition: background 0.2s;
   }
-  .pl-bio-item.done .pl-bio-dot { background: var(--normal-color); }
-  .pl-bio-sig-wrap {
-    margin-top: 22px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    animation: pl-fade-in 0.4s ease forwards;
-    min-width: 260px;
-  }
-  .pl-bio-sig-label {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    align-self: flex-start;
-  }
-  .pl-bio-sig-input {
-    width: 100%;
-    box-sizing: border-box;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--un-blue);
-    color: var(--text);
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    padding: 5px 2px;
-    outline: none;
-    caret-color: var(--un-blue);
-  }
-  .pl-bio-sig-error {
-    font-family: var(--mono);
-    font-size: 9px;
-    letter-spacing: 0.12em;
-    color: var(--accent-red);
-    min-height: 14px;
-    text-transform: uppercase;
-  }
+  .pl-bio-item.done .pl-bio-dot { background: var(--normal-color, #5a9e6f); }
 </style>
 
 <div id="preloader">
@@ -2675,44 +2889,59 @@
   window._portraitCache = {};
 
   function prefetchPortraits() {
-    fetch('wielders.json', { cache: 'no-store' })
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        var wielders = (data && data.wielders) ? data.wielders : [];
-        var urls = [];
-        wielders.forEach(function(w) {
-          if (w.imageUrl && !window._portraitCache[w.imageUrl]) {
-            urls.push(w.imageUrl);
-          }
-        });
-
-        // Batch with concurrency limit of 6 (browser connection limit)
-        var CONCURRENCY = 6;
-        var idx = 0;
-        var active = 0;
-
-        function next() {
-          while (active < CONCURRENCY && idx < urls.length) {
-            (function(url) {
-              active++;
-              var img = new Image();
-              img.onload = function() {
-                window._portraitCache[url] = true;
-                active--;
-                next();
-              };
-              img.onerror = function() {
-                // Don't cache failures — showProfile will retry
-                active--;
-                next();
-              };
-              img.src = url;
-            })(urls[idx++]);
-          }
+    function fire(urls) {
+      var CONCURRENCY = 6, idx = 0, active = 0;
+      function next() {
+        while (active < CONCURRENCY && idx < urls.length) {
+          (function(url) {
+            active++;
+            var img = new Image();
+            img.onload  = function() { window._portraitCache[url] = true; active--; next(); };
+            img.onerror = function() { active--; next(); };
+            img.src = url;
+          })(urls[idx++]);
         }
-        next();
+      }
+      next();
+    }
+    function collect(list) {
+      var urls = [];
+      (list || []).forEach(function(w) {
+        if (w && w.imageUrl && !window._portraitCache[w.imageUrl]) urls.push(w.imageUrl);
+      });
+      return urls;
+    }
+    // Try folder listing -> manifest -> legacy bundle, then warm the portrait cache.
+    fetch('wielders/', { cache: 'no-store' })
+      .then(function(r) { if (!r.ok) throw 0; return r.text(); })
+      .then(function(htmlText) {
+        var names = [], re = /href="([^"?]+\.json)"/gi, m;
+        while ((m = re.exec(htmlText)) !== null) {
+          var nm = decodeURIComponent(m[1].split('/').pop());
+          if (nm && nm.toLowerCase() !== 'manifest.json' && names.indexOf(nm) === -1) names.push(nm);
+        }
+        if (!names.length) throw 0;
+        return Promise.all(names.map(function(nm) {
+          return fetch('wielders/' + nm, { cache: 'no-store' }).then(function(r) { return r.json(); }).catch(function() { return null; });
+        }));
       })
-      .catch(function() {}); // silently fail — portraits load lazily anyway
+      .catch(function() {
+        return fetch('wielders/manifest.json', { cache: 'no-store' })
+          .then(function(r) { if (!r.ok) throw 0; return r.json(); })
+          .then(function(list) {
+            var arr = Array.isArray(list) ? list : (list.files || []);
+            return Promise.all(arr.map(function(x) {
+              return fetch('wielders/' + String(x).split('/').pop(), { cache: 'no-store' }).then(function(r) { return r.json(); }).catch(function() { return null; });
+            }));
+          });
+      })
+      .catch(function() {
+        return fetch('wielders.json', { cache: 'no-store' })
+          .then(function(r) { return r.json(); })
+          .then(function(d) { return (d && d.wielders) ? d.wielders : []; });
+      })
+      .then(function(list) { fire(collect(list)); })
+      .catch(function() {});
   }
 
   function startRealLoad() {
@@ -2747,7 +2976,7 @@
     // Hard timeout: if assets take more than 6s, proceed anyway
     setTimeout(onDone, 6000);
   }
-  // Start with biometric phase, which will call startLoading() after signature confirmed
+  // Start with biometric phase
   startBiometrics();
 
   function showWelcome() {
@@ -2765,7 +2994,6 @@
   function dismiss() {
     if (!welcomed || keyPressed) return;
     keyPressed = true;
-    // Expose keypress event for future audio hooks
     window.dispatchEvent(new CustomEvent('unwc:enter'));
     loader.classList.add('fade-out');
     setTimeout(function() {
@@ -3092,6 +3320,758 @@
   <div class="fo-panel" id="fo-panel"></div>
 </div>
 
+<!-- INDICES OVERLAY -->
+<!-- STAT NODE TOOLTIP -->
+<div id="idx-tooltip">
+  <span class="tt-stat-label" id="tt-stat-label"></span>
+  <span class="tt-stat-val" id="tt-stat-val"></span>
+  <span class="tt-stat-desc" id="tt-stat-desc"></span>
+</div>
+
+<div id="indices-overlay">
+  <div class="idx-panel">
+    <div class="idx-header">
+      <div class="idx-header-left">
+        <div class="idx-type">WIELDER INDICES — CAPABILITY ASSESSMENT</div>
+        <div class="idx-title" id="idx-title">—</div>
+        <div class="idx-subtitle" id="idx-subtitle">—</div>
+      </div>
+      <button class="idx-close" id="idx-close">[ CLOSE ]</button>
+    </div>
+    <div class="idx-class-bar">CLASSIFICATION: RESTRICTED — UNWC INTERNAL USE ONLY</div>
+    <div class="idx-body">
+      <div class="idx-chart-wrap">
+        <svg id="idx-svg" viewBox="-30 -20 600 580" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="idx-legend-wrap">
+        <div class="idx-legend-group">
+          <div class="idx-legend-header">Material Indices</div>
+          <div class="idx-legend-rows" id="idx-legend-material"></div>
+        </div>
+        <div class="idx-legend-group">
+          <div class="idx-legend-header">Phenomena Indices</div>
+          <div class="idx-legend-rows" id="idx-legend-phenomena"></div>
+        </div>
+        <div class="idx-legend-group">
+          <div class="idx-legend-header">Cognitive Indices</div>
+          <div class="idx-legend-rows" id="idx-legend-cognitive"></div>
+        </div>
+        <div class="idx-disclaimer">
+          Index values are derived from field observation and controlled assessment. Values may not be entirely accurate. All figures are subject to revision.
+        </div>
+      </div>
+    </div>
+    <div class="idx-footer">
+      UNWC INDICES FRAMEWORK REV. 4.1 &nbsp;|&nbsp; UNAUTHORIZED DISTRIBUTION PROHIBITED &nbsp;|&nbsp; REF: UNWC-IDX-PROTO
+    </div>
+  </div>
+</div>
+
+<script>
+  /* ============================================================ */
+  /* INDICES OVERLAY — showIndices() + drawRadar()                 */
+  /* ============================================================ */
+  (function() {
+
+    // Stat descriptions inlined — no fetch dependency
+    var STAT_DESCS = {"physicality": {"label": "Physicality", "descriptions": {"0": "Below Human Average", "1": "Standard Human", "2": "Trained Human", "3": "Peak Human Conditioning", "4": "Low Superhuman: Can lift hundreds of kilograms, strikes can create small cracks in concrete and dent metal doors", "5": "Superhuman: Can lift cars, strikes can shatter brick walls and are effective against standard armor", "6": "High Superhuman: Can lift trucks or small aircraft, strikes can destroy small vehicles and shatter reinforced concrete", "7": "Beyond Superhuman: Can lift stacked shipping containers and heavy construction equipment, strikes can punch through multiple walls, destroy small rooms, and destroy armored vehicles", "8": "Low Ruler: Can lift tanks and trains, singular strikes can demolish small buildings", "9": "Ruler: Can lift small buildings or large vehicles such as cargo ships and cranes, strikes can destroy small buildings", "10": "High Ruler: Can lift large buildings, strikes can level buildings outright"}}, "resilience": {"label": "Resilience", "descriptions": {"0": "Below Human Average", "1": "Standard Human", "2": "Peak Human Conditioning", "3": "Low Superhuman: Can withstand small blades and concussive strikes, small arms fire remains potentially lethal", "4": "Superhuman: Can withstand slashes and stabs from blades and handle significant concussive force, small arms fire is dangerous but not reliably lethal", "5": "High Superhuman: Can survive standard arms fire with mild injury, standard blades and concussive weapons are largely ineffective", "6": "Peak Superhuman: Can withstand small and medium arms fire, remains vulnerable to high penetration weapons", "7": "Beyond Superhuman: Conventional arms are ineffective, vulnerable to high explosives and high power anti-material rifles", "8": "Low Ruler: Most weapons are ineffective, vulnerable to missiles and high impact kinetic force", "9": "Ruler: Conventional weapons are irrelevant, requires specialized countermeasures to engage effectively", "10": "High Ruler: All but the most destructive weapons are negated", "11": "Beyond Ruler: Immense durability, even anti-ruler weapons are ineffective", "Ineffable": "No known methods of causing lasting harm or injury. Subject is immortal and unharmable."}}, "speed": {"label": "Speed", "descriptions": {"0": "Below Human Average", "1": "Standard Human", "2": "Trained Human", "3": "Peak Human Conditioning", "4": "Low Superhuman: Movement speeds of up to 50 mph, capable of reacting to and defending against standard humans in close quarters with little difficulty", "5": "Superhuman: Movement speeds of up to 100 mph, capable of avoiding gunfire when on guard and given sufficient space", "6": "High Superhuman: Movement speeds of up to 300 mph, difficult to track with the naked eye, capable of consistently dodging gunfire", "7": "Beyond Superhuman: Movement speeds of up to Mach 1, capable of consistently avoiding multiple vectors of firearms fire, beyond the ability of standard humans to track", "8": "Low Ruler: Movement speeds of up to Mach 2-3, evades gunfire with ease", "9": "Ruler: Movement speeds of up to Mach 5", "10": "High Ruler: Movement speeds of up to or surpassing Mach 10", "13": "Apex: Movement speeds averaging mach 30, capable of moving at speeds up to mach 100."}}, "traversal": {"label": "Traversal", "descriptions": {"0": "No traversal capability beyond standard human movement", "1": "Minor enhancement to conventional movement, very limited unconventional mobility", "2": "Moderate unconventional mobility, limited in range or reliability", "3": "Meaningful unconventional mobility with notable limitations in range or frequency", "4": "Reliable unconventional mobility over short to moderate distances", "5": "Reliable unconventional mobility over moderate distances with reasonable frequency", "6": "Highly reliable unconventional mobility over significant distances", "7": "Highly reliable unconventional mobility over significant distances with additional methods or versatility", "8": "Effectively unrestricted unconventional mobility within a large area", "9": "Near unrestricted mobility, very few positional limitations remain", "10": "Effectively unbounded mobility, no meaningful positional limitation exists"}}, "magnitude": {"label": "Magnitude", "descriptions": {"0": "Very low magnitude: Harm to an individual or no harm at all", "1": "Low magnitude: Harm to a group of individuals", "2": "Moderate magnitude: Capable of destroying a room or small structure", "3": "Notable magnitude: Capable of destroying a large room or standard structure", "4": "Potent magnitude: Capable of destroying a large structure", "5": "Major magnitude: Capable of destroying several large structures", "6": "Immense magnitude: Capable of destroying a city block", "7": "Devastating magnitude: Capable of destroying several city blocks", "8": "Catastrophic magnitude: Capable of major urban destruction", "9": "Ruinous magnitude: Capable of destroying a town", "10": "Cataclysmic magnitude: Capable of destroying a small city", "11": "Regional magnitude: Capable of destroying a city and surrounding areas"}}, "anomaly": {"label": "Anomaly", "descriptions": {"0": "No Anomaly", "1": "Slight Anomaly: Very minor reframing or manipulation of factors", "2": "Minor Anomaly: Minor reframing or manipulation of factors, requires preparation", "3": "Anomaly: Standard reframing or manipulation of factors, requires specialist knowledge", "4": "Notable Anomaly: Notable reframing or manipulation of factors, requires specialist and high preparation", "5": "Potent Anomaly: Effective reframing or manipulation of factors, requires specific countermeasures", "6": "Major Anomaly: Major reframing or manipulation of factors, requires advanced countermeasures, usage of another anomaly recommended", "7": "Immense Anomaly: Immense reframing or manipulation of factors, requires advanced planning and countermeasures, solutions may prove ineffective, recommended to utilize other effective anomalies", "8": "Severe Anomaly: Incredibly potent reframing or manipulation of factors, countermeasures and preparation unreliable, support of anomalies required", "9": "Critical Anomaly: High scale reframing or manipulation of factors, requires high power anomalies and preparation", "10": "Absolute Anomaly: Maximum reframing or manipulation of factors, requires maximum preparation, planning and usage of anomalies, all may prove ineffective", "12": "Beyond all known forms of anomaly. No amount of prepartion is sufficient"}}, "range": {"label": "Range", "descriptions": {"0": "No range: Phenomena must establish direct contact", "1": "Miniscule range: Phenomena has a range of up to or around 5 meters", "2": "Low range: Phenomena has a range of around 10 meters", "3": "Standard range: Phenomena has a range of around 30 meters", "4": "Notable range: Phenomena has a range of around 80 meters", "5": "Considerable range: Phenomena has a range of around 150 meters", "6": "Major range: Phenomena has a range of around 300 meters", "7": "Immense range: Phenomena has a range of around 700 meters", "8": "Massive range: Phenomena has a range of around 1.5km", "9": "Monumental range: Phenomena has a range of around 3-4km", "10": "Colossal range: Phenomena has a range of over 6km"}}, "intellect": {"label": "Intellect", "descriptions": {"0": "Intelligence akin to a severely limited human intellect ", "1": "Below average human intelligence", "2": "IStandard human intellect", "3": "Above average human intellect ", "4": "High intellect: Capable of effective decision making and complex problem solving", "5": "Very high intellect: High speed problem solving, decision making, and improvisation across a broad range of scenarios", "6": "Low Genius intellect: Capable of retaining and processing large volumes of information, with strong intuitive reasoning", "7": "Genius intellect: Rapid adaptation to new information, capable of considering and juggling many complex factors simultaneously ", "8": "Superhuman intellect: Beyond human intellect, capable of forming deductions based on minimal information, adapting to information at immense speeds and considering complex concepts in real time", "9": "Beyond superhuman intellect: Cognition surpasses human neurology, capable of acts of seemingly precognition from deduction", "10": "Supreme intellect: Far beyond standard superhuman intelligence, capable of immediate problem solving and forming complex, accurate predictions and deductions from minor pieces of information"}}};
+
+    var tooltip    = document.getElementById('idx-tooltip');
+    var ttLabel    = document.getElementById('tt-stat-label');
+    var ttVal      = document.getElementById('tt-stat-val');
+    var ttDesc     = document.getElementById('tt-stat-desc');
+
+    function showTooltip(e, axisKey, value) {
+      var info = STAT_DESCS[axisKey];
+      if (!info || !tooltip) return;
+      var ineffTooltip = isIneffable(value);
+      // Look up description: try exact key, then case-insensitive match for ineffable
+      // Look up by exact key, then case-insensitive, then for ineffable find any string key
+      var descKey = String(value);
+      var desc = info.descriptions[descKey];
+      if (!desc) {
+        var lower = descKey.toLowerCase();
+        for (var k in info.descriptions) {
+          if (k.toLowerCase() === lower) { desc = info.descriptions[k]; break; }
+        }
+      }
+      // For ineffable: if still no match, find the first non-numeric key in descriptions
+      if (!desc && ineffTooltip) {
+        for (var k in info.descriptions) {
+          if (isNaN(k)) { desc = info.descriptions[k]; break; }
+        }
+      }
+      if (!desc) desc = '';
+      ttLabel.textContent = info.label.toUpperCase();
+      ttVal.textContent   = ineffTooltip ? 'INEFFABLE' : String(value);
+      ttDesc.textContent  = desc;
+      if (ineffTooltip) {
+        ttVal.style.color = 'rgba(196,74,74,1)';
+        ttVal.style.letterSpacing = '0.1em';
+      } else {
+        ttVal.style.color = '';
+        ttVal.style.letterSpacing = '';
+      }
+      tooltip.classList.add('visible');
+      moveTooltip(e);
+    }
+
+    function moveTooltip(e) {
+      if (!tooltip) return;
+      var x = e.clientX + 16, y = e.clientY + 16;
+      // keep on screen
+      if (x + 280 > window.innerWidth)  x = e.clientX - 280 - 8;
+      if (y + 100 > window.innerHeight) y = e.clientY - 100 - 8;
+      tooltip.style.left = x + 'px';
+      tooltip.style.top  = y + 'px';
+    }
+
+    function hideTooltip() {
+      if (tooltip) tooltip.classList.remove('visible');
+    }
+
+    var AXES = [
+      { key: 'physicality', label: 'Physicality', group: 'material' },
+      { key: 'resilience',  label: 'Resilience',  group: 'material' },
+      { key: 'speed',       label: 'Speed',        group: 'material' },
+      { key: 'traversal',   label: 'Traversal',    group: 'material' },
+      { key: 'magnitude',   label: 'Magnitude',    group: 'phenomena' },
+      { key: 'anomaly',     label: 'Anomaly',      group: 'phenomena' },
+      { key: 'range',       label: 'Range',        group: 'phenomena' },
+      { key: 'intellect',   label: 'Intellect',    group: 'cognitive' },
+    ];
+
+    var N = AXES.length;
+    var CX = 260, CY = 265, R = 168;
+    var MAX_VAL   = 10;
+    var INEFFABLE = 'ineffable'; // sentinel string value
+    var NS = 'http://www.w3.org/2000/svg';
+
+    function axisAngle(i) {
+      return (Math.PI * 2 / N) * i - Math.PI / 2;
+    }
+
+    function pt(cx, cy, r, angle) {
+      return [cx + r * Math.cos(angle), cy + r * Math.sin(angle)];
+    }
+
+    function el(tag, attrs, text) {
+      var e = document.createElementNS(NS, tag);
+      for (var k in attrs) e.setAttribute(k, attrs[k]);
+      if (text !== undefined) e.textContent = text;
+      return e;
+    }
+
+    // Max radius includes overflow headroom (e.g. value 15 = 1.5x R)
+    var R_OVERFLOW  = R * 1.6;  // max rendered radius for overflow values
+    var R_INEFFABLE = R * 4.5;  // extends well outside the SVG viewport
+
+    function isIneffable(val) { return val === INEFFABLE; }
+
+    function valToR(val) {
+      if (isIneffable(val)) return R_INEFFABLE;
+      if (val > MAX_VAL) return Math.min((val / MAX_VAL) * R, R_OVERFLOW);
+      var r = (val / MAX_VAL) * R;
+      return r === 0 ? 6 : r; // zero stats sit 6px from centre so they don't collapse geometry
+    }
+
+    function getNumericVal(val) {
+      // For sorting/display — ineffable is treated as beyond-scale
+      return isIneffable(val) ? 999 : Math.max(0, Number(val) || 0);
+    }
+
+    function drawRadar(indices) {
+      var svg = document.getElementById('idx-svg');
+      while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+      // Determine which axes overflow or are ineffable
+      var axisRaw = AXES.map(function(ax) { return indices[ax.key]; }); // raw values inc. 'ineffable'
+      var axisVals = axisRaw.map(function(v) { return getNumericVal(v); }); // numeric for geometry
+      var hasIneffable = axisRaw.some(function(v) { return isIneffable(v); });
+      var hasOverflow  = axisVals.some(function(v) { return v > MAX_VAL; });
+
+      // ---- Extension spokes for overflow axes only (not ineffable — polygon handles that) ----
+      if (hasOverflow) {
+        for (var i = 0; i < N; i++) {
+          if (axisVals[i] <= MAX_VAL) continue;
+          if (isIneffable(axisRaw[i])) continue; // polygon line already goes off-screen
+          var a = axisAngle(i);
+          var capTip = pt(CX, CY, R, a);
+          var extEnd = pt(CX, CY, R_OVERFLOW, a);
+          svg.appendChild(el('line', {
+            x1: capTip[0].toFixed(2), y1: capTip[1].toFixed(2),
+            x2: extEnd[0].toFixed(2), y2: extEnd[1].toFixed(2),
+            stroke: 'rgba(196,74,74,0.25)',
+            'stroke-width': '1',
+            'stroke-dasharray': '3,3'
+          }));
+        }
+      }
+
+      // ---- Concentric reference rings ----
+      [2, 4, 6, 8, 10].forEach(function(lvl) {
+        var pts = [];
+        for (var i = 0; i < N; i++) {
+          var p = pt(CX, CY, (lvl / MAX_VAL) * R, axisAngle(i));
+          pts.push(p[0].toFixed(2) + ',' + p[1].toFixed(2));
+        }
+        var isCap = lvl === 10;
+        svg.appendChild(el('polygon', {
+          points: pts.join(' '),
+          fill: 'none',
+          stroke: isCap ? 'rgba(74,144,196,0.55)' : 'rgba(74,144,196,0.1)',
+          'stroke-width': isCap ? '1.2' : '0.7',
+          'stroke-dasharray': isCap && hasOverflow ? '4,3' : 'none'
+        }));
+        var rp = pt(CX, CY, (lvl / MAX_VAL) * R, 0);
+        svg.appendChild(el('text', {
+          x: (rp[0] + 5).toFixed(1), y: (rp[1] + 3).toFixed(1),
+          fill: isCap ? 'rgba(74,144,196,0.65)' : 'rgba(74,144,196,0.4)',
+          'font-family': "'Share Tech Mono',monospace",
+          'font-size': '9',
+          'letter-spacing': '0.05em'
+        }, String(lvl)));
+      });
+
+      // ---- Axis spokes ----
+      var labelEls = []; // collect labels, append last so they're always on top
+      for (var i = 0; i < N; i++) {
+        var a = axisAngle(i);
+        var tip = pt(CX, CY, R, a);
+
+        svg.appendChild(el('line', {
+          x1: CX, y1: CY, x2: tip[0].toFixed(2), y2: tip[1].toFixed(2),
+          stroke: 'rgba(74,144,196,0.16)', 'stroke-width': '1'
+        }));
+        svg.appendChild(el('circle', {
+          cx: tip[0].toFixed(2), cy: tip[1].toFixed(2), r: '2.5',
+          fill: 'rgba(74,144,196,0.45)'
+        }));
+
+        // Push label further out if this axis has an overflow value, so it doesn't overlap the node
+        var axisVal = axisVals[i];
+        var labelPush = isIneffable(axisRaw[i]) ? R + 24 :  // ineffable: label stays at normal ring edge (node is off-screen)
+                        axisVal > MAX_VAL ? R + 24 + (axisVal - MAX_VAL) / MAX_VAL * R * 0.55 + 16 :
+                        R + 24;
+        var labelR = labelPush;
+        var lp = pt(CX, CY, labelR, a);
+        var cosA = Math.cos(a);
+        var anchor = Math.abs(cosA) < 0.18 ? 'middle' : (cosA > 0 ? 'start' : 'end');
+        var sinA = Math.sin(a);
+        var dy = Math.abs(sinA) > 0.7 ? (sinA > 0 ? 12 : -4) : 4;
+
+        var labelEl = el('text', {
+          x: lp[0].toFixed(1), y: (lp[1] + dy).toFixed(1),
+          'text-anchor': anchor,
+          fill: axisVals[i] > MAX_VAL ? 'rgba(196,74,74,0.95)' : 'rgba(204,210,224,0.82)',
+          'font-family': "'Barlow Condensed',sans-serif",
+          'font-weight': '700',
+          'font-size': '11.5',
+          'letter-spacing': '0.1em',
+          'paint-order': 'stroke',
+          'stroke': 'rgba(7,8,10,0.85)',
+          'stroke-width': '4',
+          'stroke-linejoin': 'round',
+          'cursor': axisVals[i] > MAX_VAL ? 'crosshair' : 'default',
+          'pointer-events': axisVals[i] > MAX_VAL ? 'all' : 'none'
+        }, AXES[i].label.toUpperCase());
+        // For overflow/ineffable axes, label is also a tooltip trigger (node may be off-screen)
+        if (axisVals[i] > MAX_VAL) {
+          (function(axKey, axRaw) {
+            labelEl.addEventListener('mouseenter', function(e) { showTooltip(e, axKey, axRaw); });
+            labelEl.addEventListener('mousemove',  moveTooltip);
+            labelEl.addEventListener('mouseleave', hideTooltip);
+          })(AXES[i].key, axisRaw[i]);
+        }
+        labelEls.push(labelEl);
+      }
+
+      // ---- Data polygon ----
+      var dataPts = [];
+      for (var i = 0; i < N; i++) {
+        var r = valToR(axisRaw[i]); // pass raw so isIneffable check works
+        var p = pt(CX, CY, r, axisAngle(i));
+        dataPts.push(p[0].toFixed(2) + ',' + p[1].toFixed(2));
+      }
+      var ptsStr = dataPts.join(' ');
+
+      // Start collapsed at center then CSS-transition to final
+      var fillPoly = el('polygon', {
+        points: dataPts.map(function() { return CX+','+CY; }).join(' '),
+        fill: 'rgba(74,144,196,0.14)',
+        stroke: 'none'
+      });
+      svg.appendChild(fillPoly);
+
+      var strokePoly = el('polygon', {
+        points: dataPts.map(function() { return CX+','+CY; }).join(' '),
+        fill: 'none',
+        stroke: 'rgba(74,144,196,0.9)',
+        'stroke-width': '1.6',
+        'stroke-linejoin': 'round'
+      });
+      svg.appendChild(strokePoly);
+
+      // ---- Gradient edge segments for overflow vertices ----
+      // For each pair of adjacent vertices where at least one overflows,
+      // draw a gradient line from red (at overflow end) fading to blue (at normal end)
+      if (hasOverflow) {
+        var defs = el('defs', {});
+        var overflowColor = 'rgba(196,74,74,1)';
+        var normalColor   = 'rgba(74,144,196,0.0)'; // fade to transparent so it blends with the blue poly stroke
+
+        // We'll draw these after the animation settles — store the final point coords
+        // by parsing dataPts which are already computed
+        var finalPts = dataPts.map(function(s) {
+          var p = s.split(','); return [parseFloat(p[0]), parseFloat(p[1])];
+        });
+
+        // Draw one gradient segment per overflow vertex (connecting to both neighbours)
+        // Each segment: from overflow vertex (red) to neighbour (transparent)
+        for (var oi = 0; oi < N; oi++) {
+          if (axisVals[oi] <= MAX_VAL) continue;
+          var isIneff = isIneffable(axisRaw[oi]);
+          var prev = (oi - 1 + N) % N;
+          var next = (oi + 1) % N;
+
+          // For ineffable axes, anchor gradient at the cap ring point (not the off-screen vertex)
+          // to avoid broken gradient geometry. The glitch engine handles the visual on that spoke.
+          var capPtOi = pt(CX, CY, R, axisAngle(oi));
+          var gradOriginX = isIneff ? capPtOi[0] : finalPts[oi][0];
+          var gradOriginY = isIneff ? capPtOi[1] : finalPts[oi][1];
+
+          if (isIneff) {
+
+
+          } else {
+            [prev, next].forEach(function(ni) {
+              var gradId = 'ovf-grad-' + oi + '-' + ni;
+              var x1 = gradOriginX, y1 = gradOriginY;
+              var x2 = finalPts[ni][0], y2 = finalPts[ni][1];
+              var dx = x2-x1, dy = y2-y1;
+              if (dx*dx+dy*dy < 1) return;
+              var grad = el('linearGradient', { id: gradId, gradientUnits: 'userSpaceOnUse',
+                x1: x1.toFixed(2), y1: y1.toFixed(2), x2: x2.toFixed(2), y2: y2.toFixed(2) });
+              grad.appendChild(el('stop', { offset: '0%',   'stop-color': '#c44a4a', 'stop-opacity': '1' }));
+              grad.appendChild(el('stop', { offset: '40%',  'stop-color': '#c44a4a', 'stop-opacity': '0.2' }));
+              grad.appendChild(el('stop', { offset: '100%', 'stop-color': '#c44a4a', 'stop-opacity': '0' }));
+              defs.appendChild(grad);
+              svg.appendChild(el('line', {
+                x1: CX, y1: CY, x2: CX, y2: CY,
+                stroke: 'url(#' + gradId + ')', 'stroke-width': '2', 'stroke-linecap': 'round',
+                'data-x1': x1.toFixed(2), 'data-y1': y1.toFixed(2),
+                'data-x2': x2.toFixed(2), 'data-y2': y2.toFixed(2)
+              }));
+            });
+          }
+        }
+        svg.insertBefore(defs, svg.firstChild);
+      }
+
+      // Data dots — store refs so we can animate them + attach tooltips
+      var dotEls = [];
+      for (var i = 0; i < N; i++) {
+        (function(axisIdx) {
+          var axisKey = AXES[axisIdx].key;
+          var rawVal = axisRaw[axisIdx];
+          var ineffableAxis = isIneffable(rawVal);
+          var val = ineffableAxis ? 999 : Math.max(0, Number(rawVal) || 0);
+          var overflow = val > MAX_VAL;
+          var p = pt(CX, CY, valToR(rawVal), axisAngle(axisIdx));
+          // Invisible hit area circle (larger, transparent) for easier hovering
+          var hitArea = el('circle', {
+            cx: CX, cy: CY, r: '14',
+            fill: 'transparent',
+            stroke: 'none',
+            style: 'cursor:crosshair'
+          });
+          // Overflow pulse ring (drawn first, behind dot)
+          var pulseRing = null;
+          if (overflow) {
+            pulseRing = el('circle', {
+              cx: CX, cy: CY, r: ineffableAxis ? '10' : '8',
+              fill: 'none',
+              stroke: ineffableAxis ? 'rgba(196,74,74,0.55)' : 'rgba(196,74,74,0.35)',
+              'stroke-width': ineffableAxis ? '1.5' : '1',
+              style: 'pointer-events:none',
+              id: ineffableAxis ? ('ineffable-pulse-' + axisIdx) : null
+            });
+            svg.appendChild(pulseRing);
+          }
+          // Visible dot — ineffable nodes are off-screen so dot won't be visible,
+          // but we still create it so animation logic works
+          var dotFill  = overflow ? 'rgba(196,74,74,1)'  : 'rgba(74,144,196,1)';
+          var dotHover = overflow ? 'rgba(220,100,100,1)' : 'rgba(122,184,232,1)';
+          var dotR     = ineffableAxis ? '5' : (overflow ? '4' : (val > 0 ? '3.2' : '2'));
+          var d = el('circle', {
+            cx: CX, cy: CY, r: dotR,
+            fill: dotFill,
+            stroke: 'rgba(12,13,16,1)',
+            'stroke-width': '1.2',
+            style: 'pointer-events:none'
+          });
+          // Wire tooltip to hit area
+          var rawHoverVal = axisRaw[axisIdx]; // use raw so ineffable string is passed to tooltip
+          hitArea.addEventListener('mouseenter', function(e) {
+            d.setAttribute('r', ineffableAxis ? '7' : (overflow ? '6' : '5'));
+            d.setAttribute('fill', dotHover);
+            showTooltip(e, axisKey, rawHoverVal);
+          });
+          hitArea.addEventListener('mousemove', moveTooltip);
+          hitArea.addEventListener('mouseleave', function() {
+            d.setAttribute('r', dotR);
+            d.setAttribute('fill', dotFill);
+            hideTooltip();
+          });
+          svg.appendChild(hitArea);
+          svg.appendChild(d);
+          dotEls.push({ el: d, hit: hitArea, pulse: pulseRing, tx: p[0], ty: p[1] });
+        })(i);
+      }
+
+      var dur = 600; // ms
+      var startTime = null;
+
+      function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+      function animateTick(ts) {
+        if (!startTime) startTime = ts;
+        var ease = easeOutCubic(Math.min(1, (ts - startTime) / dur));
+
+        var pStr = dataPoints.map(function(fp) {
+          return (CX + (fp[0] - CX) * ease).toFixed(2) + ',' + (CY + (fp[1] - CY) * ease).toFixed(2);
+        }).join(' ');
+        fillPoly.setAttribute('points', pStr);
+        strokePoly.setAttribute('points', pStr);
+        dotEls.forEach(function(d) {
+          var cx = (CX + (d.tx - CX) * ease).toFixed(2);
+          var cy = (CY + (d.ty - CY) * ease).toFixed(2);
+          d.el.setAttribute('cx', cx); d.el.setAttribute('cy', cy);
+          if (d.hit)   { d.hit.setAttribute('cx', cx);   d.hit.setAttribute('cy', cy); }
+          if (d.pulse) { d.pulse.setAttribute('cx', cx); d.pulse.setAttribute('cy', cy); }
+        });
+
+        // Animate gradient segments
+        svg.querySelectorAll('line[data-x1]').forEach(function(seg) {
+          var fx1 = parseFloat(seg.getAttribute('data-x1'));
+          var fy1 = parseFloat(seg.getAttribute('data-y1'));
+          var fx2 = parseFloat(seg.getAttribute('data-x2'));
+          var fy2 = parseFloat(seg.getAttribute('data-y2'));
+          seg.setAttribute('x1', (CX + (fx1 - CX) * ease).toFixed(2));
+          seg.setAttribute('y1', (CY + (fy1 - CY) * ease).toFixed(2));
+          seg.setAttribute('x2', (CX + (fx2 - CX) * ease).toFixed(2));
+          seg.setAttribute('y2', (CY + (fy2 - CY) * ease).toFixed(2));
+        });
+
+        if (ease < 1) {
+          requestAnimationFrame(animateTick);
+        } else {
+          fillPoly.setAttribute('points', ptsStr);
+          strokePoly.setAttribute('points', ptsStr);
+          dotEls.forEach(function(d) {
+            d.el.setAttribute('cx', d.tx.toFixed(2)); d.el.setAttribute('cy', d.ty.toFixed(2));
+            if (d.hit)   { d.hit.setAttribute('cx', d.tx.toFixed(2));   d.hit.setAttribute('cy', d.ty.toFixed(2)); }
+            if (d.pulse) { d.pulse.setAttribute('cx', d.tx.toFixed(2)); d.pulse.setAttribute('cy', d.ty.toFixed(2)); }
+          });
+          // Snap gradient segments to final positions
+          svg.querySelectorAll('line[data-x1]').forEach(function(seg) {
+            seg.setAttribute('x1', seg.getAttribute('data-x1'));
+            seg.setAttribute('y1', seg.getAttribute('data-y1'));
+            seg.setAttribute('x2', seg.getAttribute('data-x2'));
+            seg.setAttribute('y2', seg.getAttribute('data-y2'));
+          });
+          // Fire glitch engine for ineffable axes once animation settles
+          if (hasIneffable) {
+            setTimeout(function() { initIneffableGlitch(svg, axisRaw, dataPoints); }, 200);
+          }
+        }
+      }
+
+      var dataPoints = dataPts.map(function(p) {
+        var parts = p.split(',');
+        return [parseFloat(parts[0]), parseFloat(parts[1])];
+      });
+
+      fillPoly.setAttribute('points', dataPts.map(function(){ return CX+','+CY; }).join(' '));
+      strokePoly.setAttribute('points', dataPts.map(function(){ return CX+','+CY; }).join(' '));
+
+      // Append labels last so they paint over everything
+      labelEls.forEach(function(l) { svg.appendChild(l); });
+
+      requestAnimationFrame(animateTick);
+    }
+
+    function populateLegend(indices) {
+      var groups = { material: [], phenomena: [], cognitive: [] };
+      AXES.forEach(function(ax) { groups[ax.group].push(ax); });
+
+      function renderGroup(elId, axes) {
+        var container = document.getElementById(elId);
+        if (!container) return;
+        container.innerHTML = '';
+        axes.forEach(function(ax) {
+          var rawVal = indices[ax.key];
+          var ineffLeg = isIneffable(rawVal);
+          var val = ineffLeg ? 999 : Math.max(0, Number(rawVal) || 0);
+          var pct = ineffLeg ? 100 : (val / MAX_VAL) * 100;
+          var displayVal = ineffLeg ? 'INEFFABLE' : String(val);
+          var row = document.createElement('div');
+          row.className = 'idx-legend-row';
+          var overflow = val > MAX_VAL;
+          var barPct   = Math.min(100, pct); // cap bar at 100%
+          var valStyle = overflow
+            ? 'color:rgba(196,74,74,1);letter-spacing:0.04em;font-size:' + (ineffLeg ? '8px' : '13px')
+            : '';
+          if (ineffLeg) {
+            // No bar — centered red label, styled like the other rows
+            row.style.display = 'flex';
+            row.style.alignItems = 'center';
+            row.style.justifyContent = 'space-between';
+            row.innerHTML =
+              '<span style="color:rgba(196,74,74,0.75);font-family:var(--mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;">' + ax.label + '</span>' +
+              '<span style="color:rgba(196,74,74,1);font-family:var(--mono);font-size:9px;font-weight:bold;letter-spacing:0.22em;text-transform:uppercase;">INEFFABLE</span>';
+          } else {
+            row.innerHTML =
+              '<span class="idx-legend-name"' + (overflow ? ' style="color:rgba(196,74,74,0.9)"' : '') + '>' + ax.label + '</span>' +
+              '<div class="idx-legend-bar-track"><div class="idx-legend-bar-fill" data-pct="' + barPct + '" style="width:0%;' + (overflow ? 'background:rgba(196,74,74,0.8)' : '') + '"></div></div>' +
+              '<span class="idx-legend-val"' + (valStyle ? ' style="' + valStyle + '"' : '') + '>' + displayVal + '</span>';
+          }
+          container.appendChild(row);
+        });
+        // Animate bars — single timeout, no loop
+        setTimeout(function() {
+          container.querySelectorAll('.idx-legend-bar-fill').forEach(function(bar) {
+            bar.style.width = bar.getAttribute('data-pct') + '%';
+          });
+        }, 60);
+      }
+
+      renderGroup('idx-legend-material', groups.material);
+      renderGroup('idx-legend-phenomena', groups.phenomena);
+      renderGroup('idx-legend-cognitive', groups.cognitive);
+    }
+
+    // ---- SVG Glitch Engine for Ineffable axes ----
+    var _ineffableGlitchTimers = [];
+
+    function clearIneffableGlitch() {
+      _ineffableGlitchTimers.forEach(function(t) { clearTimeout(t); });
+      _ineffableGlitchTimers = [];
+    }
+
+    function initIneffableGlitch(svg, axisRaw, dataPoints) {
+      clearIneffableGlitch();
+
+      // Build a defs block with RGB-split filter for the glitch
+      var existingDefs = svg.querySelector('defs');
+      if (!existingDefs) { existingDefs = el('defs', {}); svg.insertBefore(existingDefs, svg.firstChild); }
+
+      // Add feColorMatrix / feOffset filter for RGB split
+      var filterId = 'ineffable-glitch-filter';
+      if (!existingDefs.querySelector('#' + filterId)) {
+        var filt = el('filter', { id: filterId, x: '-20%', y: '-20%', width: '140%', height: '140%' });
+        // Two offset channels for the chromatic abberation
+        var feR = el('feOffset', { dx: '0', dy: '0', result: 'rChan', in: 'SourceGraphic' });
+        feR.setAttribute('id', 'glitch-feOffset-r');
+        filt.appendChild(feR);
+        existingDefs.appendChild(filt);
+      }
+
+      // Collect ineffable axis indices and their cap-ring crossing points
+      var ineffAxes = [];
+      for (var i = 0; i < N; i++) {
+        if (!isIneffable(axisRaw[i])) continue;
+        var a = axisAngle(i);
+        var capPt    = pt(CX, CY, R, a);           // where line exits the cap ring
+        var innerPt  = pt(CX, CY, R * 0.9, a);    // a bit before the break
+        ineffAxes.push({ axisIdx: i, angle: a, capPt: capPt, innerPt: innerPt, finalPt: dataPoints[i] });
+      }
+
+      if (!ineffAxes.length) return;
+
+      // Glitch elements: short perpendicular fragments at the cap ring exit point
+      // on each of the two polygon edges leaving the ineffable vertex
+      var glitchEls = [];
+      ineffAxes.forEach(function(ax) {
+        var group = el('g', { opacity: '0', style: 'pointer-events:none' });
+
+        // The ineffable vertex — off-screen end of both spike edges
+        var ineffPt = dataPoints[ax.axisIdx];
+        var capPt   = ax.capPt;
+
+        // Neighbour vertices (the visible polygon points the spike connects to)
+        var prevPt = dataPoints[(ax.axisIdx - 1 + N) % N];
+        var nextPt = dataPoints[(ax.axisIdx + 1) % N];
+
+        // Perpendicular to each spike edge (for the RGB-split shift)
+        function edgePerp(a, b) {
+          var dx = b[0]-a[0], dy = b[1]-a[1], len = Math.sqrt(dx*dx+dy*dy)||1;
+          return [-dy/len, dx/len];
+        }
+        var perpA = edgePerp(prevPt, ineffPt);
+        var perpB = edgePerp(nextPt, ineffPt);
+
+        // Each spike edge goes from a neighbour vertex to ineffPt (off-screen).
+        // Find where each edge crosses the cap ring (circle of radius R) to get
+        // the correct start point for each glitch line.
+        function edgeCapCross(fromPt, toPt) {
+          // Parametric: P(t) = fromPt + t*(toPt-fromPt)
+          // Find t where |P(t) - center|^2 = R^2, take the t closer to toPt (larger t)
+          var dx = toPt[0]-fromPt[0], dy = toPt[1]-fromPt[1];
+          var fx = fromPt[0]-CX,      fy = fromPt[1]-CY;
+          var a = dx*dx + dy*dy;
+          var b = 2*(fx*dx + fy*dy);
+          var c = fx*fx + fy*fy - R*R;
+          var disc = b*b - 4*a*c;
+          if (disc < 0) return fromPt; // no crossing, fallback
+          var t = (-b + Math.sqrt(disc)) / (2*a);
+          return [fromPt[0]+t*dx, fromPt[1]+t*dy];
+        }
+
+        var crossA = edgeCapCross(prevPt, ineffPt); // where prev->ineff edge exits cap ring
+        var crossB = edgeCapCross(nextPt, ineffPt); // where next->ineff edge exits cap ring
+
+        // Two lines: each traces its own spike edge from cap ring crossing to off-screen vertex
+        var rLine = el('line', {
+          x1: crossA[0].toFixed(2), y1: crossA[1].toFixed(2),
+          x2: ineffPt[0].toFixed(2), y2: ineffPt[1].toFixed(2),
+          stroke: 'rgba(255,20,20,0.8)', 'stroke-width': '1.5', 'stroke-linecap': 'round'
+        });
+        var cLine = el('line', {
+          x1: crossB[0].toFixed(2), y1: crossB[1].toFixed(2),
+          x2: ineffPt[0].toFixed(2), y2: ineffPt[1].toFixed(2),
+          stroke: 'rgba(0,230,255,0.75)', 'stroke-width': '1.5', 'stroke-linecap': 'round'
+        });
+
+        group.appendChild(rLine);
+        group.appendChild(cLine);
+        svg.appendChild(group);
+        glitchEls.push({ group: group, rLine: rLine, cLine: cLine,
+          perpA: perpA, perpB: perpB });
+      });
+
+      // Also glitch the legend value text for ineffable axes
+      function getIneffableLegendEls() {
+        var rows = document.querySelectorAll('.idx-legend-row');
+        var result = [];
+        rows.forEach(function(row) {
+          var nameEl = row.querySelector('.idx-legend-name');
+          var valEl  = row.querySelector('.idx-legend-val');
+          if (nameEl && nameEl.style.color.indexOf('196,74,74') !== -1) result.push(valEl);
+        });
+        return result;
+      }
+
+      function fireIneffableGlitch() {
+        var tier = 3; // always max tier
+        var burstLen = 2 + Math.floor(Math.random() * 3);
+        var maxShift = 8 + Math.random() * 6;
+
+        function glitchFrame(frameIdx) {
+          if (frameIdx >= burstLen) {
+            // Reset all glitch els
+            glitchEls.forEach(function(g) { g.group.setAttribute('opacity', '0'); });
+            getIneffableLegendEls().forEach(function(el) {
+              el.style.textShadow = '';
+              el.style.transform = '';
+              el.style.filter = '';
+            });
+            // Schedule next
+            var wait = 800 + Math.random() * 4000;
+            if (Math.random() < 0.35) wait = 60 + Math.random() * 200; // chain
+            _ineffableGlitchTimers.push(setTimeout(fireIneffableGlitch, wait));
+            return;
+          }
+          var hx = (Math.random() - 0.5) * maxShift * 2;
+          var hy = (Math.random() - 0.5) * 4;
+          var bright = 1.4 + Math.random() * 1.2;
+
+          glitchEls.forEach(function(g) {
+            g.group.setAttribute('opacity', '1');
+            var shiftA = (1 + Math.random() * 3) * (Math.random() < 0.5 ? 1 : -1);
+            var shiftB = (1 + Math.random() * 3) * (Math.random() < 0.5 ? 1 : -1);
+            // Shift each line a few px perpendicular to the spike edge
+            g.rLine.setAttribute('transform',
+              'translate(' + (g.perpA[0]*shiftA).toFixed(2) + ',' + (g.perpA[1]*shiftA).toFixed(2) + ')');
+            g.cLine.setAttribute('transform',
+              'translate(' + (g.perpB[0]*shiftB).toFixed(2) + ',' + (g.perpB[1]*shiftB).toFixed(2) + ')');
+            g.group.setAttribute('filter', 'brightness(' + bright + ')');
+          });
+
+          // Glitch legend val text
+          getIneffableLegendEls().forEach(function(el) {
+            el.style.textShadow = (-maxShift*0.5)+'px 0 rgba(255,15,15,0.9), '+(maxShift*0.5)+'px 0 rgba(0,235,255,0.9)';
+            el.style.transform  = 'translateX(' + (hx * 0.4) + 'px)';
+            el.style.filter     = 'brightness(' + bright + ')';
+          });
+
+          _ineffableGlitchTimers.push(setTimeout(function() { glitchFrame(frameIdx + 1); }, 50 + Math.random() * 40));
+        }
+
+        glitchFrame(0);
+      }
+
+      // Kick off
+      var initDelay = 400 + Math.random() * 1200;
+      _ineffableGlitchTimers.push(setTimeout(fireIneffableGlitch, initDelay));
+    }
+
+    window.showIndices = function(wielderId) {
+      var w = null;
+      if (window.WIELDER_DATA) {
+        for (var i = 0; i < window.WIELDER_DATA.length; i++) {
+          if (window.WIELDER_DATA[i].id === wielderId) { w = window.WIELDER_DATA[i]; break; }
+        }
+      }
+      if (!w || !w.indices) return;
+
+      document.getElementById('idx-title').textContent = (w.codename || w.realname || wielderId).toUpperCase();
+      document.getElementById('idx-subtitle').textContent = w.registryId + ' — CAPABILITY INDEX REPORT';
+
+      drawRadar(w.indices);
+      populateLegend(w.indices);
+
+      document.getElementById('indices-overlay').classList.add('open');
+      if (document.activeElement) document.activeElement.blur();
+
+      // Audio
+      if (typeof SFX !== 'undefined') SFX.play('open');
+    };
+
+    function closeIndices() {
+      var ov = document.getElementById('indices-overlay');
+      if (ov && ov.classList.contains('open')) {
+        ov.classList.remove('open');
+        hideTooltip();
+        clearIneffableGlitch();
+        if (typeof SFX !== 'undefined') SFX.play('close');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var closeBtn = document.getElementById('idx-close');
+      if (closeBtn) closeBtn.addEventListener('click', closeIndices);
+
+      document.getElementById('indices-overlay').addEventListener('click', function(e) {
+        if (e.target === this) closeIndices();
+      });
+    });
+
+    // ESC key — stop propagation so main handler doesn't also fire
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        var ov = document.getElementById('indices-overlay');
+        if (ov && ov.classList.contains('open')) {
+          closeIndices();
+          e.stopPropagation();
+        }
+      }
+    }, true);
+
+  })();
+</script>
+
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -3398,7 +4378,13 @@ document.addEventListener('DOMContentLoaded', function() {
     html += '<div class="ratings-row">';
     html += '<div class="rating-block bar-combat"><div class="rating-header"><span class="rating-label">UN Combat Rating</span><span class="rating-value">'+w.combatRating.toFixed(1)+' / 10</span></div><div class="rating-bar-track"><div class="rating-bar-fill" style="width:'+(w.combatRating*10)+'%"></div></div></div>';
     html += '<div class="rating-block bar-threat"><div class="rating-header"><span class="rating-label">UN Threat Rating</span><span class="rating-value">'+w.threatRating.toFixed(1)+' / 10</span></div><div class="rating-bar-track"><div class="rating-bar-fill" style="width:'+(w.threatRating*10)+'%"></div></div></div>';
-    html += '</div></div></div>'; // close ratings-row, info-col, profile-header
+    html += '</div>'; // close ratings-row
+    if (w.indices) {
+      html += '<button class="indices-btn" onclick="showIndices(\'' + esc(w.id) + '\')">'
+        + '<svg class="indices-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="8.5" x2="22" y2="8.5"/><line x1="2" y1="15.5" x2="22" y2="15.5"/></svg>'
+        + '</button>';
+    }
+    html += '</div></div>'; // close info-col, profile-header
 
     // Body
     html += '<div class="profile-body">';
@@ -3747,6 +4733,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('attachedfiles.json', { cache: 'no-store' }).then(function(r) { return r.json(); }).catch(function() { return { files: [] }; })
   ]).then(function(results) {
       var wielders      = results[0].wielders;
+      window.WIELDER_DATA = wielders;
       var attachedFiles = results[1].files || [];
 
       // Build sidebar
