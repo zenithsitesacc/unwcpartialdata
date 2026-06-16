@@ -5769,7 +5769,7 @@ var topoLand, topoBorders;
 
 document.getElementById('load-text').textContent = 'Loading Map Data...';
 Promise.all([
-  fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(function(r){return r.json();}),
+  fetch('https://unpkg.com/world-atlas@2/countries-110m.json', {mode:'cors',credentials:'omit'}).then(function(r){return r.json();}),
   fetch('mapdata.json').then(function(r){return r.json();})
 ]).then(function(results){
   var world = results[0], mapdata = results[1];
