@@ -3,62 +3,182 @@
     {
       "id": "sovereign",
       "codename": "Sovereign",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 6,
+        "resilience": 7,
+        "speed": 8,
+        "traversal": 10,
+        "magnitude": 9,
+        "anomaly": 12,
+        "range": 10,
+        "intellect": 6
+      }
     },
     {
       "id": "pluto",
       "codename": "Pluto",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 10,
+        "resilience": 10,
+        "speed": 9,
+        "traversal": 6,
+        "magnitude": 7,
+        "anomaly": 7,
+        "range": 10,
+        "intellect": 9
+      }
     },
     {
       "id": "mars",
       "codename": "Mars",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 8,
+        "resilience": "ineffable",
+        "speed": 9,
+        "traversal": 8,
+        "magnitude": 8,
+        "anomaly": 6,
+        "range": 7,
+        "intellect": 5
+      }
     },
     {
       "id": "empyrean",
       "codename": "Empyrean",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 6,
+        "resilience": 8,
+        "speed": 8,
+        "traversal": 10,
+        "magnitude": 10,
+        "anomaly": 9,
+        "range": 6,
+        "intellect": 3
+      }
     },
     {
       "id": "leviathan",
       "codename": "Leviathan",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 8,
+        "resilience": 10,
+        "speed": 9,
+        "traversal": 9,
+        "magnitude": 10,
+        "anomaly": 9,
+        "range": 9,
+        "intellect": 8
+      }
     },
     {
       "id": "Ignacio",
       "codename": "Ignacio",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 7,
+        "resilience": 8,
+        "speed": 9,
+        "traversal": 5,
+        "magnitude": 11,
+        "anomaly": 5,
+        "range": 9,
+        "intellect": 2
+      }
     },
     {
       "id": "zephyr",
       "codename": "Zephyr",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 7,
+        "resilience": 8,
+        "speed": 13,
+        "traversal": 7,
+        "magnitude": 9,
+        "anomaly": 7,
+        "range": 0,
+        "intellect": 4
+      }
     },
     {
       "id": "jupiter",
       "codename": "Jupiter",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 7,
+        "resilience": 11,
+        "speed": 9,
+        "traversal": 9,
+        "magnitude": 9,
+        "anomaly": 6,
+        "range": 3,
+        "intellect": 3
+      }
     },
     {
       "id": "custodian",
       "codename": "Custodian",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 7,
+        "resilience": 7,
+        "speed": 6,
+        "traversal": 0,
+        "magnitude": 3,
+        "anomaly": 4,
+        "range": 2,
+        "intellect": 6
+      }
     },
     {
       "id": "seamstress",
       "codename": "Seamstress",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 6,
+        "resilience": 7,
+        "speed": 8,
+        "traversal": 5,
+        "magnitude": 6,
+        "anomaly": 5,
+        "range": 8,
+        "intellect": 5
+      }
     },
     {
       "id": "mawae",
       "codename": "Māwae",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 7,
+        "resilience": 8,
+        "speed": 8,
+        "traversal": 0,
+        "magnitude": 9,
+        "anomaly": 5,
+        "range": 3,
+        "intellect": 5
+      }
     },
     {
       "id": "darcy",
       "codename": "Darcy Phang",
-      "category": "ruler"
+      "category": "ruler",
+      "indices": {
+        "physicality": 7,
+        "resilience": 8,
+        "speed": 9,
+        "traversal": 3,
+        "magnitude": 9,
+        "anomaly": 5,
+        "range": 6,
+        "intellect": 4
+      }
     },
     {
       "id": "knight",
@@ -129,7 +249,17 @@
       "addendumslocked": true,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": "https://od.lk/s/NzBfNDE1MjgyNzRf/knight.PNG"
+      "imageUrl": "https://od.lk/s/NzBfNDE1MjgyNzRf/knight.PNG",
+      "indices": {
+        "physicality": 7,
+        "resilience": 10,
+        "speed": 7,
+        "traversal": 3,
+        "magnitude": 3,
+        "anomaly": 8,
+        "range": 0,
+        "intellect": 4
+      }
     },
     {
       "id": "delger",
@@ -187,7 +317,17 @@
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": "https://od.lk/s/NzBfNDE1MjgzNTRf/delger.PNG"
+      "imageUrl": "https://od.lk/s/NzBfNDE1MjgzNTRf/delger.PNG",
+      "indices": {
+        "physicality": 4,
+        "resilience": 5,
+        "speed": 5,
+        "traversal": 3,
+        "magnitude": 5,
+        "anomaly": 4,
+        "range": 4,
+        "intellect": 3
+      }
     },
     {
       "id": "haoxun",
@@ -214,7 +354,17 @@
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": "https://od.lk/s/NzBfNDE1MjgzNTZf/haoxun.PNG"
+      "imageUrl": "https://od.lk/s/NzBfNDE1MjgzNTZf/haoxun.PNG",
+      "indices": {
+        "physicality": 6,
+        "resilience": 7,
+        "speed": 6,
+        "traversal": 0,
+        "magnitude": 1,
+        "anomaly": 6,
+        "range": 0,
+        "intellect": 4
+      }
     },
     {
       "id": "dmitri",
@@ -252,7 +402,17 @@
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": null
+      "imageUrl": null,
+      "indices": {
+        "physicality": 2,
+        "resilience": 2,
+        "speed": 2,
+        "traversal": 4,
+        "magnitude": 2,
+        "anomaly": 4,
+        "range": 4,
+        "intellect": 3
+      }
     },
     {
       "id": "arben",
@@ -292,7 +452,17 @@
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": null
+      "imageUrl": null,
+      "indices": {
+        "physicality": 2,
+        "resilience": 3,
+        "speed": 2,
+        "traversal": 2,
+        "magnitude": 1,
+        "anomaly": 3,
+        "range": 3,
+        "intellect": 3
+      }
     },
     {
       "id": "coop",
@@ -319,7 +489,17 @@
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": null
+      "imageUrl": null,
+      "indices": {
+        "physicality": 3,
+        "resilience": 3,
+        "speed": 2,
+        "traversal": 0,
+        "magnitude": 3,
+        "anomaly": 2,
+        "range": 2,
+        "intellect": 2
+      }
     },
     {
       "id": "jay",
@@ -346,7 +526,17 @@
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": null
+      "imageUrl": null,
+      "indices": {
+        "physicality": 5,
+        "resilience": 5,
+        "speed": 3,
+        "traversal": 2,
+        "magnitude": 2,
+        "anomaly": 4,
+        "range": 0,
+        "intellect": 2
+      }
     },
     {
       "id": "milos",
@@ -398,7 +588,17 @@
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": null
+      "imageUrl": null,
+      "indices": {
+        "physicality": 3,
+        "resilience": 4,
+        "speed": 4,
+        "traversal": 6,
+        "magnitude": 0,
+        "anomaly": 4,
+        "range": 10,
+        "intellect": 3
+      }
     },
     {
       "id": "andrej",
@@ -468,7 +668,17 @@
       "addendumslocked": false,
       "expunged": false,
       "engagementRules": null,
-      "imageUrl": "https://od.lk/s/NzBfNDE5NjA0ODBf/andrejhenwick.jpg"
+      "imageUrl": "https://od.lk/s/NzBfNDE5NjA0ODBf/andrejhenwick.jpg",
+      "indices": {
+        "physicality": 4,
+        "resilience": 5,
+        "speed": 7,
+        "traversal": 2,
+        "magnitude": 5,
+        "anomaly": 2,
+        "range": 6,
+        "intellect": 3
+      }
     }
   ]
 }
